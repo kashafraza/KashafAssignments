@@ -1,0 +1,3051 @@
+WEB CONCEPTS NOTES :
+*********************
+what is Internet ?
+
+The internet is worlds largest computer network and is referred to as network of networks. One of the subsets of internet is the world wide web .The world wide web contains a number of web servers scattered across the world .The web servers contain the  information that a user from anywhere in the world can access.The information is available in the form of web pages.
+
+The Web (formally called the World Wide Web) is not the same thing as the Internet. The terms are often used interchangeably, but in fact, they're different. The Web is only one part of the Internet. There are many other parts as well and in fact, the Web was developed many years later than many other parts of the Internet.
+
+Computers on the Internet connect with each other using what are called protocols,essentially standards, conventions, and rules that govern how they communicate with one another. Different parts of the Internet use different sets of protocols.
+
+The Web's protocol is the Hypertext Transfer Protocol, known as HTTP for short. Acute observers will recognize that acronym because it always precedes any website's address. Putting those letters in front of the address alerts computers that they should communicate using HTTP.
+
+Hypertext Transfer Protocol (HTTP) The communications language, or protocol, used by the World Wide Web.
+
+
+Whenever you visit a website, your web browser contacts a computer on the Internet called a web server. When it makes that contact, it asks the server to send information to it, and the server happily complies. The server sends to your browser the web page and any files associated with that page, and your web browser displays it on your computer.
+
+Web server is a computer on the Internet that contains web pages, and that delivers those web pages to computers that contact it.By the way, you'll often come across the terms website and web page. The terms are often used interchangeably, but they're not quite the same thing. A web page is one individual location, whereas a website is made up of multiple web pages.
+
+
+How Web Servers Work:
+---------------------
+Web servers are at the heart of the Web, and when you build web pages, you're going to spend time with servers.These servers run software called web server software the software that speaks HTTP.Every server on the Web has its own unique number, called an IP address, such as 130.94.155.164. There's no way for human beings to remember every single number of every single website, so the server also has a domain associated with it, such as gralla.com. When you type in the address of the website, special servers on the Internet called DNS servers translate that address into an IP address,and your web browser goes to the right location.
+
+--->IP address A unique number, such as 63.240.93.138, that identifies a computer on the Internet. In order for a computer to be connected to the Internet, it must have an IP address.
+--->DNS (Domain Naming Service) server An Internet server that translates web addresses such as www.samspublishing.com to 63.240.93.138. When you type in a web address, the request is first sent to a DNS server, which translates the address into an IP address. Your computer then uses the IP address to contact the website you want to visit.
+You won't be running a web server yourself. Instead, a company called a hosting service or an Internet service provider (ISP) runs the servers.
+For someone to visit a website you build, you'll have to put onto the server the files that make up the site. There are two primary ways to do this,
+You can create the files first on your own computer, and then upload the files to the server that is, send it from your PC to the server. 
+You can use built-in design tools so that you'll create the site right on the server itself, rather than first building it on your computer.A network is a group of computers connected to each other .An interent is a network of nerworks .The Transmission Control Protocol/Internet protocol provides the bindings that connect all the computers over the world.
+www was intially started as government research project at CERN laboratories in switzerland .Today ,it provides information to users worldwide .The WWW is based on three mechanisms that are used to make resources available to users.They are 
+
+protocols:These are followed to access the resources over the  web.HyperText Transfer protocol is the  protocol used by WWW.
+
+Addresses: The WWW follows a uniform naming scheme to access resources on the web.Uniform Resource Locator (URLs) are used to identify pages and resources on the web .
+
+HTML : Hypertext Markup Language is used to create documents that can be accessed over the web .The HTML document is created using HTML tags and elements.The file is saved with a .htm or .html file name extension on the web server .
+
+when u request for some information using a browser ,the web servers responds to the request .It sends the requested information in the form of web pages to the browser .The browser formats the information sent from the server and displays it.
+
+After explaining all the above concepts and all we go with day1 pdf well okay .
+Introduction to HTML :
+______________________
+The HTML language specifies how a web page should be displayed in the browser .Using HTML tags and elements ,you can :
+
+  -->control the appearence of the page and the content 
+
+  -->publish online documents and retrive online information using the links inserted in the HTML      documents .
+  
+  -->create on -line forms ,which used to collect information about the user ,conduct transactions and 
+     so on .
+
+  -->Insert objects like audio clips ,video clips,ActiveX components and java applets in the HTML      documents   
+
+  The HTML document forms the source code of the web page . when viewed in the editor ,the document is a series of tags and elements that specify how a page is to be displayed .The browser reads the html file and displays the page according to the specified instructions given in html file 
+
+<html>
+<head >
+<title>  Hello world </title>
+</head>
+
+<body >
+<p>
+This is my first page i built it using html !<br/><br/>
+<strong>My name </strong>is raghavendra and i am feeling <em>fine</em> 
+</p>
+
+</body>
+</html>
+
+Now what is xhtml that is important check the slides 1 and 2 for this 
+
+first explain what is xml it is a platform independent device independent language used to transfer data between hetrogeneous system . give them bank example that will be nice and then tell it act as front end database as well okay and now a day architecture of many programming languages is in xml format only.
+
+tell them about serilization like though mobile phone how things are going and stored and web services etc in all this things u explain fully about xml so some function which will execute over internet is called web service so anybody can use it now it is not local okay so next use is configurations we can do lot of configuration so after telling all the use of xml it is better to use html which will have and follow the rules of xml which is xhtml so that is why i am using xhtml and all stuff.
+
+Another use of xhtml is that what ever code u write will be supported in wide variety of browsers as well earlier when we were developing websites which are static websites .
+
+/** go though this topic in style section okay 
+so above one web page is created so now whatever we keep in head file will not be seen by the user remember that well okay .I will write certain rules in this style tag which tells how my html file shoudl behave and all 
+so i will provide some formatting to the web page so that it will look good in color and all now it is looking as black and white kind of stuff so i will include some style to my above coding stuff .
+
+it will be like this selector {property :value;}
+
+
+<html>
+<head >
+<title>  Hello world </title>
+<style type="text/css">
+
+body {  background-color:#ffffff;
+        margin-left:20%;
+		margin-right:20%;
+		border:2px dotted #cccccc;
+		padding :10px;
+		font-family:sans-serif;
+
+ }
+</style >
+</head>
+<body >
+<p>
+This is my first page i built it using html !<br/><br/>
+<strong>My name </strong>is raghavendra and i am feeling <em>fine</em> 
+</p>
+</body>
+</html>
+
+so dont go into the actual coding i will tell u indetail about the concepts right now one sample thing i am trying and showing to u and open in mozilla u can see clearly the lines of padding and border and margin kind of stuff .so here i didnt change anything inside the body okay so this is the example of stylesheet effecting the presentation of my document so lets add few more rules and check the output again okay 
+
+<html>
+<head >
+<title>  Hello world </title>
+<style type="text/css">
+
+body {  background-color:green;
+        margin-left:20%;
+		margin-right:20%;
+		border:2px dotted #cccccc;
+		padding :10px;
+		font-family:sans-serif;
+
+ }
+ 
+ p { background-color:#ffffff;
+     padding:0px;
+ }
+ 
+ h1 { color:#000000;
+ 
+ }
+ 
+</style >
+</head>
+<body >
+<h1> Hello World </h1>
+<p>
+This is my first page i built it using html !<br/><br/>
+<strong>My name </strong>is raghavendra and i am feeling <em>fine</em> 
+</p>
+</body>
+</html>
+
+so keep on chnaging the values and see like change margin to 10 and change heading to orange and add paddding as 10 to p tag as well and see  like that check it by yourself how the stuff is going to look but dont explore still lot of things to learn once we learn we will explore right now i am introducing u some stuff for what is what and all okay .check slide 3,4 etc after this just for explanation etc things and all 
+** will go through in style section **/
+
+
+so move on slide 5 now which is telling about tags and elements so to create elements we require tags so 
+
+HTML Tags are comprised of 
+<ELEMENT ATTRIBUTE = value>
+Element : This identifies the tag
+
+Attribute: This describes the tag
+
+value=This is the content that is assigned to attribute 
+
+eg: <body bgcolor="red">
+
+remember html are having all predefined tags and all are not case sensitive.
+
+paragraphs :
+-----------
+when u write an article or an essay ,you group the contents into series of paragraphs .The objective is to group the logical ideas together and apply some format to the content.Even in an html document ,the textual matter can be grouped into paragraphs .The paragraph tag <p> is used to mark the start of new paragraph.
+<html>
+<head>
+<title> Welcome to HTML </title>
+</head>
+<body bgcolor=pink>
+<p> This is going to be really fun 
+<p> Another paragraph element 
+</body>
+</html>
+so u can see the closing </p> is optional ..
+
+Breaks :
+--------
+The <br> element is used to specify line breaks in the HTML document 
+
+
+ <html>
+
+<head>
+
+<title> Welcome to HTML </title>
+
+</head>
+
+<body bgcolor=lavender>
+
+<p> This is going to be really <br> fun 
+<p> Another paragraph element 
+
+</body>
+</html>
+
+ choosing alignment :
+ ---------------------
+ The align attribute is used to align the HTML elements on the web page .We can align text,objects ,images ,paragraphs and divsions etc
+
+  
+
+  the values are left ,center,right, and justify 
+
+so here we know all the things but justify ...means the text is justified along with both the margins 
+
+
+ 
+
+<html>
+
+<head>
+
+<title> Learning  HTML </title>
+
+</head>
+
+<body bgcolor=lavender>
+
+<p align =right>This is good fun </p>
+</body>
+</html>
+
+
+Using <meta> tag :
+---------------------
+The header section contains the META element .This element provides information about the information on the web page .This would include the authors name,name of the software in which the page was written ,the company name ,contact information and so on .The META element uses a property/value combination 
+
+  for example ,to indicate Graham Browne as the Author ,the following META element is used:
+
+  <META name="Author"  content="Graham Browne">
+
+The http-equiv attribute can be used in place of the name attribute .HTTP servers use the attribute to generate an HTTP response header.
+
+
+A response header is a header that is passed to the browser to identify data .If the browser knows what the header is then the browser can take special action for that header.
+
+for example <META http-equiv="Expires" content="Mon ,15 sep 2003 14:25:27 GMT> will generate an HTTP response header as follows 
+
+Expires:Mon, 15 sep 2003 14:25:27   GMT 
+
+so,if the document has been cached,HTTP will know when to retrive a fresh copy of the associated document .
+
+
+so try this example ...
+
+
+<html>
+
+<head>
+<META name="Author"  content="Graham Browne">
+
+<META http-equiv="Expires" content="Mon ,15 sep 2003 14:25:27 GMT">
+
+<title> Learning  HTML </title>
+
+</head>
+
+<body bgcolor=lavender>
+
+<p align =right>This is good fun </p>
+</body>
+</html>
+
+
+Using Special Characters in HTML Document :
+-------------------------------------------
+
+You can insert special characters into the text of the HTML document .To ensure that browser does not confuse them with html tags ,you have to attach escape codes to the special characters.
+
+
+Special Characters : 
+--------------------
+
+Greater than > &gt; and less than <  &alt; and copyright symbols :
+-----------------------------------------------------------------
+<html>
+<head>
+<title>Learning HTML</title>
+</head>
+<body>
+ The tag <P> starts a new paragraph.
+</body>
+</html>
+
+so the above code will put me into next paragraph but i actually want to write it 
+like that only means so i need to use special characters like this below 
+and see that i have used copyright symbol also to which i cannot type it from the keyboard.
+
+
+<html>
+<head>
+<title>Learning HTML </title>
+</head>
+<body>
+
+ The tag &lt;P&gt; starts a new paragraph.
+
+This is the licensed version of &copy 
+</body>
+</html>
+and also check &quot; for quotations and all okay .
+so now lets us move to some more coding in html where we will lead to devlopment of website from scratch and all okay .
+
+<html>
+
+<head>
+    	
+</head>
+
+<body>
+	Flavors<br />
+        Chocolate<br />
+	Vanilla<br />
+	Chocolate Chip<br />
+	Mint Chip<br />
+   	Watermelon Sherbet<br />
+</body>
+
+</html>
+
+then change  it to like this 
+
+<html>
+<head>
+	<title>Best Ice Cream in Boston | The House of Ice Cream</title>
+</head>
+<body>
+	Flavors<br />
+	Chocolate<br />
+	<p>Solid and reliable; helps with a hard day.</p>
+	Vanilla<br />
+	<p>Light and happy; good before taking a walk.</p>
+	Chocolate Chip<br />
+	<p>No way to go wrong; go for it!</p>
+	Mint Chip<br />
+	<p>Green and great; if you like chips you might as well live large</p>
+	Watermelon Sherbet<br />
+	<p>Good for you and tastes good too!</p>
+</body>
+</html>
+
+now change it to like this 
+
+<html>
+
+	<head>
+		<title>Best Chocolate Ice Cream in Boston | The House of Ice Cream</title>
+	</head>
+
+	<body>
+		<h1>Recipe: Chocolate Ice Cream</h1>
+
+		<h2>Ingredients</h2>
+		
+			<ul>
+				<li>3 eggs</li>
+				<li>2/3 cup sugar</li>
+				<li>1 3/4 cups milk</li>
+				<li>1 3/4 cups cream</li>
+				<li>1 1/2 teaspoons vanilla extract</li>
+				<li>1/4 cup cocoa powder</li>
+			</ul>
+
+		<h2>Directions</h2>
+
+			<ol>
+				<li>In a saucepan stir together the eggs, sugar and milk and cook on low heat</li>
+				<li>Stir constantly for 8-10 minutes until mixture starts to thicken</li>
+				<li>Set mixture aside from the stove and allow to cool</li>
+				<li>In separate bowl, stir cream, cocoa powder, and vanilla</li>
+				<li>Pour into cooled milk mixture</li>
+				<li>Place in refrigerator for hours</li>
+				<li>Run mixture through ice cream machine</li>
+			</ol>
+	</body>
+</html>
+
+Lists:
+------
+Lists are used to group the data logically.They can be added to HTML document to group  related information together
+
+for example
+
+roses
+sunflower
+orchids
+Apples
+oranges
+daffodils
+Mangoes
+
+Above things can be grouped into two categories
+
+fruits
+  Apples
+  Mangoes
+  Orange
+flowers
+  Daffodils
+  sunflower
+  Roses
+  orchids
+
+unordered lists:
+---------------
+
+This is the simplest kind of list that can beadded to HTML document.It is nothing but bulleted lists
+Here we will use the tag <ul>
+inside that we add elements with the tag <li> and <li> tag is optional 
+<html>
+<head>
+<title>unordered list </title>
+</head>
+<body>
+<ul>
+<li>Monday
+<li>Tuesday
+<li>wednesday
+<li>Thursday
+<li>Friday
+<li>Saturday
+</ul>
+</body>
+</html>
+creating nested lists:
+-----------------------
+<html>
+<head>
+<title>unordered list </title>
+</head><body>
+<ul>
+<li>fruits
+<ul>
+<li type=circle>Mangoes
+<li type=circle>oranges
+<li type=circle>Apples
+</ul>
+</li>
+<li>Flowers
+<ul>
+<li type=square>Daffodils
+<li type=square>Roses
+<li type=square>Sunflowers
+<li type=square>orchids
+</ul>
+</li>
+</ul>
+</body></html>
+Note : u can change the type of list element also like above mentioned so this is aout unordered list which means we dont provides numbering or alphabetical sequence for your related group of elements
+Ordered lists:
+--------------
+here I will use <ol>   </ol> tags means elements are displayed automatically in sequence
+<html>
+<head>
+<title>ordered list</title>
+</head>
+<body>
+<ol>
+<li>Monday
+<li>Tuesday
+<li>wednesday
+<li>Thursday
+<li>Friday
+<li>Saturday
+</ol>
+</body>
+</html>
+Nesting of lists using ordered lists
+------------------------------------
+<html>
+<head>
+<title>nesting of ordered list </title>
+</head><body>
+<ol>
+<li>fruits
+<ol>
+<li type=A>Mangoes
+<li type=A>oranges
+<li type=A>Apples
+</ol>
+</li>
+<li>Flowers
+<ol>
+<li type=i>Daffodils
+<li type=i>Roses
+<li type=i>Sunflowers
+<li type=i>orchids
+</ol>
+</li>
+</ol>
+<ol start=6>
+<li>six
+<li>seven
+</ol>
+</body></html>
+Definition lists:
+-----------------
+These are lists used to generate a list of terms and their defnitions.Definition lists are enclosed within <DL>..</DL> tags
+The <DT> tag is used to specify the defnition term ,while the <DD>
+tag is used to specify the defnition itself
+
+
+<html>
+<head>
+<title>demo on defnition list </title>
+</head>
+<body>
+<dl>
+<dt>sunday
+<dd>This is called the first day of the week on this day no body goes to office 
+<dt>HTML
+<dd>Hyper text mark up language </dd>
+<dt>Internet 
+<dd>It is called a network of networks 
+</dl>
+<dt>www
+<dd>world wide web 
+</body>
+</html>
+
+so this is all about lists 
+
+pre Tag :
+----------
+if u want the text to be displayed with predefined formatting we can make use of PRE element tag.The element is used to define formatting for the text.when the text is displayed in the browser,it follows the formatting defined in the HTML source code
+<html>
+<head>
+<title> linking to the page </title>
+</head>
+<body bgcolor=pink>
+<pre>
+  Humpty Dumpty sat on the wall Humpty
+               Dumpty has a great fall
+ the kings men's could not put the              humpty dumpty together again
+</pre>
+</body></html>
+span and div tags :
+---------------------
+There may be situations where u want to divide the text in a web page into logical blocks of information . we may also want to apply common properties to the entire block.The Div and span tag is used to group the contents.The DIV element is used to divide up the document into related sections and the span element is used to specify the span of characters
+<html>
+<head>
+<title> span and div demo </title>
+</head>
+<body>
+<div >
+Division 1
+<p>division elements is used to group the elements 
+<p>Typically division is used for block level elements 
+</div>
+<div align=right>
+division 2
+<p>This is second division 
+<br>
+<h2>Are u having fun ?</h2>
+</div>
+<p> The second division is right aligned 
+<span style=font-size:25;color:blue>Common formatting</span>
+is applied to all the lement of division 
+</body></html>
+physical formating tags :
+--------------------------
+These are those tags that define and alter the characteristics of the text to which u apply tag...some of them are below
+<b>--> for bold
+<tt>-->fixed width text
+<sup>-->superscript text
+<sub>-->subscript text
+code for physical formatting text
+--------------------------------
+<html>
+<head>
+<title>physical formatting tags demo </title>
+</head>
+<body>
+<p> <b>This is good fun </b></p>
+<p> This is <tt>good</tt> fun </p>
+<p>pi*r<sup>2</sup> </p>
+<p>H<sub>2</sub> O</p>
+</body>
+</html>
+Logical formatting tags:
+------------------------
+logical tags describes the require effect of the text .Logical tags are intrepreted according to the browser in which the HTML document is displayed
+<em>-->used for emphasizing the text
+<code>-->used for programming code 
+<var>-->used for varibale decleration in programming
+<cite>-->used for citations and references
+ 
+<html>
+<head>
+<title>logical formatting tags demo </title>
+</head>
+<body>
+<p> <em>This is good fun </em></p>
+<p> <code> x=x+1<br> y=y+1 </code> </p>
+<p><var> x</var> </p>
+<p>It is the mark of educated mind to be able to entertain a thought wthout accepting it <cite>Aristole</cite></p>
+</body></html>
+
+Horizantal tag:
+---------------
+The <hr> tag is used to draw a horizontal line ,across the page ,the following attributes help to control the horizontal line ,it has a start tag,forbids an end tag and contains no content. 
+
+align-->specifies the position  of horizontal rule ,we can align the line center,right and left 
+
+width-->specifies the length of the line ,it can be specified in pixels or percentage
+size--->specifies the thickness of the horizontal rule and is defined in pixels
+noshade-->specifies that the rule be displayed in a solid color instead of with shading
+<html>
+<head>
+<title>Welcome to HTML </title>
+</head>
+<body>
+<h3>My First HTML document </h3>
+<hr noshade size=5 align=center width=50%>
+<hr size =15 align=left width=80%>
+<hr>
+<p>This is going to real fun 
+</body></html>
+
+
+Next move on to some slides section like this check out slides from 6 and  7 so it gives instruction what things can be used we have to copy and paste these blocks of code into future html files which we use okay .
+
+Introduction to css :
+______________________
+Newer versions of browser supports dynamic html .Dynamic html includes combination of html,style sheets  like  cascading style sheets,scripts like javascript.Dynamic html can be defined as a software to add dynamic features to the website.HTML was developed as a document to exchange information on internet.The transfer of data ment to be paltform independent.but the focus shifted to academics to scientfic circles and web pages become more creative and colorful .
+
+
+Features of DHTML:
+------------------
+
+1)Dynamic styles:Here we will use stylesheets means no need to referesh the page from the server side .we will do changes in css file and the page gets changed.so using style sheet we can specify the color,style and size of the page content .we can change the style of page without having return to web server by adding additional tags and attributes.
+
+2)Dynamic content : Internet explorer supports this ,here we can support words and pictures on a web page after they are displayed means we can change the content of the page in response to user input and events like a mouse click.
+
+3)Positioning: In earlier versions of html ,there was no control over the position of element on a web page ,That is exact position of page in terms of co-ordinates could not be specified it was left to  the browser.HTML can only describe the content and relative positioning the elements .
+
+ But in dynamic html we can specify the exact position either obsolute or relative in terms of x-co-ordinates and y co-ordinates .once the page is rendered,we can move the elements on the page making it dynamic.
+
+--->Absolute positioning : specify the exact position in terms of pixels.
+
+--->Relative positioning : specify the relative position of elements,the browser hadnles the actual positioning.
+
+
+
+4)Data Binding : In dynamic html we can bind the table to the web page to a database.This is supported by Internet explorer,when the page is loaded ,the data from the database on the server is displayed in the table.we can sort ,filter and display the data according to the requirments.
+
+
+5)scripting : we can write scripts to change the style and content of the web page .This script is inserted in the web page ,the browser interprets the script whenever the page is displayed.
+
+6) object structure : Dynamic html follows an object structure where each element is treated as an object in the structure.each object can be programmed and accessed independently.
+
+A stylesheet is made up of style rules that tell a browser how to present a document. Style sheets is a simple mechanism for adding style eg:font ,colors,spacing to web pages.
+
+There are two ways of changing the style of our page :
+
+--->change the inline style
+
+--->write scripts to change the style.
+
+using inline styles we can create dynamic styles without adding any scripting to our page so it is a style that is assigned to a particular element .The style does not apply to all the elements of certain type or class.An inline sytle is defined using STYLE  attribute for the elements tag
+
+eg : for seeing color to h1 tag 
+
+  <h1 STYLE=color:red>
+Examples on inline :
+----------------
+
+example 1:
+___________
+<html>
+<head>
+<title>Setting Properties</title>
+</head>
+<body>
+<p style =color:aqua;font-Style:italic;text-Align:center;>This paragraph has an inline style applied to it <br>
+<p>This paragraph is displayed in the default style.
+<br>
+<p>Can u see the <span style=color:red>difference </span> in this line?
+</body>
+</html>
+u already know about span and div elements so i have used on of them earlier i tried to change the div tag color like this 
+<div bgcolor=blue> as i was doing for body so these things will not work for this tag then inline style comes into the picture ....like this..
+but it was not happening using normal method so style will help me in this regard.so same document changed little ..
+
+example 2:
+__________
+<html>
+<head>
+<title> Setting Properties</title>
+</head>
+<body>
+<p style =color:aqua ;font-Style:italic;text-Align:center;>This paragraph has an 
+inline style applied to it <br>
+<div style=color:blue>
+<p>This paragraph is displayed in the default style.
+</div>
+<div style=background-color:blue>
+<p>This paragraph is displayed in the default style.
+</div>
+<br>
+<p><span style=color:red>Can u see the difference </span> in this line?
+</body>
+</html>
+so only thing u need to know is all the properties generally more than  50 properties are available till now.so let us see another example as sample
+
+example 3:
+----------
+<html>
+<head>
+<title>XML How to Program - Inline Styles</title>
+</head>
+<body>
+ <p >This text does not have any style applied to it.</p>
+<h1 style="font size:20pt;color:blue">hello every body </h1>
+<p style = "font-size: 20pt">This text has the <em>font-size</em>
+ style applied to it, making it 20pt.</p>
+<p style="color:red">
+This is going <br>
+to be first exam in <br>
+tanzania nation <br>
+he has to pass with good <br>
+marks and get good job 
+</p>
+ <p style = "font-size: 20pt; color: #0000ff">This text has the
+ <em>font-size</em> and <em>color</em> styles applied to it,
+ making it 20pt. and blue.</p>
+
+ </body>
+ </html>
+
+Advantages of using style sheets over inline styles :
+-----------------------------------------------------
+
+1)override the browser-->different people across the globe are using different browsers and each browser has its own way of displaying the things so using style sheets browser is forced to display according to conventions which we give.
+
+2)page layout--->style sheets can be used to display fonts ,change colors and so on without chnaging the structure of web page ,this means that a designer can seperate visual design requirements from the logical structure of web page and address the two differently.
+using relative measurements in our style sheets ,we can present our document to look good on any monitor at any resolution.
+
+3)Style-sheet can be re-used-->once we define style sheet information,we can embed the style sheet inside the HTML document.Alternatively we can link all our pages on our website to stylesheet .This ensures that our web pages have a uniform appearence when they are displayed.for example we can put a common background,the company logo and some standard information in one style sheet .
+
+4)one time effort--->we can create a style sheet and link several documents to it.so when u made a change in sytlesheet all the documents linked will change accordingly.
+
+5)The "cascade" in CSS is a hiearchy that must be established when multiple styles are applied to section of the web page ,each with different styling instructions okay .
+
+style sheet rules:
+------------------
+syntax :
+---------
+A rule is a declaration of how a page element (whether it is a heading, a block-quote, or a paragraph) should be displayed. 
+selector{property:value}
+
+eg:H1 { color: red }
+   P { font-size: 12pt;
+       font-face: Verdana, sans-serif;
+   }
+
+The two main sections are the selector (which identifies the element to beaffected) and the declaration (the style or display instructions to be applied to that element). In the sample code above, H1 and P are the selectors. The different
+types of selectors that may be used are discussed in the “Selectors” section of this chapter.The declaration, enclosed in curly brackets, is made up of a property and its value.
+Properties are separated from their values by the colon (:) character followed by a
+space. A property is a stylistic parameter that can be defined, such as color, font-family, or line-height.
+A declaration may contain several property/value pairs. Multiple properties must
+be separated by semicolons (;).Values are dependent on the property. Some properties take measurements, some take color names, and others have a predefined list of accepted values. 
+example 4:
+----------
+<html>
+<head>
+<style type="text/css">
+h1 {color:limegreen}
+h1 {font-family:Arial}
+h2 {color:limegreen}
+h2 {font-family:Arial}
+</style>
+</head>
+<body>
+<h1 >This is H1 element </h1>
+<h2>This is H2 element </h2>
+<h3>This is the H3 element with its default style as displayed in the browser </h3>
+</body>
+</html>
+example 5:
+----------
+grouping the elements:
+----------------------
+<html>
+<head>
+<style type="text/css">
+h1 ,h2{color:limegreen ;font-family:Arial}</style>
+</head>
+<body>
+<h1>This is H1 element </h1>
+<h2>This is H2 element </h2>
+<h3>This is the H3 element with its default style as displayed in the browser </h3>
+</body>
+</html>F
+
+CLASS and ID Attribute Selectors:
+----------------------------------
+Attribute selectors allow web page authors to apply style rules based on special identifying attributes placed within HTML element tags. There are currently two
+available attribute selectors: CLASS and ID.
+
+class selector :
+-----------------
+You can classify elements by adding a CLASS attribute to the HTML element tag.Elements in a class can then be modified with a single style rule.The class selector is preceded with a dot(.) followed by the 'class name' of our choice .it is better to choose class names according to their purposes rather than a name that describes their color or style.
+
+eg : we may want paragraph A to appear in italics and other pargraphs appear with different  styles in that case we can have paragraph A have a class identifier .slant like that 
+
+ID selector :
+--------------
+
+An ID selector uses the ID attribute of an HTML element.An ID selector is used to 
+apply a style to an individual element on the web page .we can use an ID selector 
+to apply a particular style to <h2> element.This does not mean that the same style is applied to another occurence of an <h2> element on the same page unless specified.so we can say it is similar to using an inline style where by a style is applied to individual element.it is preceded by # mark.
+
+The ID attribute is used similarly to CLASS, however, it is used for targeting
+specific elements rather than classifying them. If you have several elements that
+need treatment, use CLASS. If you have a specific element that must be uniquely
+treated, you can give it an ID:
+
+<P ID="061998">New item added today</P>
+
+ID selectors are indicated by the hash (#) symbol within the style sheet as follows:
+
+P#061998 { color: red }
+
+Omit the HTML tag name to apply properties to all elements with a given ID:
+
+The difference between an ID and a class is that an ID can be used to identify one 
+element, whereas a class can be used to identify more than one.
+
+check the coding below uncomment the body and see u will understand the stuff and generally id tag is used mainly with div tags for layout purpose and all .
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+		<title>Internal CSS Styles</title>
+
+		<style type="text/css">
+			
+			/* Grouped Selectors - Common Formatting */
+
+			h1, h2 {
+				color: #315DCC;
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+			}
+
+
+			/* Independent Selectors - Unique Formatting 
+			body {
+				background-color: #000000;
+			}
+			*/
+
+			h1 {
+				font-size: 16px;
+			}
+
+			h2 {
+				font-size: 14px;
+			}
+
+
+			p {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 12px;
+				color: #333333;
+			}
+
+			/* Classes - Unique Formatting */
+
+				.redText {
+					color: #ff0000;
+				}
+
+			/* IDs - Layout Formatting */
+
+				#mainContent {
+					background-color: #ffffff;
+				}
+
+
+		</style>
+
+	</head>
+	<body>
+		<div id="mainContent">
+
+		<h1>Cool Photos from the Hubble Space Telescope</h1>
+		<p>
+			The Hubble Space telescope has captured many <em class="redText">truly remarkable</em> images over the last 18 years. 
+		</p>
+
+		<h2>Learn more</h2>
+		<p>
+			There are many <em>free</em> sample images courtesy of NASA, which are available for download over the internet.
+		</p>
+		</div>
+	</body>
+</html>
+
+
+#061998 { color: red }
+lexample 6:
+----------
+<html>
+<head>
+<style type="text/css">
+  .water{color:blue}
+  .danger {color:red}
+</style>
+</head>
+<body>
+<p class=water>test water 
+<p class=danger>test danger 
+<p> no style
+<br>
+<em class=danger >hello world</em>
+</body>
+</html>
+
+note : we can specify which html element can use this style and we can use all keyword to let all elements use it .
+example 7:
+-----------
+<html>
+<head>
+<style type="text/css">
+.hotpink {color:hotpink;}
+p.blue {color:blue ;font-weight:bold;}
+h5.red {color:red;font-weight :bold ;}
+</style></head>
+<h5 class=red>This is an H5 element that uses the RED class </h5>
+<h5 class=hotpink>This is an H5 element that is allowed to take hot pink style</h5>
+<body bgcolor=lavender>
+<p class=blue>This paragraph uses the class blue </p>
+<p >This paragraph does not uses the class blue </p>
+<p class=hotpink>This paragraph uses the hotpink color </p>
+</body>
+</html>
+example 8:
+----------
+<html><head>
+<title> ID seletors </title>
+<style type="text/css">
+#control {color:red}
+</style>
+</head><body>
+<p id="control">Fire is of this color </p>
+<br>
+<p>This paragraph has no style applied 
+</body></html>
+example 9:
+-----------
+<html>
+<head>
+<title>XML How to Program - Style Sheets</title>
+<style type = "text/css">
+ em { background-color: #8000ff;
+ color: white }
+ h1 { font-family: arial, sans-serif }
+ p { font-size: 12pt }
+.special { color: magenta}
+ </style> </head>
+ <body>
+ <h1 class = "special">Deitel & Associates, Inc.</h1>
+ <p >Deitel & Associates, Inc. is an internationally recognized
+ corporate training and publishing organization specializing
+ in programming languages, Internet/World Wide Web technology
+ and object technology education. Deitel & Associates, Inc. is
+ a member of the World Wide Web Consortium. The company
+ provides courses on Java, C++, Visual Basic, C, Internet and
+ World Wide Web programming, and Object Technology.</p>
+ <h1>Clients</h1>
+ <p class = "special"> The company's clients include many
+ <em>Fortune 1000 companies</em>, government agencies, branches
+ of the military and business organizations. Through its
+ publishing partnership with Prentice Hall, Deitel & Associates,
+ Inc. publishes leading-edge programming textbooks, professional
+ books, interactive CD-ROM-based multimedia Cyber Classrooms,
+ satellite courses and World Wide Web courses.</p>
+s</body>
+</html>
+
+example 10:
+------------
+<html>
+<head>
+<title>Combining ID and Class Selectors </title>
+<style type="text/css">
+.forest {color:green}
+.danger {color:red}
+#control {color:blue}
+</style>
+</head>
+<body>
+<p class=forest>green things
+<p class=danger >fire hazards
+</p>
+<em class=forest>more green things </em>
+<br>
+<em class=danger>more fire hazards </em>
+<ul>
+<li class=danger>things that burn 
+<li class=forest>things that dont burn </ul>
+<p id=control >water </p>
+</body>
+</html>
+
+context selectors :
+--------------------
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Contextual Selectors</title>
+<style type="text/css">
+<!--
+#container {
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	color: blue;
+}
+
+#container p { color: red; }
+h3 { color: red; }
+
+td h3 {color: blue; }
+
+-->
+
+</style>
+
+</head>
+
+<body>
+<table width="450" border="0">
+  <tr>
+    <td colspan="2"><h3>table H3 text is blue</h3></td>
+  </tr>
+  <tr>
+    <td width="205">&nbsp;</td>
+    <td width="235">&nbsp;</td>
+  </tr>
+</table>
+<h3>H3 text is red</h3>
+<p>&nbsp;</p>
+<div id="container">
+  <p>&lt;p&gt; text inside  id "container" is red</p>
+  <table width="600" border="0">
+    <tr>
+      <td>text is blue</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</div>
+<h1 class="body">&nbsp;</h1>
+</body>
+</html>
+
+
+so in the above document u just check it h3 tag is defined in td tag then only those features will be applied to my document okay  so these type of selectors we call it as contextual selectors okay and u can see here i am using space in between two selectors okay so in the same manner i have #container p { color: red; } as defined so here for the p tag the parent tag is container tag and anything which is paragraph in the container id will have the color as red so these is all about contextual selectors .
+
+
+example 11:
+-----------
+<html>
+<head>
+<title>Contextual Selectors </title>
+<style type="text/css">
+body {color:blue;background:lavender;font-family:Arial ;}
+ul {color:red}
+</style>
+</head>
+<body>
+<ul>
+<li>mangoes
+<li>oranges
+<li>apples
+</ul>
+<ol>
+<li>mangoes
+<li>oranges
+<li>apples
+</ol>
+</body>
+</html>
+example 12:
+-----------
+
+Combining ,linking and importing a style sheet with HTML:
+-----------------------------------------------------------
+
+There are several ways as follows in which a style sheet can be combined with HTML
+
+==>style element
+==>style attribute
+==>link element
+
+style element : 
+________________
+The style element is inserted into the <head> element of the document with all the rules placed between opening and closing tags so when the pages are displayed only the document in which the style is embedded will be effected.
+
+<style type="text/css">
+
+h1 {color:maroon;}
+p  {color:hotpink ; font-family:Arial;}
+
+</style>
+
+The example in the above sections have made use of <style> element.
+
+style attribute :
+__________________
+
+The style attribute is used to apply style sheets to individual elements.A style sheet can be as small as one rule .Using the style attribute we can bypass the style element and put deceleration directly into individual start tags 
+
+so these are nothing but inline styles which we have seen in example 1
+
+<h2 style ="color:green;font-family :Arial ">  This is final </h2>
+
+extra examples on stylesheet :
+-------------------------------
+<html><head>
+<title>Simple CSS Example</title>
+<style type="text/css">
+BODY{background:black}
+.PAGE{background:#FFD040;
+           color:black;
+           margin:10px 10px 20px 20px;
+           width:100%;
+           height:100%
+          }
+H1 {font-size:24pt;
+    font-family:Cosmic Sans Ms,Cursive;
+    text-align:center;
+    }
+.black  {color:black;background:white}
+.white  {color:white;background:black}
+P       { font-family:Arial,Sans-serif;
+          font-size:16pt;
+          line-height:200%;
+          text-align:justify;
+          text-indent:20px
+        }
+.style {color:blue;font-family:Arial;font-style:oblique}
+.size  {font-size:x-large}
+#letterspace {letter-spacing:15pt}
+.letterspace1 {color:red;background:yellow}
+
+</style>
+</head>
+<body>
+<div class=PAGE>
+<h1><span class="black">css</span>
+<span class="white">Fun</span></h1>
+<hr>
+<p >with style sheets ,you will be able to control the presentation of web pages with greater precsion.style
+sheets can be used to set everything from <span class="style">font styles</span> and <span class="size letterspace1 ">
+sizes </span> to 
+<span id="letterspace">letter spacing </span>and the line heights</p>
+</div>
+</body>
+</html>
+
+Link element :
+_______________
+If we want to use the link element ,our style sheet must be separate document .we then add the web address for the style sheet
+for example
+<link rel=stylesheet href="stylemine.css" type="text/css">
+
+the "rel=stylesheet"  attribute must be included since the browser will not load the stylesheet .
+
+first create a sperate file with this name 
+code for stylesheet.css file:
+--------------------------------
+BODY { font:10pt;font-family:serif;color:black;
+       background:yellow
+     }
+H1  
+  { font :20pt; font-family:Sans-Serif; color:black   }
+
+H2 {font:16pt;font-family:Sans-Serif;color:black }
+
+P {font-size:20pt; font-family:Serif; text-indent : 0.5in;
+ margin-left:50px; margin-right:50px
+ }
+A:link:{color :black;text-decoration:none}
+A:visited:{color:blue;text-decoration:none}
+A:active:{color:red;text-decoration:none}
+code for actual file to be linked 
+---------------------------------
+<html><head><title>external stylesheet demo</title>
+<link rel=stylesheet href="stylesheet.css" type="text/css"></head>
+<body>
+<h1 align="center">Africa is doing well </h1>
+<h2>how many times i need to write this code </h2>
+<p>This is going to be great fun in east africa..i think the most powerful nation is tanzania right now...to know more about each africa <a href=connect.html>click it </a>
+</body></html>
+
+using images in html document :
+-------------------------------
+syntax:
+_______
+<img align =position  src="picture.gif">
+<html>
+<head>
+<title>Image demo </title>
+</head>
+<body>
+<img align=bottom src=merlin.gif alt="merlin image">Aligned at the bottom <br> 
+<img align=middle src=merlin.gif>Aligned at the middle  <br>
+<img align=top src=merlin.gif>Aligned at the top  <br>
+</body>
+</html>
+
+Hyperlink :
+___________
+Hyperlink is an element in an electronic document that links to another place in the same document or to an entirely different document . Typically we click on hyperlink to follow the link .when the user clicks the hyperlink the user is taken to URL that we specify in the link .We can provide links to
+--->A specific section of same document 
+--->Another document 
+--->A specific section of another document
+--->Another location of the server
+Then the links can be internal or external 
+====>Internal links are the links to sections within the same document or within the same web site.
+====>External links are links to the pages on other web sites or servers.
+To create an hyperlink , we need to specify two components 
+   1)The full address or url of the file to be linked 
+   2) The hotspot that will provide the link ,the hotspot may be a line of text or even an image .
+
+Absolute URL : is the full internet address of a page or a file ,including the protocol,network location and actual path .
+
+Relative URL: is a URL with one or more of its parts missing.Browsers will take the missing information from the page containing the URL.
+The syntax of href is 
+<a href="anypage.html"> click me </a>
+<a href=http://yahoomail.com/home.asp>click here to jump to yahoo website</a>
+
+Linking to the other document :
+===============================
+doc1.html file and doc2.html file i am keeping in the same folder 
+and these are codes for the two files
+
+doc1.html
+---------
+<html><head>
+<title> linking to the page </title></head>
+<body bgcolor=pink>
+<p>The page is all about creating hyperlinks 
+<a href=doc2.html>click me </a>
+</body></html>
+doc2.html
+----------
+<html>
+<head>
+<title> welcome to the page </title>
+</head>
+<body bgcolor=lavender>
+<p><h1><marquee>The page is all about creating hyperlinks </marquee></h1>
+</body></html>
+
+
+Linking within the document :
+==============================
+<html><head>
+<title> jumping within the document </title></head>
+<body bgcolor=#02AB39>
+<h2><a href=#Internet>Internet </a><br><br>
+<h2><a href=#HTML>Introduction to html  </a><br><br>
+<h2><a href=#cricket>World cup cricket </a><br><br>
+<h2><a href=#tanzania>tanzania Nation  </a><br><br>
+
+<a name=Internet><h1>Internet </h1></a><br>
+<p><h3> The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+............
+
+<a name=HTML><h1>Introduction to HTML </h1></a><br>
+
+<p><h3>HTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the bhe base for web designing.........
+<br>
+
+<a name=cricket><h1> world cup cricket </h1> </a><br>
+<p><h3>world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup  ....................<br>
+
+<a name=tanzania><h1>tanzania  Nation </h1>  </a><br>
+
+Tanzania is good nation ...it is widely located in easteren part of africa Tanzania is good nation ...it is widely located in easteren part of africaTanzania is good 
+
+</body></html>
+
+Linking with relative path:
+===========================
+create root folder htmldemos  in that keep three documents  which we have written till now doc1.html ,doc2.html and doc3.html and htmldemos has got a sub folder maximum in that another document max.html is there so to jump from sub folder file to main folder file without using complete path is called as relative path.
+code for that max.html file is 
+-------------------------------
+<html>
+<head>
+<title> relative path demo </title>
+</head>
+<body>
+<a href ="../doc3.html">back </a>
+</body>
+</html>
+here .. indicates just above parent folder 
+
+
+
+
+Linking to particular section of another file:
+==============================================
+suppose i want to link internet section of the doc3.html file from doc1.html file the code of doc1.html file will change like this ..
+<html><head>
+<title> linking to the page </title>
+</head>
+<body bgcolor=pink>
+<p>The page is all about creating hyperlinks 
+<a href=doc3.html#Internet>click me </a>
+</body>
+</html>
+
+
+
+
+
+
+
+using hyperlinks jumping to a websites and refreshing the website:
+<html><head>
+<META http-equiv="Refresh" content="2">
+<title> website link </title>
+</head><body bgcolor=lavender>
+<p><a href="http://www.aptech-worldwide.com/">click here to jump aptechs homepage
+</a>
+</body>
+</html>
+
+
+Using Tables 
+-------------
+Apart from grouping the related data into lists,there is another way to control the display of text on a web page using tables.We can use tables to display data in tabular format completely in the form of rows and columns.
+Table  tags and  properties :
+----------------------------
+<tr>  tag is used for starting a new row 
+<th> tag is referred as heading of the table 
+<td> refers to table data and it determines number of columns in the table
+<caption> tag is used to give some title to the table
+border :This property provides lining between elements 
+cellspacing:refers to spacing between the cells
+cellpadding: refers to space between borders of table cells
+width : refers to spreading table according to the percentage mentioned
+rowspan : to merge rows in table
+colspan: to merge columns in table
+
+
+<html>
+<head>
+<title>Using Tables demo </title>
+</head>
+<body>
+<table border=2 width=80% cellspacing=2 cellpadding=6 bgcolor=blue  >
+<caption> This is student table </caption>
+<tr>
+<th>student id </th>
+<th>student name </th>
+<th>course</th>
+</tr>
+<tr>
+<td>1001</td>
+<td>ravi kumar </td>
+<td>c++ </td>
+</tr>
+<tr>
+<td>1002</td>
+<td>pavan kumar </td>
+<td>java </td>
+</tr>
+<tr>
+<td>1003</td>
+<td>naveen </td>
+<td>.Net </td>
+</tr>
+</table>
+</body>
+</html>
+
+for merging two first columns
+-----------------------------
+<th colspan=2>student id and student name </th>
+<th>course</th>
+for merging last two columns:
+------------------------------
+<th>student id </th>
+<th colspan=2>student name and course</th>
+for merging all the 3 columns:
+------------------------------
+<th colspan=3>student id ,student name and course</th>
+for merging first two rows :
+-----------------------------
+<td rowspan=2>1001 and ravikumar</td>
+<td>c++ </td>
+
+just like that we can do for other rows in the table.
+
+Layers :
+--------
+when we position the element on web page ,we typically specify x and y co-ordinates,however we can also specify z co-ordinates .The z-axis is an imaginary line from the front of the monitor to the back ,Thus an element can be positioned above or below another element in layers,so z order determines the order in which the elements are displayed
+This concept of layering can be applied to HTML document also so a layer is like a frame that can contain content and be positioned where required
+
+A layer is an element that can be added to a web page . we can specify the exact position of layer in the web page .The layer has its own set of properties that can be accessed and programmed.The layers can be controlled through script ( a small code) to make page more interactive and dynamic as we want it to be.In addition we can interface text and images to make the page fluid and readable.special effects can be added also like that we can change the content of particular layer without modifying the main page.
+
+<html>
+<head>
+<title>The layer demo </title>
+</head>
+<body bgcolor=hotpink>
+<layer id=layer1 bgcolor=blue>
+<div>
+<font color=red>
+<h1>Layer 1 </h1>
+<p>This is a paragraph element with division 1 </p>
+<p>content of layer1 </p></font>
+</div>
+<p>Outside the division </p>
+<div><font color=blue>
+<h2> Division 2 </h2>
+<p>This is paragraph element with division 2 </p>
+<p>Content of layer 1</p></font>
+</div></layer>
+</body></html>
+
+
+                           Frames
+                           ------
+Frames divide the web browser into seperate regions each of which can display seperate scrollable page.Each frame is unique window within the main window.for example u can use 3 frames in the web page one with a banner,one for navigation menu and one for display data .Each frame can be created ,modified and scrolled independent of the other.
+advantages:
+-----------
+-->To display logo or static information in one fixed portion of the page
+-->For the table of contents in page where user can just click and move around the website without having to move back constantly .
+-->Multiple views allow the disigner to keep some information static while scrolling or manipulating other contents.
+
+
+
+Note : A standard html document has a head and a body .An HTML document with frames has a head and frameset section .The frameset section  specifies the layout of the views in the main user agent window.we cannot use body and frameset elements together .The browser accepts the first element that appears in the document and ignores subsequent elements.That is ,if i used body element ,the frameset element that follows will be ignored and vice versa.
+
+Rows : This specifies the layout of the horizontal frame in terms of pixels ,percentage and relative lengths.The default value is 100% means one row
+
+Cols:This specifies the layout of vertical frames in terms of pixels,percentages and relative lengths .The defualt value is 100%.This indicates only one column.
+
+The attributes of the FRAME element are as follows :
+-----------------------------------------------------
+
+name: This assigns name to the current frame 
+
+src:This tells where the frame is located.
+
+noresize:This is boolean attribute ,it specifies that the frame window cannot be resized.
+
+scrolling:It specifies scrolling  patterns for the frame window,possible values are 
+  Auto : This provides scrolling for the frame window when necesssary          this is default value .
+  yes :This will always provide scrolling for frame window
+
+  no  : This does not provide scrolling for the frame window
+
+frameborder: This determines the frame border ,possible values are 
+
+   1: This is the default value .A sperator is drawn between current frames and every adjoining frame
+
+   0: No seperators are drawn between the current frame and every       adjoining frame,however the seperators of adjoing frames are displayed if set.
+
+marginwidth : This specifies the space to be displayed between the contents of the frame and the left and right margins of the frame.The value must be greater than one pixel.
+
+marginheight: This specifies the space to be displayed between the contents of the frame and the top and bottom margins of the frame.The value must be greater than one pixel.
+
+bordercolor:Sets the color for frame’s borders (if the border is turned on). 
+
+<frameset>:
+-----------
+Defines a collection of frames or other framesets.
+
+Attributes:
+------------
+border=number
+Sets frame border thickness (in pixels) between all the frames in a frameset(when the frame border is turned on).
+
+bordercolor=#rrggbb or color name
+Sets a border color for all the borders in a frameset. 
+
+cols=list
+Establishes the number and sizes of columns in a frameset. The number of
+columns is determined by the number of values in the list. Size specifications can be in absolute pixel values, percentage values, or relative values (*)based on available space.
+
+rows=list 
+Establishes the number and sizes of rows in the frameset. The number of
+rows is determined by the number of values in the list. Size specifications can be in absolute pixel values, percentage values, or relative values (*) based on available space.
+
+example 1:
+----------
+<HTML>
+<HEAD><TITLE>Simple Framed Document</TITLE></HEAD>
+<FRAMESET COLS="*,*">
+   <FRAME SRC="doc2.html">
+   <FRAME SRC="doc3.html">
+</FRAMESET>
+<BODY>
+<H1>ABDUL IS GOOD BOY </H1>
+</BODY>
+</HTML>
+example 2:
+----------
+<HTML>
+<HEAD><TITLE>Simple Framed Document</TITLE></HEAD>
+<FRAMESET ROWS="*,3*">
+   <FRAME SRC="doc2.html" >
+   <FRAME SRC="doc3.html">
+</FRAMESET>
+<NOFRAMES>Your browser does not support frames.</NOFRAMES>
+</HTML>
+Note:
+-----
+earlier browsers were not supporting frames so in order to tell that 
+they are not supporting in the form of message we use <noframe> tag 
+in the coding ...but now it is not required.
+* always consider the division of page relatively means *,3* means first frame will be 3 times smaller than the second one ,no of * denotes that many frames if *,*,* is there means 3 rows or cols.
+Specifying sizes:
+------------------
+Frame size can be listed in one of three ways:
+
+Absolute pixel values:
+______________________
+The browser will interpret an integer as an absolute pixel value. The frameset <frameset cols="150,450"> will create two columns, one exactly 150 pixels wide, and the other exactly 450 pixels wide. If the browser window is larger than the total specified pixels, it will enlarge each frame proportionally to fill the window.
+
+Percentages:
+_____________
+Percentages are based on the total width of the frameset. The total should add up to 100%. The frameset <frameset rows="25%,50%,25%"> creates three rows; the top and bottom frames will each always occupy 25% of the height of the frameset and the middle row will make up 50%, regardless of how the browser window is resized.
+
+Relative values:
+________________
+Relative values, indicated by the asterisk (*) character, are used to divide up the remaining space in the frameset into equal portions. For instance, the frameset <frameset cols="100,*"> creates two columns—the first will be 100 pixels wide, the second will fill whatever portion is left of the window.
+
+You can also specify relative values in multiples of equal portions and
+combine them with other measurement values. For example, the frameset
+defined by <frameset cols="25%,2*,*"> divides the window into three
+columns. The first column will always occupy 25% of the window width. The
+remaining two will divide up the remaining space; however, in this case, the middle column will always be 2 times as big as the third. (You may notice that this results in the same division as the percentages example.)
+
+Combining rows and columns:
+___________________________
+You can specify both rows and columns within a single frameset, creating a grid of frames, When both cols and rows are specified for a frameset, frames are created left-to-right in each row, in order. Rows are created top-to-bottom. The order of appearance of <frame> elements within the <frameset> does make a difference in where their contents display.
+Nesting Frames:
+_______________
+It is possible to nest a frameset within another frameset, which means you can take one row and divide it into several columns (or conversely, divide a column into several rows), Nesting gives you more page layout flexibility and complexity than simply dividing a frameset into a grid of rows and columns.
+Example 3:
+---------
+<HTML>
+<HEAD><TITLE>Simple Framed Document</TITLE></HEAD>
+<FRAMESET ROWS="*,*,*"
+COLS="100,*,2*">
+   <FRAME SRC="doc1.html">
+   <FRAME SRC="doc2.html">
+   <FRAME SRC="doc3.html">
+   <FRAME SRC="doc1.html">
+   <FRAME SRC="doc2.html">
+   <FRAME SRC="doc3.html">
+   <FRAME SRC="doc1.html">
+   <FRAME SRC="doc2.html">
+   <FRAME SRC="doc3.html">
+</FRAMESET></HTML>
+
+Example 4:
+-----------
+nested frameset demo :
+----------------------
+<html><head><title>nested frameset demo </title></head>
+<FRAMESET COLS="100,*">
+   <FRAME SRC="doc1.html">
+   <FRAMESET ROWS="75,150,*">
+      <FRAME SRC="doc2.html">
+      <FRAME SRC="doc3.html">
+      <FRAMESET COLS="*,*">
+         <FRAME SRC="doc2.html">
+         <FRAME SRC="doc3.html">
+      </FRAMESET>
+   </FRAMESET>
+</FRAMESET></html>
+
+demo with all the attributes of frame:
+---------------------------------------
+<HTML>
+<HEAD><TITLE>Simple Framed Document</TITLE></HEAD>
+<FRAMESET ROWS="*,3*">
+   <FRAME SRC="doc2.html" noresize="false"  frameborder=1 marginwidth=3 marginheight=3 bordercolor="red" >
+   <FRAME SRC="doc3.html">
+</FRAMESET>
+<NOFRAMES>Your browser does not support frames.</NOFRAMES>
+</HTML>
+
+
+Q)develop an interface of two pages when we click on the topic of one page in one frame i should jump in another frame's  corresponding topic using hyperlinks which u have learned earlier?
+
+sol)first create  two documents one is connect.html and another is doc3.html and finally check sample.html 
+code for connect.html (frame1)
+-------------------------------
+<html>
+<head><title>connecting page </title>
+</head>
+<body>
+<a href=doc3.html#Internet target=raghu >Internet go  </a><br>
+<a href=doc3.html#HTML target=raghu >HTML go  </a><br>
+<a href=doc3.html#cricket target=raghu >Cricket go </a>
+<br>
+<a href=doc3.html#tanzania target=raghu >tanzania go  </a>
+</body>
+</html>
+code for doc3.html:(frame2-already done in hyperlinks)
+------------------------------------------------------
+<html>
+<head>
+<title> jumping within the document </title>
+</head>
+<body bgcolor=#02AB39>
+<h2><a href=#Internet>Internet </a><br><br>
+<h2><a href=#HTML>Introduction to html  </a><br><br>
+<h2><a href=#cricket>World cup cricket </a><br><br>
+<h2><a href=#tanzania>tanzania Nation  </a><br><br>
+<a name=Internet><h1>Internet </h1></a><br>
+<p><h3> The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world 
+The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world The interent is used widely all over the world <br>
+<a name=HTML><h1>Introduction to HTML </h1></a><br>
+<p><h3>HTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designing
+HTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designing
+HTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designing
+HTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designingHTML is mainly meant for web designing it is the base for web designing
+<br>
+<a name=cricket><h1> world cup cricket </h1> </a><br>
+
+<p><h3>world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year 
+world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year world cup cricket is won by indians this year <br>
+
+
+
+<a name=tanzania><h1>tanzania  Nation </h1>  </a><br>
+
+Tanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africa
+Tanzania is good nation ...it is widely located in easteren part of africa
+Tanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africa
+Tanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africaTanzania is good nation ...it is widely located in easteren part of africa
+Tanzania is good nation ...it is widely located in easteren part of africa
+
+</body>
+</html>
+
+
+code for sample.html:
+----------------------
+<html><head><title>nested frameset demo </title></head>
+<FRAMESET COLS="*,3*">
+   <frame src=connect.html  name=nav >
+   <frame src=doc3.html name=raghu >
+</FRAMESET></html>
+
+Linking to the frames:
+----------------------
+when creating links in the web page we can set a frame as target of the link.The guidelines to be followed are:
+
+-->if we specify a frame in the target attribute of an element,the document specified by the element is loaded into the frame when activated
+-->If the target attribute is not set then the target attribute of the base element is used to determine the frame.
+-->if neither the element nor the base element refers to target ,the document is loaded into the frame that contains the element.
+-->if the frame is not found then the browser creates the new window and the frame and loads the document in new frame
+The target attribute is used to specify the name of the frame  in which the document is opened.
+A form is a section of HTML document that contains special elements called controls.controls are used to accept input from the user and provide some interaction.The data that is entered by the user can be validated by client side scripts and then submitted to server for further processing.Forms provide a method for true interaction between users and the publisher of a web site . Forms can be used for simple functions like surveys and guest-books, and they are the element that makes a complex online commerce system possible.
+
+Advantages of form :
+____________________
+---->Collecting names,addresses,telephone numbers,e-mail address and other information to register users for  a service or an event 
+
+---->Gathering infromation for the purchase of an item,for example if i want to purchase book on internet we have fill all relevant information
+
+---->Collecting feedback from the website .
+
+---->providing a search tool for the website ,so sites which are having varied information typically provide users with search box to enable them to locate information faster.
+
+To write a form we use first of all <form> tags 
+
+it has the following attributes :
+
+1)Accept :This defines the list of MIME types that are recognized by server that contains the script to process the form .
+syntax :
+------- 
+ACCEPT="internet media type"
+we use this tag rarely 
+
+2)Action : This tells where the form has to be jumped when u click the submit button in form 
+syntax:
+-------
+ACTION="URL"
+3)Method : This specifies the method by which the data has to be sent to the server .It also specifies the protocol to be used when client sends the data to the server.if the value is GET the browser will create a query that contains the page URL a question mark and values are generated by form 
+
+syntax :
+-------
+<form action="url"  method="get">
+contents...of the form 
+
+</form>
+
+example on get method :
+-----------------------
+when we want to send very less data and it is not secured data we can go for get method of the form. 
+
+sample.html
+------------
+<html>
+<head>
+<title>form demo </title>
+</head>
+<body>
+<H2>Join the Mailing List:</H2>
+<FORM ACTION="doc1.html" METHOD=GET>
+<PRE>
+First Name: <INPUT TYPE="text" NAME="first">
+Last Name:  <INPUT TYPE="text" NAME="last">
+<INPUT TYPE="submit">  <INPUT TYPE="reset">
+</PRE>
+</FORM>
+</body>
+</html>
+Note:this page is jumping to doc1.html and we can see in the url the information which u have typed in sample.html page so it is not secure form of sending data so we go for post method widely.
+
+HTML INPUT ELEMENTS:
+--------------------
+The <input> element defines the type and appearance of the control to be displayed on the form,the attributes are the following
+
+1)type:This specifies type of element like text means textbox,password means password type textbox ,checkbox means u can select through tick marks etc
+2)name=This specifies the name of the control by which it is called.
+3)value=This is optional one we can use this with radio buttons to specify some value 
+4)size:it determines the width of the control in case of text box if size=30 it can accomodate maximum of 30 characters.
+5)maxlength=This is used to specify maximum number of characters that can be entered in textbox or password element
+6)checked=This is boolean attribute means it specifes true or false and this is used maximum with radio and checkbox control
+7)src=This is used when we are using an image as an input type ,it identifies the location of an image 
+
+Button:
+------
+<input type=button  value=click  name="b1" >
+
+This creates a button control.,u can use size also here if u want..
+
+Text:
+------
+<input type=text value=" " name="username"  size=20>
+
+This creates a textbox with name username and i am keeping the textbox empty from strating itself 
+
+checkbox:
+---------
+
+when we have to select more than one option then u go for checkboxes
+
+<input type=checkbox name=courses value="check-box1" >C language <br>
+<input type=checkbox name=courses value="check-box2" checked >java
+
+submit :
+--------
+when the user clicks the submit button ,the form is submitted to a location which is specified in action attribute
+<input type="submit"  value="click" name="b1">
+
+Image:
+------
+This actually creates a graphical submit button
+<input type=image src="url" name="blue_bulb">
+reset:
+------
+This makes the values in the form to erase when we click it 
+<input type=reset value="reset" name="b2">
+
+code on the form using post method:
+-----------------------------------
+<html>
+<head>
+<title>sample form demo </title>
+</head>
+<body bgcolor="#ffffcc">
+<table>
+<tr><td>
+<form action="doc1.html" METHOD=post>
+<b><h2 align="left" >Sample Stock recovery </h2></b>
+<p><b>describe ur investment experience </b></p>
+<p>
+<input type="radio" name="result-radio1" value="radio-0">Beginner<br>
+<input type="radio" name="result-radio1" value="radio-1">Intermediate<br>
+<input type="radio" name="result-radio1" value="radio-2">Expert<br>
+</p>
+<p><b>Types of investments u make </b></p>
+<p>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-0">Individual stocks<br>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-1">Options<br>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-2">Mutual funds<br>
+First Name: <INPUT TYPE="text" NAME="first" size=20 ><br>
+Last Name:  <INPUT TYPE="password" NAME="password" size="10" maxlength="15"><br><br><br>
+<INPUT TYPE="submit">&nbsp;<INPUT TYPE="reset"><br>
+</FORM></td></tr></table></body></html>
+
+TextArea Element :
+------------------
+This creates a multiline text input control as compared to single line text box.Here we have to specify the size of the textarea.Also ,we have to specify the rows and columns in the textarea.
+
+<textarea  name="text1" cols=20 rows=5>  </textarea>
+select Element :
+-----------------
+The select element is used to display a list of options for the user.each choice is represented by an OPTION element.A select must contain atleast one OPTION element.The option selected by user is represented by highlighted block.
+
+The optgroup element is used to group the choices of hiearchy 
+
+code for textarea and select element and optgroup:
+--------------------------------------------------
+<html>
+<head>
+<title>Sample Form </title>
+</head>
+<body bgcolor="pink"  >
+<form action="doc1.html" method="post">
+<b><center><h2>Sample stock recovery </h2></center></b>
+<p><b>Investment advice for others </b> </p>
+<textarea  name="result_textarea"  rows="7"  cols="20">
+</textarea><p><!--comment is written like this -->
+<p><b>How do u buy your stocks</b>
+<select name="resultradio-5">
+<option></option>
+<option>1)on-line exam </option>
+<option>2)Touch stone trading</option>
+<option>3)Broken pieces</option>
+<option>4)Other</option>
+</select></p>
+<p><select name="course" multiple>
+<optgroup>
+<option>1)Introduction to html </option>
+<option>2)javascript </option>
+<option selected >3)web designing</option>
+<option selected>4)Other</option>
+</optgroup>
+<optgroup>
+<option>1)c language </option>
+<option>2)C++ language </option>
+<option>3)java language</option>
+<option>4)Other</option>
+</optgroup>
+</select><br><br>
+<button type="submit">
+send <img src="merlin.gif" alt="submit"></button>
+<button type="reset">
+reset <img src="merlin.gif" alt="reset"></button>
+</p></form>
+</body></html>
+
+Label:
+------
+label element is used to attach information to control elements.so let use see a application form developed.
+
+
+<html>
+<head>
+<title>Application  Form </title>
+</head>
+<body >
+<h1><center><font size= 4 color=Forestgreen >Application Form </center></font></h1><hr><br>
+<form action="=" method="post">
+<p>
+<label for="firstname"> Name :  </label>
+<input type="text" id="firstname"><br>
+<p>Area of Interest <br><br>
+<input type=radio name="control1" value="0" checked>web designer
+<input type=radio name="control1" value="1" >Web Administrator
+<input type=radio name="control1" value="2" >web Developer
+<p>Experience
+<select name="control2">
+<option>None</option>
+<option>1 year</option>
+<option>2 years</option>
+<option>4 years</option>
+</select><br>
+<p>Comments<br>
+<textarea name="control3" cols="30" rows="5">Type your comments here</textarea>
+<p><input type="checkbox"  name="control4" checked>send acknowledgement<br>
+<input type=submit value=ok >
+<input type=reset value=rechange >  </form>
+</body></html>
+Need of javascript or scripting technology:
+--------------------------------------------
+1)when we want to include our own logic when i execute a page then i will use javascript .
+2)In this i will use two tags <script>  and closing </script> tag.
+3)If there are controls in the form to validate the controls also we use javascript.
+eg:Inside a  text box of i should not enter more than 6 characters to do that i will write a code in javascript
+and give user a alert message when he does mistakes
+4) Javascript is completely at the client side anybody can check the code and see its execution if u allow or check the browser to include script code.
+5)The script code can be written after <head> tag or it can be placed inside a body also.
+6)To declare a variable we use var datatype it takes any arguments of our choice means if i supply 30 it will become a data type of integer and if i supply string say "mohan" it will become string data type.
+7)To print any message i use document.write method .
+8)All html tags are valid and can be used in document.write( ) method.
+9)The tags can be used anywhere after <head> and also after <body> it will work fine.
+
+
+example1 for javascript 
+-----------------------
+<html>
+<head>
+<title>javascript demo </title>
+<script language='javascript'>
+var x=45;
+var name="ramesh";
+document.write("<h2>"+name +" is " +x+" years old </h2><br>");
+document.write("<h2>hello world<br>")
+</script>
+</head>
+<body>
+<h1>This is a sample example on javascript 
+</h1>
+</body>
+</html>
+
+syntax for function:
+----------------------
+function function_name (paramters value)
+{
+
+
+}
+eg :function add(x,y)
+{
+  var z;
+  z=x +y;
+  document.write("The sum is "+z);
+}
+example 2 :
+------------
+<html><head>
+<title>Strings  
+</title></head>
+<body>
+<h2>parse Int and parse float demo </h2>
+<script  type='text/javascript'>
+function add(x,y)
+{
+var total;
+total=parseInt(x) + parseInt(y);
+alert (total);
+}</script>
+1st number <input type="text"  name="Myname1"  value=" "><br>
+2nd number <input type="text"  name="Myname2"  value=" "><br>
+<input type="button"  name=ok  value="largest"  onClick=add(Myname1.value,Myname2.value)>  
+</body>
+</html>
+Note: for decimal value conversion use parseFloat() in the above coding.
+
+some more coding so here u can see that 
+when u click the div tag and it output is changed according to what u have written 
+
+<html>
+<head>
+</head>
+<body>
+<div id='feedback' onClick='goodbye()'>Users without Javascript see  this.</div>
+<script type='text/javascript'> 
+document.getElementById('feedback').innerHTML='Hello World!';
+function goodbye() {
+document.getElementById('feedback').innerHTML='Goodbye World!';
+}
+</script>
+</body>
+</html>
+
+some more coding where u have a textbox and button and then and by click of button i am showing the output in div tag and u can see how getelementbyid syntax is used earlier and now in this program and all 
+
+<HTML>
+<HEAD> </HEAD>
+<BODY> 
+<input id='userInput' size=60> <button  
+onClick='userSubmit()'>Submit</button><BR>
+<P><div id='result'></div>
+
+<script type='text/javascript'>
+function userSubmit() {
+var UI=document.getElementById('userInput').value;
+document.getElementById('result').innerHTML='You typed: '+UI;
+}
+</script>
+</BODY>
+</HTML>
+some more coding for javascript and all 
+<html><head><title>My First Javascript</title>
+</head><body>Hello World!
+<p>Say what? <input id="sayThis" size=40>
+<P>How many times? <select id='howMany'>
+<option value=1>1</option>
+<option value=5 selected>5</option>
+<option value=10>10</option>
+<option value=20>20</option>
+</select>
+<p><button onClick='doLoop()'>Do It!</button>
+<p><div id="results"></div>
+<script type='text/javascript'>
+function doLoop() {
+var sayWhat = document.getElementById('sayThis').value;
+var maxLoop = document.getElementById('howMany').value;
+var str = ''; // where we'll store our output temporarily.
+for (var i=1; (i<=maxLoop); i++) {
+str=str+i+':'+sayWhat+'<br>';
+}
+document.getElementById("results").innerHTML=str;
+}
+</script>
+</body>
+</html>
+
+
+JavaScript uses dialog boxes to interact with the user. The dialog boxes are created with three methods:
+
+alert()
+prompt()
+confirm()
+alert:
+------
+We saw in the last chapter that the write() and writeln() were JavaScript methods used to send output to the Web page. Another way to send output to the browser is with the alert() method. The alert() method creates a little independent box—called a dialog box—which contains a small triangle with an exclamation point. 
+
+syntax:
+
+alert("String of plain text");
+alert(expression);
+
+eg:
+alert("Phone number is incorrect");
+alert(a + b);
+prompt :
+-------
+Since JavaScript does not provide a simple method for accepting user input , the prompt dialog box and HTML forms are used  The prompt dialog box pops up with a simple textfield box.
+
+syntax:
+prompt(message);
+prompt(message, defaultText);
+
+eg:
+prompt("What is your name? ", "");
+prompt("Where is your name? ", name);
+
+The Confirm Box:
+-----------------
+The confirm dialog box is used to confirm a user's answer to a question. A question mark will appear in the box with an OK button and a Cancel button. If the user presses the OK button, true is returned; if he presses the Cancel button, false is returned. This method takes only one argument, the question you will ask the user.
+
+example 5:
+----------
+<html>
+    <head>
+    <title>using prompt box with if else</title>
+    </head>    <body>
+        <script language = "JavaScript">
+         var name=prompt("What is your name?", "");
+           document.write("<br>Welcome to my world! "
+               + name + "<br>");
+           var age=prompt("Tell me your age.", "Age");
+           if ( age==null){    
+              alert("Not sharing your age with me");
+           }
+            else{
+              alert(age + " is young");
+            }
+          alert(prompt("Where do you live? ", ""));
+        </script>
+    </body>
+    </html>
+example 6:
+----------
+<html>
+  <head>
+  <title>Using the JavaScript confirm box</title>
+   </head>
+  <body>
+        <script language = "JavaScript">
+          if(confirm("Are you really OK?") == true){
+              alert("Then we can finish the work");
+            }
+            else{
+              alert("We'll work on this when you feel better? ");
+            }
+        </script>
+    </body>
+    </html>
+example 9:
+-----------
+<html><head>
+<title>Strings </title></head>
+<body>
+<h2>if else are tested here .... </h2>
+<script language="javascript">
+function Test(str1,str2,str3)
+{
+x=parseInt(str1);
+y=parseInt(str2);
+z=parseInt(str3);
+if( ( x >y )  && ( x > z))
+document.write("The largest number is "+x);
+else if((y > z) && ( y > x)) 
+document.write("The largest number is " +y);
+else
+document.write("The largest number is " +z);
+}
+</script>
+1st number <input type="text"  name="Myname1"  value=" "><br>
+2nd number <input type="text"  name="Myname2"  value=" "><br>
+3rd number <input type="text"  name="Myname3"  value=" "><br>
+<input type=button  name=ok  value="largest " 
+ onClick=Test(Myname1.value,Myname2.value,Myname3.value)>  
+</body></html>
+
+To check email is valid or not :
+__________________________________
+<script>
+function validate()
+{
+var x;
+x=document.getElementById('email').value;
+var atpos=x.indexOf('@');
+alert(atpos);
+var dotpos=x.lastIndexOf('.');
+alert(dotpos);
+alert(x.length);
+var c=x.length-dotpos;
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length || c>4)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+  }
+}
+</script>
+<body>
+<form>
+<input type="text" id="email" >
+<input type="button" onclick="validate()" value="click">
+</form>
+</body>
+
+To click the button and use of or operator :
+____________________________________________
+<script>
+function aa(firstvar,secondvar)
+{
+var first= firstvar || 10;
+var second = secondvar ||10;
+var c = first+second;
+alert( c);
+}
+</script>
+
+<body>
+
+<input type="submit" onclick="aa()"> <br>
+<input type="submit" onclick="aa(10)"> <br>
+<input type="submit" onclick="aa(11,10)"> <br>
+</body>
+
+validating an basic html form using javascript :
+-------------------------------------------------
+<html><head>
+<title>Form Validation</title>
+<script type="text/javascript">
+function validate()
+{
+ 
+   if( document.myForm.Name.value == "" )
+   {
+     alert( "Please provide your name!" );
+     document.myForm.Name.focus() ;
+     return false;
+   }
+   if(document.myForm.EMail.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }
+   if(document.myForm.Zip.value == "" ||
+           isNaN( document.myForm.Zip.value ) ||
+           document.myForm.Zip.value.length != 5 )
+   {
+     alert( "Please provide a zip in the format #####." );
+     document.myForm.Zip.focus() ;
+     return false;
+   }
+   if(document.myForm.Country.value == "-1" )
+   {
+     alert( "Please provide your country!" );
+     return false;
+   }
+   return( true );
+}
+</script>
+</head>
+<body>
+ <form action="/cgi-bin/test.cgi" name="myForm"  
+          onsubmit="return(validate());">
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+   <td align="right">Name</td>
+   <td><input type="text" name="Name" /></td>
+ </tr>
+ <tr>
+   <td align="right">EMail</td>
+   <td><input type="text" name="EMail" /></td>
+ </tr>
+ <tr>
+   <td align="right">Zip Code</td>
+   <td><input type="text" name="Zip" /></td>
+ </tr>
+ <tr>
+ <td align="right">Country</td>
+ <td>
+ <select name="Country">
+   <option value="-1" selected>[choose yours]</option>
+   <option value="1">USA</option>
+   <option value="2">UK</option>
+   <option value="3">INDIA</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+   <td align="right"></td>
+   <td><input type="submit" value="Submit" /></td>
+ </tr>
+ </table> </form>
+ </body> </html>
+CSS BOx Model :
+---------------
+One of the powerful features of modern HTML and Cascading Style Sheets (CSS) for web development is that you can almost completely separate the markup of your page in HTML from the rendering details specified in your CSS. An HTML page using a small selection of tags and some CSS styling can look like… well, just about anything you like. And you can change how it looks by simply changing the CSS.
+
+A basic - but often misunderstood - feature of CSS styling is something called the box model. The box model simply defines the rectangular space around an element and is defined by three properties:
+
+    border
+    padding
+    margin
+
+check slide 13 in web slides for clear explanation and below are the definitions for it 
+
+The border represents the effective outer limit of the element itself. The border can be either visible or invisible, and has properties for line type, color, and width.
+
+Padding specifies the spacing between the border and any content within the HTML element. If there’s no visible border, then the extent of the padding is effectively the extent of the element. Any background CSS properties associated with the element are displayed within the area defined by the border and padding properties.
+
+The margin represents the distance between the outer edge of the border and any neighboring(parent) elements. This is often a source of confusion as it’s easy to think of the margin as a kind of “padding” between elements. Better to think of it like the margin of a page: it represents the outer edge of the object. The margin is effectively transparent and will not reflect any of the background properties specified for the element.
+
+so here u check another slide in webslides which is cssbox okay which gives clear explanation first width and height will come for the element which u define 
+and then u define border and this content has to be how much far from border is decided by padding stuff and the border should be away from the page is decided by margin tags which can be applied as u know to four corners and another thing is u will use maximum div tags to implement css box model okay .
+
+
+
+<html>
+<head>
+<title >The box model example </title>
+<style type="text/css">
+body {background: black;}
+#container {
+    background: gray; 
+    width: 600px; 
+    margin: 0px auto; 
+    border: 1px solid black;}
+	
+	p { background: white;
+    border: 20px solid red; 
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; }
+</style>
+</head>
+<body>
+<div id="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>	
+	</body>
+</html>
+so we can give it in a single line as well like this margin: [top] [right] [bottom] [left]
+
+if u want to bring the div in the middle irespective of browser movement u can do like this use auto at right and left of the margin okay 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>First Styles </title>
+<style type="text/css">
+
+#container{ 
+background-color:yellow;
+padding:20px;
+border:5px solid red;
+margin-top:20px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:1em;
+width:50%;
+
+
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+this is a good example this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+this is a good example 
+
+
+</div>
+
+
+</body>
+</html>
+
+u better refer vtc videos for box model it has been given very nicely okay .
+
+
+
+HTML5:
+******
+HTML 5 is the latest revision of html and is designed to allow creation of more richer more semantic code and as well as to address how modren web applications are created .check html5slide1 in webslides folder .where it is telling how it was originated a group of people were not happy with using xhtml1.0 so they started there own stuff coming out of w3c organization .so the specification which they created converted that into html5 and check slides html5slide2 html5slide3 for explanaion it is given clearly .
+so html5 is completely application specific and it does not include any policies because of which u cannot run html4 means it is backward compatibility is there and another as i was saying application specific means support for mutiple api and these capabilities make developers to devlop application in mobile as well video and audio etc features will be there no need to add plug in etc kind of stuff and create interactive content okay .
+
+dramatic changes have come in web and mobile technologies with usage of html5 and according to specification it will do error handling as well no need to validate each code by javascript which we will see in the below coding and all .
+
+so first programming example will be semantics which i am following open folder 01_03 and open all the files and show them the difference of usage and how it has become easy and all in these u need to understand the exact use of aside tag so what is doing 
+so check slide html5slide4 to 6 u will come to know already some tags defined and to those tags also u can apply style sheet features that is the advantage that is why it is showing at the right in the slide but in my coding i am directly using those slides as well okay and i can implement those properties to all the other part of html5 elements like nav ,footer etc okay if not used also it will work u can check once so when checked i kept footer at the place of header and header at the place of footer it  is not working so earlier we used to apply classes to our interetesed tags like div now directly u can name them in stylesheet as per the slide okay .just try to check out the changes that is what i am talking about means i am using new structure and semantics in this okay .
+
+
+now go to chapter2 folder and show them the difference earlier we were writing doctype and metha now that much is not required which is shown in first folder okay next is open again second folder and see the difference like script type i have not used and other things etc just analize it properly okay .
+
+so just tell them these are the differences and now let us run videos and validating stuff check it out in interent in html5 okay .
+
+
+inserting a audio and video  in the html file:
+----------------------------------------------
+<html>
+<head>
+<title>The video demo </title>
+</head>
+<body>
+<bgsound src=kalimba.mp3 loop="infinite"  >
+<img src=Blue_bulb.gif  alt="super duper blub">
+<embed src=Wildlife.wmv height=300 width=400>
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html> 
+this was old way of doing it now in html5 they have introduced so tag with video and audio which is written down coding completely 
+and ask them to go through w3schools and check some of the examples etc okay and open html5 from geetha content some things are not working of that code may be because of latest  internet explorer i am not using etc so this will end the html5 stuff fully okay .
+JQUERY :
+________
+First go through the slide from jquery section of day 2 as it is clearly mentioned over there and students also can easily understand it well .jQuery is a JavaScript library specialized for changing web page documents on the fly so go upto the ready event and explain the concept from slide only and go through ur slides from 14 to 35 and then explain the below lines of code to them and at the same time tell them about DOM .
+
+Remeber the named function will look like this 
+function named()
+{ 
+// do some stuff here 
+} 
+An anonymous function can be defined in similar way as a normal 
+function but it would not have any name.A anonymous function can be assigned to a variable or passed to a method as shown below.
+var handler = function ()
+{ 
+// do some stuff here 
+}
+JQuery makes a use of anonymous functions very frequently as 
+follows:
+$(document).ready(function()
+{ 
+// do some stuff here 
+}); 
+so another example is there below u can see it clearly 
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  $("h1").hide("slow");
+  $("h2").show("fast");
+  $("img").slideUp();
+  });
+});
+</script>
+
+
+Now let us go ahead with some examples because once we do we will come to know and for this open head first and day 2 slide open to show them demos and all 
+
+<html> 
+<head> 
+<title>The jQuery Example</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("div").click(function() 
+{ 
+alert("Hello world!"); 
+}); 
+});
+</script> 
+</head> 
+<body> 
+<div id="newdiv"> Click on this to see a dialogue box. </div> 
+</body> </html>
+
+
+now open one notepad and save it as custom.js 
+
+and write the following code as well 
+
+/* Filename: custom.js */ 
+$(document).ready(function() 
+{ 
+$("div").click(function() 
+{ 
+alert("Hello world!"); 
+}); 
+});
+
+and then the above coding will change like this 
+
+<html> 
+<head> 
+<title>The jQuery Example</title> 
+<script type="text/javascript" src=" jquery-1.7.1.min.js "></script> 
+<script type="text/javascript" src="custom.js"></script> 
+</head> 
+<body> 
+<div id="newdiv"> Click on this to see a dialogue box. </div> 
+</body> 
+</html>
+
+
+some more coding :
+
+using selectors :
+
+
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src=" jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+var pars = $("p"); 
+for( i=0; i<pars.length; i++ )
+{ 
+alert("Found paragraph: " + pars[i].innerHTML); 
+} 
+}); 
+</script> 
+</head> 
+<body> 
+<div> 
+<p class="myclass">This is a paragraph.</p> 
+<p id="myid">This is second paragraph.</p> <p>This is third paragraph.</p> 
+</div> </body> </html>
+
+changing attributes 
+____________________
+so using this code what i am doing is adding element inside a div tag 
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js">
+</script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+var title = $("em").attr("title"); 
+$("#divid").text(title); 
+}); 
+</script> 
+</head> 
+<body> <div> <em title="Bold and Brave">This is first paragraph.</em> <p 
+id="myid">This is second paragraph.</p> <div id="divid"></div> </div> 
+</body> </html>
+
+using this code i am changing the src property of image path and even able to display the image as well okay 
+
+<html> <head> 
+<title>the title</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("#myimg").attr("src", "images/Pict0001.jpg"); 
+}); 
+</script> 
+</head> 
+<body> 
+<div> 
+<img id="myimg" src="/wongpath.jpg" alt="Sample image" /> 
+</div> 
+</body> </html> 
+
+applying classes and ids to the element using  jquery ...
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src=“jquery-1.7.1.min.js”></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("em").addClass("selected"); 
+$("#myid").addClass("highlight"); 
+}); 
+</script> 
+<style> 
+.selected { color:red; } 
+.highlight { background:yellow; } 
+</style> 
+</head> <body> <em title="Bold and Brave">This is first paragraph.</em> <p 
+id="myid">This is second paragraph.</p> </body> </html> 
+
+so the above thing is working in some systems and in some systems it is not working try to go in dreamweaver and type below code and then try so that u can get that okay .
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" >
+<title>Inline Styles</title>
+
+some more coding on accessing the list  items 
+
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+$("li").eq(2).css("color", "red");
+});
+</script>
+</head>
+<body>
+<div><ul>
+<li>list item 1</li><li>list item 2</li><li>list item 3</li>
+<li>list item 4</li><li>list item 5</li><li>list item 6</li></ul>
+</div>
+</body>
+</html>
+
+applying multiple values as well 
+
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() 
+{ 
+$("li").eq(2).css({"color":"red", "background-color":"green"}); 
+});
+</script>
+</head>
+<body>
+<div><ul>
+<li>list item 1</li><li>list item 2</li><li>list item 3</li>
+<li>list item 4</li><li>list item 5</li><li>list item 6</li></ul>
+</div>
+</body>
+</html>
+
+some more coding 
+so below program is provide some animation effects inside it .
+<!DOCTYPE html>
+<html><head> <title>jQuery goes to DOM-ville</title>
+<style> 
+  #change_me {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  font: 24px arial;}
+  #move_up #move_down #color #disappear {
+  padding: 5px;}
+</style>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+</head>
+<body>
+  <button id="move_up">Move Up</button>
+  <button id="move_down">Move Down</button>
+  <button id="color">Change Color</button>
+  <button id="disappear">Disappear/Re-appear</button>
+  <div id="change_me">Make Me Do Stuff!</div>
+  <script>
+    $(document).ready(function() {
+      $("#move_up").click( function() {
+        $("#change_me").animate({top:30},200);
+      });//end move_up
+      $("#move_down").click( function() {
+        $("#change_me").animate({top:500},2000);
+      });//end move_down
+      $("#color").click( function() {
+        $("#change_me").css("color", "purple");
+      });//end color
+      $("#disappear").click( function() {
+        $("#change_me").toggle("slow");
+      });//end disappear
+    });//end doc ready
+  </script>
+</body>
+</html>
+
+
+some more coding 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furry Friends Campaign</title>
+	<style>
+   #clickMe {
+    background: #D8B36E;
+    padding: 20px;
+    text-align: center;
+    width: 205px;
+    display: block;
+    border: 2px solid #000;
+}
+#picframe {
+    background: #D8B36E;
+    padding: 20px;
+    width: 205px;
+    display: none;
+    border: 2px solid #000;
+}
+
+</style>
+  </head>
+  <body>
+    <div id="clickMe">Show me the Furry Friend of the Day</div>
+    <div id="picframe">
+    <img src="merlin.gif">
+    </div>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $("#clickMe").click(function() {
+    $("img").fadeIn(1000);
+    $("#picframe").slideToggle("slow");
+    });
+      });
+    </script>
+  </body>
+</html>
+
+After this u go through internet w3schools and execute the code ask them to do it by themselves .
+
+some more examples remove the comments in this and check the output of the code and design how it changes and all it is using some filter option only which we have performed earlier .
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Document</title>
+ <script src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+        //$("p[class]").css("border", "3px solid red");
+        //$("p[id=para1]").css("border", "3px solid red");
+        //$("p[id^=para]").css("border", "3px solid red");
+        //$("p[id^=para][lang*=en-]").css("border", "3px solid red");
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p id="para4" lang="en-us">This is paragraph 4</p>
+</body>
+</html>
+
+
+Now better u go into this folder and show the output directly that will be better and explain no need to write the code as there is no limit for the implementaton of jquery code .
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\02_retrieving
+
+autofiltersfinished ,autopdficonsfinished ,form selectors finished ,basic selectors etc just show the examples from this folder only.
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\03_manipulating
+
+attribute finished example 
+creating finished example 
+CSS sizing example as well 
+inserting finished .html 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\04_events
+
+all demos u go through okay 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\05_effects
+
+all demos u show them 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\07_realsite
+
+all demos u show them 
+
+so this will end whole part of jquery in this lesson .
+
+
+XML 
+_____
+xml is a platform independent and device independent language used to transfer data between hetrogeneous sytems .
+eg:banking domain example 
+
+xml knows what is stores so if i am using xml means i am doing intelligent programming but html duty is how i have to display the content as xml know what is stores i can provide configuration to my websites and all if  i am using xml like timeout is 20 min etc .
+
+xml is mainly used for data transfer .In xml data is stored in hiearchical format so it can act as an front end database also so there are two types of xml well formed xml and valid xml if i am writing an xml according to the syntax of xml or rules we say well formed xml to test we can use any browser if xml file is not opening properly means it is not well formed xml and valid xml means my xml document i will validate with some other documents like DTD and xml schemas with the help of some parsers .so different companies will be storing information in different ways so they want u to create dtds or schemas so any person is creating any xml file it should match with the dtd or schemas files 
+
+xml is case sensitive and i can create my own tags here but in html we have to use predefined tags and in xml even space is counted but in html it is not .If u are using xml u can do fast searches as well okay .Every xml element should start with root element and inside it child elements will be there where we can store data and data can also be stored in the form of attributes in xml which denotes the characteristics of element .xml is self describing language .Tags must be properly nested in xml .
+
+
+
+internal dtd :
+______________
+save it as anyname.xml file okay 
+
+<?xml version="1.0"?>
+<!DOCTYPE note [
+<!ELEMENT note (to, from, heading, body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+]>
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend</body>
+</note>
+external dtd :
+_______________
+note.dtd code :
+---------------
+<!ELEMENT note (to,from,heading,body)>
+<!ELEMENT to (#PCDATA)>
+<!ELEMENT from (#PCDATA)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+
+note :syntax to wrap into external document :<!DOCTYPE root-element SYSTEM "filename">
+
+xmlsample.xml 
+--------------
+<?xml version="1.0"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend!</body>
+</note>
+
+emp.dtd:
+---------
+<!ELEMENT empdet (emp)+>
+<!ELEMENT emp ((ename)+, (address)?, city, country, marks, subject)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country EMPTY>
+<!ELEMENT marks (#PCDATA)>
+<!ELEMENT subject (sem1, sem2, sem3)>
+<!ELEMENT sem1 (#PCDATA)>
+<!ELEMENT sem2 (#PCDATA)>
+<!ELEMENT sem3 (#PCDATA)>
+<!ENTITY x "dkdkddkdkjdDar es salaam">
+<!ENTITY a "Aptech WorldWide">
+
+
+xmlsample.xml
+----------------
+<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE empdet SYSTEM "emp.dtd">
+<empdet>
+	<emp>
+		<ename>&a;</ename>
+		<address>ffff</address>
+		<city>&x;</city>
+		<country />
+		<marks>78</marks>
+		<subject>
+			<sem1>44</sem1>
+			<sem2>55</sem2>
+			<sem3>66</sem3>
+		</subject>
+	</emp>
+</empdet>	
+
+check here how entities are getting substituted and all .
+
+schemas examples :
+_________________
+ go to that url and check from there by pasting all the code online 
+ chapter1.xsd
+ -------------
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="product" type="ProductType"/>
+  <xs:complexType name="ProductType">
+    <xs:sequence>
+      <xs:element name="number" type="xs:integer"/>
+      <xs:element name="size" type="SizeType"/>
+    </xs:sequence>
+    <xs:attribute name="effDate" type="xs:date"/>
+  </xs:complexType>
+  <xs:simpleType name="SizeType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="2"/>
+      <xs:maxInclusive value="18"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+
+chapter1.xml
+------------
+<product effDate="2001-04-02"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="chapter1.xsd">
+  <number>557</number>
+  <size>20</size>
+</product>
+
+using multiple schemas 
+-----------------------
+children.xsd
+-------------
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.w3schools.com"
+xmlns="http://www.w3schools.com"
+elementFormDefault="qualified"><xs:element name="children">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="childname" type="xs:string"
+      maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element></xs:schema>
+
+family.xsd
+-----------
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.microsoft.com"
+xmlns="http://www.microsoft.com"
+elementFormDefault="qualified">
+<xs:element name="person">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="firstname" type="xs:string"/>
+      <xs:element name="lastname" type="xs:string"/>
+      <xs:any minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+family2.xsd
+------------
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+elementFormDefault="qualified"><xs:element name="persons">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="person" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="full_name" type="xs:string"/>
+            <xs:element name="child_name" type="xs:string"
+            minOccurs="0" maxOccurs="5"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element></xs:schema>
+
+myfamily.xml
+------------
+<?xml version="1.0" encoding="ISO-8859-1"?><persons xmlns="http://www.microsoft.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:SchemaLocation="http://www.microsoft.com family.xsd
+http://www.w3schools.com children.xsd">
+<person>
+<firstname>Hege</firstname>
+<lastname>Refsnes</lastname>
+<children>
+  <childname>Cecilie</childname>
+</children>
+</person><person>
+<firstname>Stale</firstname>
+<lastname>Refsnes</lastname>
+</person></persons>
+
+shiporder.xsd
+--------------
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"><xs:element name="shiporder">
+ <xs:complexType>
+  <xs:sequence>
+   <xs:element name="orderperson" type="xs:string"/>
+   <xs:element name="shipto">
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="address" type="xs:string"/>
+      <xs:element name="city" type="xs:string"/>
+      <xs:element name="country" type="xs:string"/>
+     </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+   <xs:element name="item" maxOccurs="unbounded">
+    <xs:complexType>
+     <xs:sequence>
+      <xs:element name="title" type="xs:string"/>
+      <xs:element name="note" type="xs:string" minOccurs="0"/>
+      <xs:element name="quantity" type="xs:positiveInteger"/>
+      <xs:element name="price" type="xs:decimal"/>
+     </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+  </xs:sequence>
+  <xs:attribute name="orderid" type="xs:string" use="required"/>
+ </xs:complexType>
+</xs:element></xs:schema>
+
+shiporder.xml
+--------------
+<?xml version="1.0" encoding="ISO-8859-1"?><shiporder orderid="889923"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="shiporder.xsd">
+ <orderperson>John Smith</orderperson>
+ <shipto>
+  <name>Ola Nordmann</name>
+  <address>Langgt 23</address>
+  <city>4000 Stavanger</city>
+  <country>Norway</country>
+ </shipto>
+ <item>
+  <title>Empire Burlesque</title>
+  <note>Special Edition</note>
+  <quantity>1</quantity>
+  <price>10.90</price>
+ </item>
+ <item>
+  <title>Hide your heart</title>
+  <quantity>1</quantity>
+  <price>9.90</price>
+ </item>
+</shiporder>
+
+so check through all the syntax and go though notes and slides that will be enough .
+
+AJAX AND HTML5.0
+_________________
+For this first go with ajax concepts and all mainly theortical stuff ,u can gather from videos of asp.net ajax and appdev videos  the difference from asp.net ajax stuff and all what it is happening and all then move on to your own demo which represent client side code and all which u have mail during interview and then go though some geetha codes and finally read html5 and implement some coding or just demonstrate html5 code as well of geetha and then make a list of questions which are going to come and all and  finally prepare for partions which u have to explain it to geetha .
+
+
+Proper  Notes :AJAX means Asynchronus javascript and xml .Ajax is a web development technique for creating interactive web applications.server side means the logic and your code will be executed at server it may be a database code or any code as database will also reside in server only and client side means user interface logic will run at client side like some script file will run or some jquery code will run or html ,css etc codes will run and it denotes the capabilities of the browser and here u dont install anything like which u do in server side.so now what ajax does  is that it does asynchornus communication between client and server means whatever happens will happen behind the scences only .synchronus means one after the other asynchronus means simaltaneously .If u see any desktop application it will open very fastly as it is present at the client side only on the desktop earlier websites used to take long time to open i am not talking about current websites as now all websites have ajax enabled feature embedded into it .something will happen within the page rather than the page is recreated again so if u are using using ajax u dont have to learn javascript or u dont have to learn asynchronous programming also it will happen automatically .so ajax is something which can be integrated with any technology like java or .net web application in order to increase the web page interactivity ,speed and usability .Now i am not having server if u are working in asp.net or jsp server will be there but i want to implement this ajax functionality at client side we can do that as  ,many browsers now a days support ajax and if u are having xmlhttprequest object and a good browser which supports javascript engine u can do client side ajax programmig stuff okay .so ajax is based on standard open based technolgy which increases the responsive of the page so ajax is purely client side technology .
+
+show them demos using asp.net ajax and after that tell them i dont have server now as they have integrated them selves to ajax i can use now at client side i want to run the code means show them ur example .
+
+so if u want to execute the same code in interent explorer  which is executing in firefox not in explorer then inside try block 
+function InitXmlHttp() {
+           try {
+		    try{ XmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+               return;           }
+           catch (ex) {}
+               XmlHttp = new XMLHttpRequest();
+               return;           }
+           catch (ex) { }
+          
+           try {
+               XmlHttp = new  ActiveXObject("Msxml2.XMLHTTP");
+               return;}
+           catch (ex) {}
+		   
+		   means put active object first as it is written in the slide like that okay .
+		   
+		   so here the data is ul some set of cities are there i want to retrive will act as server for me okay .
+so now go ahead with slides as well and go with asp.net ajax functionality with date demos and tell how  things are getting refershing and all and then perform all the demos from client side along with geeta codes as well . 
+
+so  XmlHttp.open('GET','HTMLPage1.htm',true);  in this check this option as well in firefox it is working reverse as per given in the slide but in interent explorer it is working for both actually it shoudl not work for false okay as true means i am allowing asynchronus operation over here okay .
+
+
+
+
+

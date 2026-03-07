@@ -1,0 +1,41 @@
+
+colspan: to merge columns in table
+<html>
+<head>
+    <title>first demo in html</title>
+</head>
+<body >
+<table border="1" cellpadding="10" cellspacing="2" width="80%" bgcolor="yellow">
+    <caption> <h3>This is student table </h3></caption>
+   <tr>
+     <th >Studentid </th>
+     <th>Name</th>
+ 
+        <th >city </tr>
+  
+  
+        </tr>
+   
+<tr>
+<td rowspan="2" align="center">101</td>
+<td colspan="2" align="center">ravi</td>
+</tr>
+<tr>
+    <td colspan="2" align="center">Bangalore</td>
+</tr>
+
+
+<tr>
+    <td align="center">102</td>
+    <td align="center">suresh</td>
+    <td align="center">chennai</td>
+    </tr>
+  <tr>
+        <td align="center">103</td>
+        <td align="center">sita</td>
+        <td align="center">delhi</td>
+    </tr>
+</table>
+   
+ 
+</html>

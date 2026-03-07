@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="2" width="80%" cellpadding="8" cellspacing="3" bgcolor="lightyellow">
+
+        <caption>Student table </caption>
+        <!--cell padding means inside cell the content is how much it is far away from border -->
+        <!--cell spacing  means in between two cells borders what is the distance is measued 
+          in cell spacing -->
+        <tr>
+            <th>StudentID</th>
+            <th>StudentName </th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2" align="center">101</td>
+            <td align="center" colspan="2">pavan kumar</td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">Java</td>
+        </tr>
+        <tr>
+            <td rowspan="2" align="center">102</td>
+            <td colspan="2" align="center">suresh kumar</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">C#</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" align="center">103</td>
+            <td colspan="2" align="center">Naveen </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">C++</td>
+        </tr>
+    </table>
+</body>
+
+</html>
