@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Say what? <input id="sayThis" size=40>
+    <P>How many times? <select id='howMany'>
+            <option value=1>1</option>
+            <option value=5 selected>5</option>
+            <option value=10>10</option>
+            <option value=20>20</option>
+        </select>
+    <p><button onClick='doLoop()'>Do It!</button>
+    <p>
+    <div id="results" style="background: yellow;color:red; height:400px; width:80%">
+    </div>
+    <script>
+        function doLoop() {
+            var saywhat = document.getElementById("sayThis").value;
+            var maxloop = document.getElementById("howMany").value;
+            var str = '';
+            for (var i = 1; i <= maxloop; i++) {
+                str = str + i + " :" + saywhat + "<br/>"
+            }
+            document.getElementById("results").innerHTML = str;
+        }
+    </script>
+</body>
+
+</html>

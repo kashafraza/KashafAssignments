@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Semantics in HTML5 </title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="container">
+<header>
+<h1> The Main Heading </h1>
+</header>
+<nav>
+<ul>
+
+<li style="font-size:30px;text-align:center;width:70%" > register </li>
+<div style="clear:both;"></div>
+</ul>
+ </nav>
+<section>
+
+<form id="reg-form" novalidate>
+<fieldset> 
+<legend> <b>Register</b>  </legend>
+<table>
+<tr>
+<td> Full Name: </td>
+<td> <input type="text" required autofocus placeholder="Enter Name here "> </td>
+</tr>
+<tr>
+<td> Email : </td>
+<td> <input type="email" required placeholder="Enter email here " > </td>
+</tr>
+<tr>
+<td> Password : </td>
+<td> <input type="password" required placeholder="Enter password here " > </td>
+</tr>
+<tr>
+<td> Birthday : </td>
+<td> <input type="date" required placeholder="Birthday " max="2010-01-01" min="2000-01-01" > </td>
+</tr>
+<tr>
+<tr>
+<td> Expereince(In years) : </td>
+<td> <input type="number" required placeholder="Expereince " max="10" min="1" > </td>
+</tr>
+<tr>
+<td> Color (selct it ) : </td>
+<td> <input type="color"  > </td>
+</tr>
+<tr>
+<tr>
+<td> salary(range) : </td>
+<td> <input type="range" required placeholder="range" max="10000" min="1000" > </td>
+</tr>
+<tr>
+<td> Gender: </td>
+<td> 
+<select>
+<option>choose your Gender status</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+ </td>
+</tr>
+<tr>
+<td> Martial status: </td>
+<td> 
+<select>
+<option>choose your Martial status</option>
+<option>Married</option>
+<option>Single</option>
+<option>Divorced</option>
+</select> 
+</td>
+</tr>
+<tr>
+<td>  </td>
+<td> <input type="submit" > </td>
+</tr>
+</table>
+</fieldset>
+
+
+</form>
+
+ </section>
+
+<aside>
+<div id="side-top"> 
+<h2> Latest Posts </h2>
+<div id="latest-posts-lists">
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ 
+ </div>
+</div>
+<div id="side-bottom">
+<h2> News Letter </h2>
+<form>
+
+<input type="email">
+<input type="submit">
+
+</form>
+
+ </div>
+ </aside>
+ <div style="clear:both;">
+ </div>
+<footer> Copyright &copy;RaghuTechnologies </footer>
+</div>
+
+</body>
+</html>

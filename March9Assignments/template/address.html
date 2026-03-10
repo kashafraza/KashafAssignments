@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Semantics in HTML5 </title>
+<script type="text/javascript">
+function initStorage(){
+	function saveName(){
+		var name = document.getElementById('name');
+		localStorage.setItem('name',name.value);
+	}
+	
+	function saveEmail(){
+		var email = document.getElementById('email');
+		localStorage.setItem('email',email.value);
+	}
+	
+	//Run functions
+	saveName();
+	saveEmail();
+}
+
+function displayName(){	
+	if(localStorage.getItem('name') != null){
+		document.write('<b>Welcome Back, '+localStorage.getItem('name')+"</b>");
+	}
+}
+	
+function showText(){
+	if(localStorage.getItem('email') == null){
+		document.write('<p>Please enter your email address</p>');
+	} else {
+		document.write('<p><strong>Subscribed Email:</strong> '+localStorage.getItem('email')+'</p> ');
+	}
+}
+
+function clearAll(){
+	localStorage.clear();   
+	window.location.reload()
+}
+</script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="container">
+<header>
+<h1> The Main Heading </h1>
+</header>
+<nav>
+<ul>
+
+<li style="font-size:30px;text-align:center;width:70%" > Address </li>
+<script type="text/javascript">
+					displayName();
+				</script>
+<div style="clear:both;"></div>
+</ul>
+
+ </nav>
+<section>
+
+<form id="reg-form" >
+
+<table>
+<tr>
+<td> Full Name: </td>
+<td> <input type="text" required autofocus placeholder="Enter Name here "> </td>
+</tr>
+<tr>
+<td> complete Address: </td>
+<td> <textarea id="w3review" name="w3review" rows="4" cols="50">
+
+</textarea> </td>
+</tr>
+<tr>
+<td>  </td>
+<td> <input type="submit" > </td>
+</tr>
+</table>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+if (navigator.geolocation) {
+			var timeoutVal = 10 * 1000 * 1000;
+			navigator.geolocation.getCurrentPosition(
+				displayPosition, 
+				displayError,
+				{ enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0 }
+			);
+		}
+		else {
+			alert("Geolocation is not supported by this browser");
+		}
+		function displayPosition(position) {
+			var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			var options = {
+				zoom: 10,
+				center: pos,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map"), options);
+			var marker = new google.maps.Marker({
+				position: pos,
+				map: map,
+				title: "User location"
+			});
+			var contentString = "<b>Timestamp:</b> " + parseTimestamp(position.timestamp) + "<br/><b>User location:</b> lat " + position.coords.latitude + ", long " + position.coords.longitude + ", accuracy " + position.coords.accuracy;
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+			google.maps.event.addListener(marker, 'click', function() {
+				infowindow.open(map,marker);
+			});
+		}
+		function displayError(error) {
+			var errors = { 
+				1: 'Permission denied',
+				2: 'Position unavailable',
+				3: 'Request timeout'
+			};
+			alert("Error: " + errors[error.code]);
+		}
+		function parseTimestamp(timestamp) {
+			var d = new Date(timestamp);
+			var day = d.getDate();
+			var month = d.getMonth() + 1;
+			var year = d.getFullYear();
+			var hour = d.getHours();
+			var mins = d.getMinutes();
+			var secs = d.getSeconds();
+			var msec = d.getMilliseconds();
+			return day + "." + month + "." + year + " " + hour + ":" + mins + ":" + secs + "," + msec;
+		}
+</script>
+<center><div id="map" style="width: 600px; height: 300px background:yellow">
+</div></center>
+
+
+
+</form>
+
+ </section>
+
+<aside>
+<div id="side-top"> 
+<h2> Latest Posts </h2>
+<div id="latest-posts-lists">
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ <div class="latest-posts">First Post Title </div>
+ 
+ </div>
+</div>
+<div id="side-bottom">
+<h2> News Letter </h2>
+<script type="text/javascript">
+					showText();
+				</script>
+<form id="news" onsubmit="initStorage()">
+
+	 <input type="text" id="name" placeholder="name"name="name"><br/><br/>
+	 <input type="email" id="email" placeholder="email" name="email">
+	 <input type="submit" value="Send">
+				
+				<a href="#" onClick="clearAll()">Clear</a>
+				
+</form>
+
+ </div>
+ </aside>
+ <div style="clear:both;">
+ </div>
+<footer> Copyright &copy;RaghuTechnologies </footer>
+</div>
+
+</body>
+</html>
