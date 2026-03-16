@@ -1,0 +1,1223 @@
+validating an basic html form using javascript :
+-------------------------------------------------
+<html><head>
+<title>Form Validation</title>
+<script type="text/javascript">
+function validate()
+{
+ 
+   if( document.myForm.Name.value == "" )
+   {
+     alert( "Please provide your name!" );
+     document.myForm.Name.focus() ;
+     return false;
+   }
+   if(document.myForm.EMail.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }
+   if(document.myForm.Zip.value == "" ||
+           isNaN( document.myForm.Zip.value ) ||
+           document.myForm.Zip.value.length != 5 )
+   {
+     alert( "Please provide a zip in the format #####." );
+     document.myForm.Zip.focus() ;
+     return false;
+   }
+   if(document.myForm.Country.value == "-1" )
+   {
+     alert( "Please provide your country!" );
+     return false;
+   }
+   return( true );
+}
+</script>
+</head>
+<body>
+ <form action="/cgi-bin/test.cgi" name="myForm"  
+          onsubmit="return(validate());">
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+   <td align="right">Name</td>
+   <td><input type="text" name="Name" /></td>
+ </tr>
+ <tr>
+   <td align="right">EMail</td>
+   <td><input type="text" name="EMail" /></td>
+ </tr>
+ <tr>
+   <td align="right">Zip Code</td>
+   <td><input type="text" name="Zip" /></td>
+ </tr>
+ <tr>
+ <td align="right">Country</td>
+ <td>
+ <select name="Country">
+   <option value="-1" selected>[choose yours]</option>
+   <option value="1">USA</option>
+   <option value="2">UK</option>
+   <option value="3">INDIA</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+   <td align="right"></td>
+   <td><input type="submit" value="Submit" /></td>
+ </tr>
+ </table> </form>
+ </body> </html>
+
+
+Regular Expression in Javascript :
+---------------------------------------------
+Till now i have done validations to a form or a form fields using normal procedure like which is nothing but basic validations where we will see that mandatory fields are filled but as per the requirement i want to validate the input which i pass in 
+the textbox then i will go regular expressions 
+
+
+regular expressions are there in .net also and also in javascript 
+
+
+pan card : five chaarcters ,4 numbers and one again alphabet 
+
+some sites to refer :
+
+https://regexhero.net/  
+
+to test without program 
+
+https://regexr.com/  go through this website throghly instructions
+
+and in google type 
+
+regex in javascript and check some tutorials as well and 
+in youtube also u can check it by putting the same 
+
+
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+https://www.programiz.com/javascript/regex
+
+in youtube :
+
+
+https://www.youtube.com/watch?v=nlGF-zh0fsg
+
+ 
+ Email validation code
+ --------------------
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function validate()
+    {
+        var mail=document.getElementById("text").value;
+        var regx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+         if (regx.test(mail)) 
+         {
+            document.getElementById("result").innerHTML = "Valid email id";
+            document.getElementById("result").style.color = "green";
+            return true;
+        }
+        else {
+            document.getElementById("result").innerHTML = "Sorry invalid email id";
+            document.getElementById("result").style.color = "red";
+            return false;
+        }
+
+    }
+</script>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" placeholder="email" id="text" />
+                </td>
+                <td>
+                    <div id="result">
+    
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br /><br />
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+- add one file onlyjsdemo1.js ----
+
+ --and write the code like this 
+
+function test()
+{
+console.log("hello world ");
+}
+test();
+function test2(num1, num2)
+{
+return (num1 + num2);
+}
+let sum = test2(12, 45);
+console.log(sum);
+//so above two functions using arrow is like this
+const testme = () => console.log("hello world ")
+testme();
+const test2me = (n1, n2) => n1 + n2;
+let sum2 = test2me(10, 34);
+console.log(sum2);
+//I can write a function where only single value is passing
+const test3 = (number) => number + 10;
+let sum3 = test3(134);
+console.log(sum3);
+
+install code runner extension  into vscode and then right click on screen and say run code 
+ you will get the output or u can install node js and write node onlyjsdemo1.js at command prompt 
+
+ observe above how i had used arrow functions in js 
+
+ a function if it is written in js it has to be called as you are in js u need to call explcitly
+ 
+ add some more code in above file only 
+ 
+Next concept is of DE structuring
+
+const person = {
+name: "john",
+age: 25,
+mail: "john@gmail.com"
+}
+console.log(age);
+this code will give me error so i it will work when i write like this
+
+console.log(person.age)
+Now I have to de structure it now
+const { name, age, mail } = person;
+console.log(age);
+
+Next let us go with spread operator usage
+arr11 = [10, 20, 30, 40]
+arr2 = [50, 60]
+arr2 = [...arr11, 50, 60]
+console.log(arr2)
+
+
+and same thing in classes and objects
+var obj1 = {
+name: 'john'
+}
+var obj2 = {
+...obj1, age: 25,
+mail: "mail@gmail.com"
+}
+console.log(obj2)
+
+Map function demo 
+--------------------
+Variable.map((element)=> print(element))
+
+var arr = [10, 20, 30, 40, 50]
+arr.map((element) => console.log(element))
+example 2:
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(value => value * value);
+console.log(squares);
+example 3:
+const people = [
+{ id: 1, name: 'Felipe', country: 'DR' },
+{ id: 2, name: 'Scott', country: 'USA' },
+{ id: 3, name: 'Jennifer', country: 'Canada' },
+]
+const ids = people.map(person => person.id);
+console.log(ids);
+in mapping i can do modification of data of array
+here mapping will always return a value but foreach will not return value ..
+var data = [1, 2, 3, 4, 5];
+data.forEach(function(element)
+{
+console.log(element);
+})
+var data2 = [1, 2, 3, 4, 5];
+data2.forEach(element => console.log(element));
+Now I want to check for every value for that every function is there
+var data = [1, 2, 3, 4]
+var output = data.every(
+function (element) {
+return element > 0;
+}
+)
+console.log(output)
+
+here all conditions are getting satisfied so true will come and it will become false if i write >2 or
+something like that
+here in the same place i can use some also then in that even some elements in list are true also
+means then it is true
+var data = [1, 2, 3, 4]
+var output = data.some(
+function (element) {
+return element > 2;
+}
+)
+console.log(output)
+Now let us try to understand indexOf and lastIndexOf
+var data = [12, 78, 23, 19]
+console.log(data.indexOf(23));
+var data2 = [12, 78, 23, 19,12,34,23]
+console.log(data2.lastIndexOf(23))
+here i am checking the positions of number 23 in both arrays
+Then stringify is used to convert the data into json format
+var data = {
+name: 'John',
+age: 28
+}
+var json = JSON. stringify(data);
+console.log(json);
+
+Now let us discuss date functions now
+var date = new Date();
+console.log(date.valueOf());
+Gives the value of date till now in milliseconds okay
+rest operator usage which is ...
+This below coding we have seen earlier also in spread concept okay
+function user(name, ...remaining) {
+console.log(name + " : " + remaining)
+}
+
+user('John', 25, "mail@gmail.com", 123456)
+here in function how to use we can see and you have to use that at the last of the function
+
+
+Filter Function Demo
+--------------------
+array.filter( (element)=> condition )
+
+var arr = [10, 20, 30, 40, 50]
+let filtered = arr.filter((element) => element > 20);
+console.log(filtered) // will print in the form of array
+same thing which is having array u want to print it using map
+filtered.map((element) => console.log(element));
+in the form of line by line it will print the value okay 
+
+
+now add one file with the name datetimedemo.html
+ -------------------------------------------------
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to display what day is today </p>
+    <button onclick="myfunction()">Get today day</button>
+    <p id="demo">
+
+    </p>
+    <script>
+        function myfunction()
+        {
+            var x;
+            var d =new Date().getDay();
+            switch(d)
+            {
+                  case 0: x = "Today is Sunday";
+                    break;
+
+                case 1: x = "Today is Monday";
+                    break;
+                case 2: x = "Today is Tuesday";
+                    break;
+
+                case 3: x = "Today is Wednesday";
+                    break;
+
+                case 4: x = "Today is Thursday";
+                    break;
+
+                case 5: x = "Today is Friday";
+                    break;
+                case 6: x = "Today is Saturday";
+                    break;
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
+
+Arrays in js 
+ -----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo" style="background:rgb(177, 113, 35);width:90%;height:100px;
+                font-size:large;font-weight:900px ;">
+    
+    </p>
+    <script type="text/javascript">
+        //difference ebetween var and let variable 
+
+        var kk = "hai";
+        kk = "hai";//can reassing 
+
+        {
+            var kk = "hello";
+        }
+
+        console.log(kk);
+
+        let kk1 = "hai";  //scope level varibale 
+        kk1 = "sss";//can reassing 
+        {
+            let kk1 = "hello";
+
+        }
+        console.log(kk1);
+
+        const kk2 = "Hi";
+       // kk2 = "sksk";//error i am getting here as i cannot reassing const type variable
+
+        {
+            const kk2 = "hi aagin";
+
+        }
+        console.log(kk2);
+
+        let cars = ["BMW","Hyndai","TATA", "SKODA"];
+
+
+        document.getElementById("demo").innerHTML=cars;
+
+        //firsr car 
+        let firstcar=cars[0];
+         document.getElementById("demo").innerHTML = firstcar;
+
+         // no of elements in array
+         let length=cars.length;
+          document.getElementById("demo").innerHTML = length;
+
+          //last elelemt 
+          let lastcar=cars[cars.length-1];
+           document.getElementById("demo").innerHTML = lastcar;
+
+        // loop over the array and put it n the p tag 
+        var str="";
+        for(var i=0;i<cars.length;i++)
+        {
+            str=str +(i+1)+":"+cars[i]+"<br/>";
+        }
+         document.getElementById("demo").innerHTML =str;
+
+         //using for each loop
+         cars.forEach((item,index,array)=>{console.log((index+1)+"--->"+item);})
+         //removing last car 
+         let lastcar1=cars.pop();
+
+          document.getElementById("demo").innerHTML = lastcar1;
+
+          // adding at the last 
+         let lastcar2= cars.push("AUDI");
+          document.getElementById("demo").innerHTML = cars;
+
+          //remoing first car
+
+          let firstcar1=cars.shift();
+           document.getElementById("demo").innerHTML = firstcar1;
+
+           //adding at the begining 
+           let newfirstcar=cars.unshift("TOYATO");
+            document.getElementById("demo").innerHTML = cars;
+
+          let bikes=["Gixxer","Yamaha","Apache"];
+
+          let vahicles=cars.concat(bikes);
+          
+    document.getElementById("demo").innerHTML = vahicles;
+
+          // printing using map function in js
+
+          // Use map to create an HTML list
+            document.getElementById("demo").innerHTML = cars.map(car => `<li>${car}</li>`).join('');
+
+            let num1=[2,3,4,5,6];
+           let num2= num1.map(x=>x*2);
+            document.getElementById("demo").innerHTML=num2;
+            //or
+            function multiply(value)
+            {
+                return value*3;
+            }
+
+            let num3=num1.map(multiply);
+             document.getElementById("demo").innerHTML = num3;
+
+             let num4=num1.filter(x=>x>4);
+              document.getElementById("demo").innerHTML = num4;
+
+              //or
+
+              function comp(value)
+              {
+                return value>4;
+              }
+
+              let num5=num1.filter(comp);
+
+    document.getElementById("demo").innerHTML = num5;
+
+               //reduce will reduce the array to single value 
+ 
+             function sum(total,value)
+             {
+                return total+value;
+             }
+
+             let num6=num1.reduce(sum);
+              document.getElementById("demo").innerHTML = num6;
+              //or
+
+              let num7=num1.reduce((total,value)=>total+value);
+
+    document.getElementById("demo").innerHTML = num7;
+    </script>
+   
+   
+</body>
+</html>
+
+
+create one file with the name loopdemo.html
+----------------------------------------------
+and wrtie this code and chek how while loop  is executng in js 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 1;
+        for (var i = 1; i <= 10; i++) {
+            console.log(x);
+            x++;
+            if (i == 5) {
+                break;// check it for continue cahnge tthe code it shoudl print all values except 5 when coninue is given
+            }
+
+
+
+        }
+    </script>
+    <script>
+
+        console.log("using while loop");
+        let x1 = 1;
+        do {
+            console.log(x1);
+            x1++;
+
+        } while (x1 <= 10)
+
+    </script>
+</body>
+</html>
+
+DOM Manipution app.js code 
+---------------------------
+document.addEventListener('DOMContentLoaded',function(){
+
+// delete movie
+const list=document.querySelector('#movie-list ul');
+const forms=document.forms;
+
+list.addEventListener('click',(e)=>{
+
+if(e.target.className=="delete"){
+    const li=e.target.parentElement;
+    li.parentNode.removeChild(li);
+
+}
+
+
+})
+ 
+// add movie 
+
+const addform=forms['add-movie'];
+addform.addEventListener('submit',function(e)
+{
+
+    e.preventDefault();
+
+
+    //creating elements
+
+    const value=addform.querySelector('input[type="text"]').value;
+    const li=document.createElement('li'); 
+    const moviename=document.createElement('span');
+    const deletebtn=document.createElement('span');
+
+
+    //add text content 
+
+    moviename.textContent=value;
+    deletebtn.textContent='delete';
+
+// add classes 
+    moviename.classList.add('name');
+    deletebtn.classList.add('delete');
+
+     
+// append to DOM
+
+li.appendChild(moviename);
+li.appendChild(deletebtn);
+list.appendChild(li);
+
+})
+
+
+
+
+
+})
+
+
+
+  Bootstrap
+  ------------
+  BOOTSTRAP 
+ ------------
+ Bootstrap is a free front-end framework for faster and easier web development 
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image 
+carousels and many other, as well as optional JavaScript plugins
+Bootstrap also gives you the ability to easily create responsive designs
+
+go to getbootstrap.com right side corner go for 5.0.3 version of bootstrap select and  left menu third one download is there 
+and first downlod u click unzip the folder 
+and finally open the folder in vscode 
+
+add one file index.html in the downloaded fodler having css and js folder 
+and code is below 
+
+
+For designing first learn bootstrap from this link 
+
+https://www.w3schools.com/bootstrap5/
+
+
+and after learning go to this link 
+
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+
+and in this in search type what u want like forms ,dropdowns etc 
+
+some code will come try to analize it and replace that code with  your desing code which u need it 
+
+
+bootswatch.com is another site for taking code into desing 
+
+index.html
+-----------
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="row1" class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6" style="background-color:yellow;">
+            <span>row1 col1</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6" style="background-color:fuchsia ;">
+            <span>row1 col2 </span>
+        </div>
+    </div>
+    <div id="row2" class="row">
+        <div class="col-lg-2 col-md-8 col-sm-6" style="background-color: aqua;">
+            <span>row2col1</span>
+        </div>
+        <div class="col-lg-8 col-md-2 col-sm-1" style="background-color: rgb(0, 255, 13);">
+            <span>row2col2</span>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-5" style="background-color: rgb(35, 171, 205);">
+            <span>row2col3</span>
+        </div>
+
+
+
+    </div>
+
+    <div class="row" id="row3">
+
+         <div class="col-lg-6 col-md-6 col-sm-6"
+          style="background-color: orange;">
+         <span>row3 col1</span>
+         </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6"
+         style="background-color: darkcyan;">
+        <span>row3 col2</span>
+          <div id="row4" class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8" style="background-color:chocolate;">
+                 <span>row4col1</span>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" style="background-color:green;">
+                <span>row4col2</span>
+                <div id="row5" class="row">
+                    <div class="col-lg-10" style="background-color: cornflowerblue;">
+                        <span>row5col1</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </div>
+    <div id="row6" class="row">
+        <div class="col-sm-6 col-md-4 col-lg-2" style="background-color:rgba(183, 215, 25, 0.505);">
+            <span>Row-6 Col 1</span>
+        </div>
+        <div class="col-sm-6 col-md-4 offset-md-4 col-lg-2 offset-lg-8" style="background-color:rgb(26, 169, 26);">
+            <span>Row-6 Col 2</span>
+        </div>
+    </div>
+    
+    
+</body>
+
+
+</html>
+
+
+when  u waant to use CDN 
+--------------------------
+index2.html
+--------------
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    <hr/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div></nav>
+    
+    <button type="button" class="btn btn-link">Link</button>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+when u want to se bootswatch.com
+
+index3.html
+------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/quartz.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+                <h4 class="card-title">Primary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+            </div>    </div>
+       
+        <div class="col-lg-6">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Type</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                        <th scope="col">Column heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-active">
+                        <th scope="row">Active</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Default</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <th scope="row">Primary</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th scope="row">Secondary</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">Success</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <th scope="row">Danger</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th scope="row">Warning</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">Info</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-light">
+                        <th scope="row">Light</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="table-dark">
+                        <th scope="row">Dark</th>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                </tbody>      </table>
+        </div>
+        <div class="col-lg-3">
+            <div class="row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+            </div>
+            <div>
+                <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div>
+                <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+i want to generate the template which i have developed in html css using bootstrap 
+including register.html page so for this 
+I am giving both the codes to chatgpt and i am getting the code what happens 
+is that all css cannot be replaced some css it will keep and manily layouts are altered 
+by using bootstrap so you have to anilize which Which style is taken by css and 
+which is taken by bootsrap for that u have to go through the documentation of 
+bootstrap or if u dont have time ask chat gpt only explain the code which it 
+has genrated to explain line by line 
+index4.html 
+-------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template created by Raghu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        header {
+            background-color: #983030;
+            color: white;
+            padding: 40px 0;
+        }
+
+        nav ul {
+            background: orange;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        nav li {
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        nav li:hover {
+            background: lightpink;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        article h1 {
+            font-size: 25px;
+            background: #e0e0e0;
+            padding: 10px;
+        }
+
+        #meta {
+            color: gray;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .latest-posts {
+            height: 30px;
+            background: #983030;
+            margin: 10px 0;
+            border: 2px solid black;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+        }
+
+        footer {
+            background: #983030;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #side-bottom input[type='email'],
+        #side-bottom input[type='submit'] {
+            width: 100%;
+            height: 30px;
+        }
+
+        #side-bottom input[type='submit'] {
+            background: #ff9900;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <header class="text-center">
+            <h1>The Main Heading</h1>
+        </header>
+
+        <nav class="mt-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="row mt-3">
+            <!-- Left Section -->
+            <div class="col-lg-8">
+                <article>
+                    <h1>First Post Title</h1>
+                    <div id="meta"><b>20 Feb 2016 | Raghavendra Ponde</b></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </article>
+                <article>
+                    <h1>First Post Title</h1>
+                    <div id="meta"><b>20 Feb 2016 | Raghavendra Ponde</b></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </article>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-4">
+                <div id="side-top">
+                    <h2 class="text-center text-decoration-underline">Latest Posts</h2>
+                    <div id="latest-posts-lists" class="px-3">
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                    </div>
+                </div>
+
+                <div id="side-bottom" class="mt-4">
+                    <h2 class="text-center text-decoration-underline">News Letter</h2>
+                    <form class="px-3">
+                        <input type="email" placeholder="Enter your email" class="form-control" />
+                        <input type="submit" value="Subscribe" class="btn btn-warning mt-2 w-100" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4">&copy; RaghuTechnologies</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>	
+register.html
+----------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Raghu Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        header {
+            background-color: #983030;
+            color: white;
+            padding: 40px 0;
+        }
+
+        .latest-posts {
+            height: 30px;
+            background: #983030;
+            margin: 10px 0;
+            border: 2px solid black;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+        }
+
+        footer {
+            background: #983030;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="text-center mb-4">
+            <h1>The Main Heading</h1>
+        </header>
+
+        <nav class="mb-3">
+            <ul class="nav justify-content-center bg-warning">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-lg-8">
+                <section class="form-section">
+                    <form novalidate>
+                        <fieldset>
+                            <legend><b>Register</b></legend>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" required autofocus
+                                    placeholder="Enter Name here">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required
+                                    placeholder="Enter email here">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required
+                                    placeholder="Enter password here">
+                            </div>
+                            <div class="mb-3">
+                                <label for="birthday" class="form-label">Birthday</label>
+                                <input type="date" class="form-control" id="birthday" required max="2010-01-01"
+                                    min="2000-01-01">
+                            </div>
+                            <div class="mb-3">
+                                <label for="experience" class="form-label">Experience (in years)</label>
+                                <input type="number" class="form-control" id="experience" required min="1" max="10">
+                            </div>
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Color (select it)</label>
+                                <input type="color" class="form-control form-control-color" id="color">
+                            </div>
+                            <div class="mb-3">
+                                <label for="salary" class="form-label">Salary (range)</label>
+                                <input type="range" class="form-range" id="salary" min="1000" max="10000">
+                            </div>
+                            <div class="mb-3">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender">
+                                    <option selected>Choose your Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="status" class="form-label">Marital Status</label>
+                                <select class="form-select" id="status">
+                                    <option selected>Choose your Marital Status</option>
+                                    <option>Married</option>
+                                    <option>Single</option>
+                                    <option>Divorced</option>
+                                </select>
+                            </div>
+                            <div class="text-end">
+                                <input type="submit" class="btn btn-primary" value="Register">
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div>
+                    <h2 class="text-center text-decoration-underline">Latest Posts</h2>
+                    <div class="px-3">
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h2 class="text-center text-decoration-underline">Newsletter</h2>
+                    <form class="px-3">
+                        <input type="email" class="form-control mb-2" placeholder="Enter your email" />
+                        <input type="submit" class="btn btn-warning w-100" value="Subscribe" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4">&copy; RaghuTechnologies</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

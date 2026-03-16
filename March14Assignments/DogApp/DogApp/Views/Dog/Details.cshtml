@@ -1,0 +1,44 @@
+﻿@model DogApp.Models.Dog
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card shadow-lg mb-4">
+
+    <div class="card-header bg-primary ">
+        Dog ID: @Model.ID
+    </div>
+    <div class="card-body">
+        <div class="row">
+
+            <div class="col-md-5 text-center">
+                @if (!string.IsNullOrEmpty(Model.ImagePath))
+                {
+                    <img src="@Model.ImagePath"  
+                    class="img-fluid rounded border" 
+                         style="max-height:300px;"  />
+                }
+                else
+                {
+                    <span class="text-muted">No Image </span>
+                }
+            </div>
+            <div class="col-md-7 text-black">
+                <h4 class="card-title">@Model.Name</h4>
+                <p><strong>Age:</strong>@Model.Age</p>
+                <p><strong>Description:</strong></p>
+                <p class="text-muted">@Model.Description</p>
+
+                <div class="mt-4">
+                    <a asp-action="Edit" asp-route-id="@Model.ID" class="btn btn-warning">Edit</a>
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

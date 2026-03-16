@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template created by Raghu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        header {
+            background-color: #983030;
+            color: white;
+            padding: 40px 0;
+        }
+
+        nav ul {
+            background: orange;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        nav li {
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        nav li:hover {
+            background: lightpink;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        article h1 {
+            font-size: 25px;
+            background: #e0e0e0;
+            padding: 10px;
+        }
+
+        #meta {
+            color: gray;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .latest-posts {
+            height: 30px;
+            background: #983030;
+            margin: 10px 0;
+            border: 2px solid black;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+        }
+
+        footer {
+            background: #983030;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #side-bottom input[type='email'],
+        #side-bottom input[type='submit'] {
+            width: 100%;
+            height: 30px;
+        }
+
+        #side-bottom input[type='submit'] {
+            background: #ff9900;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>The Main Heading</h1>
+        </header>
+
+        <nav class="mt-2">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="row mt-3">
+            <!-- Left Section -->
+            <div class="col-lg-8">
+                <article>
+                    <h1>First Post Title</h1>
+                    <div id="meta"><b>20 Feb 2016 | Raghavendra Ponde</b></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </article>
+                <article>
+                    <h1>First Post Title</h1>
+                    <div id="meta"><b>20 Feb 2016 | Raghavendra Ponde</b></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </article>
+            </div>
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-4">
+                <div id="side-top">
+                    <h2 class="text-center text-decoration-underline">Latest Posts</h2>
+                    <div id="latest-posts-lists" class="px-3">
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                        <div class="latest-posts">First Post Title</div>
+                    </div>
+                </div>
+
+                <div id="side-bottom" class="mt-4">
+                    <h2 class="text-center text-decoration-underline">News Letter</h2>
+                    <form class="px-3">
+                        <input type="email" placeholder="Enter your email" class="form-control" />
+                        <input type="submit" value="Subscribe" class="btn btn-warning mt-2 w-100" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-4">&copy; RaghuTechnologies</footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
