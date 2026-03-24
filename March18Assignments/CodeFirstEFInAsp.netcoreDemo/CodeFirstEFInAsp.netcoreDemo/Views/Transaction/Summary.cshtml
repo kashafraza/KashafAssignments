@@ -1,0 +1,37 @@
+﻿@model CodeFirstEFInAsp.netcoreDemo.Models.Customer
+@{
+    ViewData["Title"] = "Summary";
+}
+
+<h1>Summary</h1>
+
+
+<h2>Checkout Summary for @Model.CustomerName</h2>
+<p>Total Products Bought: @Model.Products.Count</p>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Who Bought</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.ProductName</td>
+                    <td>@product.Customer.CustomerName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="mt-3">
+    <a asp-action="CreateProduct" asp-route-customerId="@Model.CustomerID" class="btn btn-secondary">Add More Products</a>
+    <button class="btn btn-success" onclick="alert('Checkout Complete! Thank you, @Model.CustomerName.'); window.location.href='@Url.Action("CreateCustomer")';">
+        Checkout Complete
+    </button>
+</div>

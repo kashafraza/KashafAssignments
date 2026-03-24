@@ -1,0 +1,540 @@
+First explain the concept of statemanagement taking web application and in that putting two buttons and try to call 
+so go to paint and explain what is happening there and same thing explain by pasting the code of below
+
+Tell about state less and stateful and tell about tcp and http protocols and then 
+
+Also tell about some communication will be there between code behind and desing what coding we do in code behind i want to show it in desing so there also some state management is done okay ..
+
+now open a new application asp.net core 
+
+Change the design of index like this 
+---------------------------------------
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form asp-action="SetA" method="post">
+        <button type="submit" class="btn btn-primary">Set A to 10</button>
+    </form>
+
+    <form asp-action="GetA" method="post">
+        <button type="submit" class="btn btn-secondary">Get A Value</button>
+    </form>
+
+    <p>Value of A: @ViewBag.AValue</p>
+</div>
+
+
+and in Home controller put the following code 
+-----------------------------------------------
+ private  int a = 0; // 'a' will reset to 0 in stateless scenarios
+
+ [HttpPost]
+ public IActionResult SetA()
+ {
+      a = 10; // 'a' is set locally within the scope of this request
+     ViewBag.AValue = "A has been set to 10 in this request.";
+     return View("Index");
+ }
+
+ [HttpPost]
+ public IActionResult GetA()
+ {
+   //  int a = 0; // 'a' is re-initialized to 0 because state is not preserved
+
+
+     ViewBag.AValue = $"A is currently: {a}";
+     return View("Index");
+ }
+ 
+ so the same effect i had shown in asp.net core also 
+ 
+ now as we know we maintain state menagement whenever we do login so let us go with some model and create a login form and if he is
+ valid user let him enter welcome page let us go with it 
+ 
+ so in that web application 22 only do further coding in Models folder add one class like this with name LoginViewModel okay 
+ 
+ 
+ using System.ComponentModel.DataAnnotations;
+
+namespace WebApplication22.Models
+{
+    public class LoginViewModel
+    {
+        [Required(ErrorMessage = "Username is required")]
+        public string Username { get; set; }
+
+        [Required(ErrorMessage = "Password is required")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+    }
+}
+
+ 
+Now in Controller folder create AccountController and the code for that is below so here 
+first write Login here geenrate view for it empty view 
+
+using Microsoft.AspNetCore.Mvc;
+using WebApplication22.Models;
+namespace WebApplication22.Controllers
+{
+    public class AccountController : Controller
+    {
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Assuming authentication is successful, we create a cookie.
+                var cookieOptions = new CookieOptions
+                {
+                    Expires = DateTime.Now.AddMinutes(1) // Set cookie expiration
+                };
+                Response.Cookies.Append("UserName", model.Username, cookieOptions);
+                return RedirectToAction("Welcome");
+            }
+
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Welcome()
+        {
+            // Check if the cookie exists
+            if (Request.Cookies.ContainsKey("UserName"))
+            {
+                string userName = Request.Cookies["UserName"];
+                ViewBag.UserName = userName;  // Send the username to the view
+            }
+            else
+            {
+                return RedirectToAction("Login");
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Remove the cookie by setting an expired cookie
+            Response.Cookies.Delete("UserName");
+            return RedirectToAction("Login");
+        }
+
+
+
+    }
+}
+
+
+
+LoginView
+----------
+@model WebApplication22.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+welcome.cshtml
+--------------------
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h1>Welcome</h1>
+
+@if (ViewBag.UserName != null)
+{
+    <h2>Welcome, @ViewBag.UserName!</h2>
+}
+<button type="button" class="btn btn-primary ">click me</button>
+<form asp-action="Logout" method="post">
+    <button type="submit" class="btn btn-danger">Logout</button>
+</form>
+
+same thing it is applicable to session also so in account controller code changes like this which is below comment earleir code
+and go like this 
+
+ [HttpGet]
+ public IActionResult Login()
+ {
+     return View();
+ }
+
+ [HttpPost]
+ 
+ public IActionResult Login(LoginViewModel model)
+ {
+     if (ModelState.IsValid)
+     {
+         // Assuming authentication is successful, set session.
+         HttpContext.Session.SetString("UserName", model.Username);
+         return RedirectToAction("Welcome");
+     }
+
+     return View(model);
+ }
+
+ [HttpGet]
+ public IActionResult Welcome()
+ {
+     // Retrieve the session value for username
+     var userName = HttpContext.Session.GetString("UserName");
+
+     if (!string.IsNullOrEmpty(userName))
+     {
+         ViewBag.UserName = userName;  // Send the username to the view
+     }
+     else
+     {
+         return RedirectToAction("Login");
+     }
+
+     return View();
+ }
+
+ [HttpPost]
+ public IActionResult Logout()
+ {
+     // Clear the session
+     HttpContext.Session.Remove("UserName");
+     return RedirectToAction("Login");
+ }
+ 
+ and change in Program.cs file 
+  ---------------------------------
+  
+ namespace SessionDemo
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+
+            // Add services to the container.
+            builder.Services.AddControllersWithViews();
+            // Add session service with a timeout (set to 30 minutes here).
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(1); // Session timeout
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true; // Required for GDPR compliance
+            });
+
+
+            var app = builder.Build();
+
+            // Configure the HTTP request pipeline.
+            if (!app.Environment.IsDevelopment())
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
+
+            app.UseHttpsRedirection();
+            app.UseStaticFiles();
+
+            app.UseRouting();
+            app.UseSession();  // Enable session middleware
+            app.UseAuthorization();
+
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.Run();
+        }
+    }
+}
+
+now again try to run the program you will get the same effect over here 
+
+now let us go with temp data demo now which is again server side state management .
+
+Now remember that view bag and view data etc are not doing statemanagement they are for one single request and response 
+
+so make that thing clear 
+
+so for one subsquent request i need tempdata here when i want to send data from one action to another action method and it can be of different controller as well okay ..
+
+tempdata internally use session to store data .
+
+keep is used to send or to save data it wont read so if  want both means i have to use peek
+
+
+
+Home controller code 
+----------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace WebGentleTempDataDemo.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            TempData["myKey"] = "Data from Index Method";
+            return View();
+        }
+
+        public ActionResult Index2()
+        {
+            //ViewBag.MyKey = TempData["myKey"];
+            //TempData.Keep("myKey");//for all keep it empty for particular or one thing assign
+            //like this as shown
+            Session.Abandon();//this tells internally usese session the tempdata okay
+            ViewBag.Mykey = TempData.Peek("myKey");//one step is enough still it works
+            return View();
+        }
+
+        public ActionResult Index3()
+        {
+            ViewBag.MyKey = TempData["myKey"];
+            return View();
+        }
+    }
+}
+
+
+index.cshtml
+--------------
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h2>hello from index method</h2>
+    </div>
+</body>
+</html>
+
+index2.cshtml
+-------------
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div> 
+        <h2>value: @ViewBag.MyKey</h2>
+    </div>
+</body>
+</html>
+
+index3.cshtml
+---------------
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index3</title>
+</head>
+<body>
+    <div>
+        <h2> value: @ViewBag.MyKey</h2>
+    </div>
+</body>
+</html>
+
+
+version 1 code (in web application 22 only doing coding) 
+--------------
+using only keep 
+
+ // GET: Home
+        public ActionResult Index()
+        {
+            TempData["myKey"] = "Data from Index Method";
+            return View();
+        }
+
+        public ActionResult Index2()
+        {
+            ViewBag.MyKey = TempData["myKey"];
+            TempData.Keep("myKey");//for all keep it empty for particular or one thing assign
+            //like this as shown
+         
+            return View();
+        }
+
+        public ActionResult Index3()
+        {
+            ViewBag.MyKey = TempData["myKey"];
+            return View();
+        }
+		
+		
+	so index view i am not changing as per above code as it can be anything 
+	
+version 2 code 
+----------------
+will use peek means it will do reading automatically peek means reading + keep() so code changes like this 
+and also uncomment session remove which will be automatically third version and in third page u cannot see after uncommeting the code 
+
+so peek and session both you can see in below code 
+
+
+
+ public ActionResult Index()
+ {
+     TempData["myKey"] = "Data from Index Method";
+     return View();
+ }
+
+ public ActionResult Index2()
+ {
+     // Clear the session
+    // HttpContext.Session.Remove("myKey");  // for version 3 remove comment and see the effect okay 
+
+    
+     ViewBag.Mykey = TempData.Peek("myKey");//one step is enough still it works
+     return View();
+     
+ }
+
+ public ActionResult Index3()
+ {
+     ViewBag.MyKey = TempData["myKey"];
+     return View();
+ }
+
+
+Query strings demo 
+-------------------
+Query strings allow passing data between requests through the URL.
+HomeController.cs:
+--------------------
+
+public IActionResult PassData()
+{
+    return View();
+}
+
+public IActionResult ReceiveData(string name, int age)
+{
+    ViewBag.Name = name;
+    ViewBag.Age = age;
+    return View();
+}
+
+
+PassData.cshtml:
+---------------
+<form asp-controller="Home" asp-action="ReceiveData" method="get">
+    <label>Name:</label>
+    <input type="text" name="name" />
+    <label>Age:</label>
+    <input type="number" name="age" />
+    <button type="submit">Submit</button>
+</form>
+
+
+ReceiveData.cshtml:
+--------------------
+<p>Name: @ViewBag.Name</p>
+<p>Age: @ViewBag.Age</p>
+
+
+Hidden Fields Demo
+-----------------
+Hidden fields allow storing data in the form and sending it during form submission.
+
+Implementation:
+
+HiddenField.cshtml:
+------------------------
+<form asp-controller="Home" asp-action="ReceiveHiddenField" method="post">
+    <input type="hidden" name="hiddenValue" value="12345" />
+    <button type="submit">Submit Hidden Field</button>
+</form>
+
+HomeController.cs:
+--------------------
+[HttpPost]
+public IActionResult ReceiveHiddenField(string hiddenValue)
+{
+    ViewBag.HiddenValue = hiddenValue;
+    return View();
+}
+
+ ReceiveHiddenField.cshtml:
+-----------------------------
+<p>Hidden Value: @ViewBag.HiddenValue</p>
+
+
+LocalStorageDemo.cshtml:(js code ) 
+-----------------------------
+
+<button onclick="setData()">Set Data</button>
+<button onclick="getData()">Get Data</button>
+<p id="output"></p>
+
+<script>
+    function setData() {
+        localStorage.setItem('key', 'This is local storage data');
+    }
+
+    function getData() {
+        const data = localStorage.getItem('key');
+        document.getElementById('output').innerText = data || 'No data found';
+    }
+</script>

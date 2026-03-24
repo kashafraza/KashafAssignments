@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\views\\student\\fewcolumns.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\views\\student\\fewcolumns.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\views\\student\\getstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\views\\student\\getstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\views\\student\\getallstudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\views\\student\\getallstudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|d:\\capgeminichandigarh\\day52\\routingcgexample\\routingcgexample\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61429BD0-5C95-4814-A374-CBC9C4005BD3}|RoutingCGExample\\RoutingCGExample.csproj|solutionrelative:routingcgexample\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Program.cs",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Program.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Program.cs",
+              "RelativeToolTip": "RoutingCGExample\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:28:49.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "fewcolumns.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\fewcolumns.cshtml",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Views\\Student\\fewcolumns.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\fewcolumns.cshtml",
+              "RelativeToolTip": "RoutingCGExample\\Views\\Student\\fewcolumns.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T05:24:15.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetStudent.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\GetStudent.cshtml",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Views\\Student\\GetStudent.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\GetStudent.cshtml",
+              "RelativeToolTip": "RoutingCGExample\\Views\\Student\\GetStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T05:23:40.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllStudents.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\GetAllStudents.cshtml",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Views\\Student\\GetAllStudents.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Views\\Student\\GetAllStudents.cshtml",
+              "RelativeToolTip": "RoutingCGExample\\Views\\Student\\GetAllStudents.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-20T05:23:09.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "RoutingCGExample\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:13:44.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "RoutingCGExample\\Models\\Student.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day52\\RoutingCGExample\\RoutingCGExample\\Models\\Student.cs",
+              "RelativeToolTip": "RoutingCGExample\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:09:20.17Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
