@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28_3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28_3.csproj|solutionrelative:mvcfrontend28-3\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28_3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28_3.csproj|solutionrelative:mvcfrontend28-3\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|d:\\desktop\\capgemini training\\webappdemo28-3\\mvcfrontend28-3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1CF7732-080E-4D41-9FC2-69C5F5687682}|MVCfrontend28-3\\MVCfrontend28-3.csproj|solutionrelative:mvcfrontend28-3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "MVCfrontend28-3\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-28T05:30:49.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "MVCfrontend28-3\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-28T05:30:03.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "MVCfrontend28-3\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-28T05:17:26.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVCfrontend28-3\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-28T05:15:50.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVCfrontend28-3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-28T05:15:44.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MVCfrontend28-3\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T05:13:56.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Program.cs",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Program.cs",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Program.cs",
+              "RelativeToolTip": "MVCfrontend28-3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T05:13:01.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\appsettings.json",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\appsettings.json",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\appsettings.json",
+              "RelativeToolTip": "MVCfrontend28-3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-28T05:09:29.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "MVCfrontend28-3\\Models\\Product.cs",
+              "ToolTip": "D:\\Desktop\\CapGemini Training\\WebAppDemo28-3\\MVCfrontend28-3\\Models\\Product.cs",
+              "RelativeToolTip": "MVCfrontend28-3\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T05:08:58.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
