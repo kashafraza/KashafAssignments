@@ -1,0 +1,355 @@
+https://www.youtube.com/playlist?list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_
+
+check above videos for shell scripting 
+
+https://drive.google.com/drive/folders/1WaiMH_Mc0BBP4b7-zzkBITi5kUnTfhdF?usp=sharing
+
+go to above drive and open linuxcommand pdf from there keep it open 
+
+create one folder with the name day7  and in tha add one file addtwonums.html
+
+here i am copying previous js code and i will convert it into jquery code 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function add()
+    {
+        var total;
+       var first=parseInt(document.getElementById("text1").value);
+       var second =parseInt(document.getElementById("text2").value);
+       total=first+second;
+       alert('The total is '+total);
+    }
+</script>
+<body>
+    <pre>
+    1st Number:<input type="text" id="text1" name="first" 
+    placeholder="enter 1st  number"/>
+    2nd Number:<input type="text" id="text2" name="second" 
+    placeholder="enter 2nd  number" />
+    <input type="button" value="sum" onclick="add()" />
+    </pre>
+</body>
+</html>
+
+frist update
+---------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js">
+    
+</script>
+<script type="text/javascript">
+  
+</script>
+
+<body>
+    <pre>
+    1st Number:<input type="text" id="text1" name="first" 
+    placeholder="enter 1st  number"/>
+    2nd Number:<input type="text" id="text2" name="second" 
+    placeholder="enter 2nd  number" />
+    <input type="button" value="sum" onclick="add()" />
+    </pre>
+</body>
+
+</html>
+
+final updated code 
+------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js">
+
+</script>
+<script type="text/javascript" language="Javascript">
+    $(document).ready(
+        function () {
+
+            $("#sumbutton").click(
+                function()
+                {
+                    var first = parseFloat($("input[name='first']").val());
+                    var second = parseFloat($("input[name='second']").val());
+                    //check if both inputs are valid numbers 
+                    if (!isNaN(first) && !isNaN(second)) {
+                        var total = first + second;
+                        alert("The total is " + total);
+                    }
+                    else {
+                        alert("please enter valid numbers")
+                    }
+                }
+
+
+
+            );
+
+           
+
+
+        }
+
+
+
+
+
+
+    );
+</script>
+
+<body>
+    <pre>
+    1st Number:<input type="text" id="text1" name="first" 
+    placeholder="enter 1st  number"/>
+    2nd Number:<input type="text" id="text2" name="second" 
+    placeholder="enter 2nd  number" />
+    <input type="button" id="sumbutton" value="sum"  />
+    </pre>
+</body>
+
+</html>
+
+create one file with name dollareachdemo.html and write the default boiler plate code given down 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+
+    </script>
+    <script type="text/javascript" language="Javascript">
+         var friends = ["sunitha", "mahesh", "kiran", "sanmay"];
+
+            var objs = [{ "name": "sita", "age": "23" }, { "name": "rajesh", "age": "55" }, { "name": "kiran", "age": "22" },
+            { "name": "praveen", "age": "27" }]
+
+            $(document).ready(
+               function()
+               {
+                    $.each(friends, function (index, value) {
+                        console.log((index + 1) + ":" + value);
+                    }
+                    )
+                    console.log("--------------------------------");
+
+                    $.each(objs,function(index,value)
+                    {
+                        console.log((index+1)+":"+value.name+
+                         " is having age "+value.age);
+
+                    }
+
+                   
+                )
+                console.log("---iterating list-----")
+                $("li").each(function(index,element)
+                  {
+                      alert((index+1)+":"+$(element).text());
+                      console.log((index + 1) + ":" + $(element).text())
+                   })
+
+                   console.log("---iterating list with this reference-----")
+                   $("li").each(function(index)
+                {
+                    alert((index+1)+":"+$(this).text());
+                    console.log((index + 1) + ":" + $(this).text())
+                }
+                )
+                console.log("---iterating till some point ---")
+                $("li").each(function()
+                    {
+                        if($(this).text()=="UK")
+                    {
+                        return false;
+                    }
+                    console.log($(this).text());
+                    }
+                         )
+                console.log("---iterating and putting color--- ")
+                $("li").each(function(){
+                    $(this).css("color","red");
+                })
+                console.log("--iterate and put in div tag ---")
+                var results="";
+                
+                $.each(friends,function(index,value){
+
+                    results+="<br/><li>"+value+"</li>"
+                })
+                $("#divresult").html(results);
+               }
+            
+               
+          
+           
+
+
+            );
+        </script>
+</head>
+<body>
+    <ul>
+        <li>US</li>
+        <li>India</li>
+        <li>UK</li>
+        <li>Canada</li>
+        <li>Australia</li>
+    </ul>
+    
+    <div id="divresult" style="background-color: yellow;">
+    
+    
+    
+    
+        </div> 
+</body>
+</html>
+
+
+now i am giving one code to you add one file ajaxdemo1.html 
+
+and paste the belowcode there 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Ajax Table Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(
+          function()
+          {
+            $.ajax({
+              url:"https://jsonplaceholder.typicode.com/users",
+              type:"GET",
+              success:function(data){
+                  var tableBody="";
+                  $.each(data,function(index,user){
+                    tableBody+="<tr>";
+                        tableBody+="<td>"+user.id+"</td>";
+                        tableBody += "<td>" + user.name + "</td>";
+                        tableBody += "<td>" + user.email + "</td>";
+                        tableBody += "</tr>"; 
+                  })
+                $("#userTable tbody").html(tableBody);
+              },
+              error :function()
+              {
+                alert("failed to retrive data ")
+              }
+              
+               
+            });
+          }
+
+        );
+
+    </script>
+</head>
+
+<body>
+
+    <h2>User Data</h2>
+    <table border="1" id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be loaded here -->
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
+
+same code using for loop when u are using for loop empty array is neded 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Ajax Table Example - with For Loop</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/users",
+                type: "GET",
+                success: function (data) {
+                    // Create an array to hold all the rows
+                    var tableRows = [];
+
+                    // Use a traditional for loop to iterate
+                    for (var i = 0; i < data.length; i++) {
+                        var user = data[i];
+                        var row = "<tr>";
+                        row += "<td>" + user.id + "</td>";
+                        row += "<td>" + user.name + "</td>";
+                        row += "<td>" + user.email + "</td>";
+                        row += "</tr>";
+
+                        // Push each row into the array
+                        tableRows.push(row);
+                    }
+
+                    // Join all rows into a single string and insert into table body
+                    $("#userTable tbody").html(tableRows.join(""));
+                },
+                error: function () {
+                    alert("Failed to retrieve data.");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>User Data</h2>
+    <table border="1" id="userTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be loaded here -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>
+
