@@ -1,0 +1,335 @@
+demo1.html
+--------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery example </title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+      $(document).ready(
+
+         function ()
+         {
+            $("div").click(function(){
+
+                alert("Hello world");
+            })
+         }
+
+
+      );
+     </script>
+  </head>
+<body>
+    <div  id="newdiv">click on this to see a dialogue box</div>
+</body>
+</html>
+
+demo2.html
+------------
+add another file demo2.html and in body paste this 
+
+
+<p class="myclass">This is a paragraph.</p> 
+<p id="myid">This is second paragraph.</p>
+<p>This is third paragraph.</p> 
+
+udpate code of demo2.html
+---------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(
+
+         function ()
+         {
+            var pars=$("p");
+          for(i=0;i<pars.length;i++)
+         {
+          alert("Found paragraph:"+pars[i].innerHTML);
+         }
+         }
+
+
+
+        );
+    </script>
+</head>
+<body>
+    <p class="myclass">This is a paragraph.</p>
+    <p id="myid">This is second paragraph.</p>
+    <p>This is third paragraph.</p>
+
+</body>
+</html>
+
+demo3.html
+-------------
+now create another file demo3.html and update the body of html using below 
+
+ <div> 
+ <em title="Bold and Brave">This is first paragraph.</em> 
+ <p id="myid">This is second paragraph.</p> 
+ <div id="divid">
+ </div>
+ </div> 
+
+
+updted code of demo3.html
+----------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(
+       function ()
+       {
+          var title=$("em").attr("title");
+          $("#divid").text(title);
+       }
+        );
+    </script>
+</head>
+<body>
+    <div> <em title="Bold and Brave">This is first paragraph.</em>
+        <p id="myid">This is second paragraph.</p>
+        <div id="divid"></div>
+    </div>
+        
+</body>
+</html>
+
+demo4.html
+------------
+
+from this drive 
+https://drive.google.com/drive/folders/1WaiMH_Mc0BBP4b7-zzkBITi5kUnTfhdF?usp=sharing
+
+download smiley images two  of them 
+
+and create a new file demo4.html for which paste the below code in body of the 
+demo4.html
+
+
+  <div> 
+        <img id="myimg" src="smileyhover.png"  width="300px" height="300px"
+         alt="Sample image" /> 
+    </div> 
+    
+    
+  put those images in same folder jquerydemos
+  
+  
+  
+  updated code of demo4.html
+  ---------------------------
+  
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(
+          function()
+          {
+            $("div").click(
+               function()
+               {
+                $("#myimg").attr("src","smileynormal.png")
+               }
+
+            );
+          }
+        );
+     
+        </script>
+</head>
+<body>
+    <div>
+        <img id="myimg" src="smileyhover.png" width="300px" height="300px" alt="Sample image" />
+    </div>
+</body>
+</html>
+
+
+The same above program code is updated for mouseenter and mouse leave also 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+                $("div").mouseenter(function () {
+                    $("#myimg").attr("src", "smileyhover.png"); // Image when mouse enters
+                });
+
+                $("div").mouseleave(function () {
+                    $("#myimg").attr("src", "smileynormal.png"); // Image when mouse leaves
+                });
+            });
+     
+        </script>
+</head>
+<body>
+    <div>
+        <img id="myimg" src="smileyhover.png" width="300px" height="300px" alt="Sample image" />
+    </div>
+</body>
+</html>
+
+open one new file demo5.html 
+-------------------------------
+
+and paste this desing in body of demo5 
+
+  <button id="move_up">Move Up</button>
+    <button id="move_down">Move Down</button>
+    <button id="color">Change Color</button>
+    <button id="disappear">Disappear/Re-appear</button>
+    <div id="change_me">Make Me Do Stuff!</div> 
+    
+    and in head add this style also 
+    
+       <style> 
+        #change_me {
+        position: absolute;
+        top: 100px;
+        left: 400px;
+        font: 24px arial;}
+        #move_up #move_down #color #disappear {
+        padding: 5px;}
+      </style>
+
+first updated code 
+-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js">
+    </script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(
+        
+        function()
+        {
+            $("#move_up").click(
+              function()
+              {
+                $("#change_me").animate({top:30},200);
+              }
+            );
+            
+        }
+
+
+
+
+
+
+        );
+
+
+        </script>
+        <style>
+            #change_me {
+                position: absolute;
+                top: 100px;
+                left: 400px;
+                font: 24px arial;
+            }
+        
+            #move_up #move_down #color #disappear {
+                padding: 5px;
+            }
+        
+            </style>
+</head>
+<body>
+    <button id="move_up">Move Up</button>
+    <button id="move_down">Move Down</button>
+    <button id="color">Change Color</button>
+    <button id="disappear">Disappear/Re-appear</button>
+    <div id="change_me">Make Me Do Stuff!</div>
+</body>
+</html>
+final uppdated code 
+---------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+    <script type="text/javascript" language="javascript">
+      $(document).ready(function () {
+        $("#move_up").click(function () {
+          $("#change_me").animate({ top: 30 }, 2000);
+        });
+
+        $("#move_down").click(function () {
+          $("#change_me").animate({ top: 500 }, 2000);
+        });
+
+        $("#color").click(function () {
+          $("#change_me").css("color", "purple");
+        });
+        $("#disappear").click(
+            function ()
+            {
+                $("#change_me").toggle("slow");
+            }
+        );
+
+      });
+    </script>
+    <style>
+      #change_me {
+        position: absolute;
+        top: 100px;
+        left: 400px;
+        font: 24px arial;
+      }
+
+      #move_up #move_down #color #disappear {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="move_up">Move Up</button>
+    <button id="move_down">Move Down</button>
+    <button id="color">Change Color</button>
+    <button id="disappear">Disappear/Re-appear</button>
+    <div id="change_me">Make Me Do Stuff!</div>
+  </body>
+</html>
+
+
+

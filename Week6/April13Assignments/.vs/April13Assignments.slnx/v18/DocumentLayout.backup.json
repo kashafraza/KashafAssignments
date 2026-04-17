@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KashafAssignments\\Week6\\April13Assignments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|d:\\kashafassignments\\week6\\april13assignments\\azurespookyloginapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|solutionrelative:azurespookyloginapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|d:\\kashafassignments\\week6\\april13assignments\\azurespookyloginapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|solutionrelative:azurespookyloginapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|d:\\kashafassignments\\week6\\april13assignments\\azurespookyloginapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|solutionrelative:azurespookyloginapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|d:\\kashafassignments\\week6\\april13assignments\\azurespookyloginapp\\models\\spookyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20029CA7-EA53-43EB-8280-E57A84BD50B5}|AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj|solutionrelative:azurespookyloginapp\\models\\spookyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Program.cs",
+              "RelativeDocumentMoniker": "AzureSpookyLoginApp\\Program.cs",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Program.cs",
+              "RelativeToolTip": "AzureSpookyLoginApp\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:58:56.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "AzureSpookyLoginApp\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "AzureSpookyLoginApp\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T05:55:41.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "AzureSpookyLoginApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "AzureSpookyLoginApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:54:06.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpookyRequest.cs",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Models\\SpookyRequest.cs",
+              "RelativeDocumentMoniker": "AzureSpookyLoginApp\\Models\\SpookyRequest.cs",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\Models\\SpookyRequest.cs",
+              "RelativeToolTip": "AzureSpookyLoginApp\\Models\\SpookyRequest.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T05:53:03.256Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

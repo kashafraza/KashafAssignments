@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\transaction\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\transaction\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\transaction\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\transaction\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\transaction\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\transaction\\createcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\eventcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\eventcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\displayemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\displayemp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\author1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\author1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\course1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\course1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\migrations\\20260319043329_dbsetcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\migrations\\20260319043329_dbsetcreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|d:\\capgeminichandigarh\\day51\\codefirstefinasp.netcoredemo\\codefirstefinasp.netcoredemo\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E002910-9763-469D-A570-AC348E77623C}|CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo.csproj|solutionrelative:codefirstefinasp.netcoredemo\\models\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Summary.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\Summary.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\Summary.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\Summary.cshtml*",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\Summary.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T09:59:40.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateProduct.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateProduct.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateProduct.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateProduct.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateProduct.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvy0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T09:50:25.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T09:04:48.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateCustomer.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateCustomer.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateCustomer.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateCustomer.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Transaction\\CreateCustomer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T09:03:17.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Controllers\\TransactionController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Controllers\\TransactionController.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwEAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:55:09.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20260319084351_2tables added.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319084351_2tables added.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:43:51.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Product.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Product.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Product.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:34:47.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Customer.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Customer.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:31:44.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Delete.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Delete.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:49:26.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:27:08.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Create.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Create.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Create.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Create.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAADwvycAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:12:07.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "displayemp.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\displayemp.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\displayemp.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\displayemp.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\displayemp.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAADwvzEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:03:35.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwEkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T05:58:50.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EventContext.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\EventContext.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\EventContext.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\EventContext.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\EventContext.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAzwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:23:39.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Details.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwBgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:30:25.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-19T06:43:28.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20260319052701_4tables aadded.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319052701_4tables aadded.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T05:27:01.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserDetail.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\UserDetail.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\UserDetail.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\UserDetail.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\UserDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:48:11.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Employee.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Employee.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:47:54.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Course1.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Course1.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Course1.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Course1.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Course1.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:47:29.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Author1.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Author1.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Author1.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Author1.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Author1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:47:08.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20260319043329_dbsetcreated.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319043329_dbsetcreated.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319043329_dbsetcreated.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319043329_dbsetcreated.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Migrations\\20260319043329_dbsetcreated.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:33:30.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Program.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Program.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Program.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:22:23.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\appsettings.json",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\appsettings.json",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-19T04:18:59.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Student.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Student.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:15:31.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Course.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Course.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Course.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwA8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:15:17.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Author.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Author.cs",
+              "RelativeDocumentMoniker": "CodeFirstEFInAsp.netcoreDemo\\Models\\Author.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day51\\CodeFirstEFInAsp.netcoreDemo\\CodeFirstEFInAsp.netcoreDemo\\Models\\Author.cs",
+              "RelativeToolTip": "CodeFirstEFInAsp.netcoreDemo\\Models\\Author.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:15:03.739Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

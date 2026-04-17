@@ -1,0 +1,418 @@
+
+https://git-scm.com/install/windows
+
+go above link and install local git as per your operating system means windows os 
+
+in this only git bash also will be installed in your local computer .
+step 1 :
+--------
+Now go to Github account and create one repository with your name as RaghavAssingments (here instead of raghav your name should  be there and repostiory should be public while creating  ) 
+
+step 2 :
+-----------
+Now first in git bash first write theses commands and register yourself in git locally 
+
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ git config user.name
+raghu
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ git config user.email
+raghu070882@gmail.com
+
+as i had earlier already registered with git locally it is showing my name and email for u if it does not show the write these commands in git bash and 
+register yourself 
+
+git config --global user.name "yourname"  // dont write here yourname only write yourname i am saying 
+
+git config --global user.email "youremailid" //same as your email enter 
+
+now again if u write earlier commands it will show that u are registred and give also 
+
+step 3 :
+----------
+
+
+Now being  to git bash and select one drive say D drive or C drive any drive you select means I am asking you to go to that drive from git bash 
+
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 ~
+$ cd D:
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$
+
+now i am in d drive as per my computer next here write this command 
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ git clone https://github.com/raghuponde/RaghuAssignments.git
+Cloning into 'RaghuAssignments'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (106/106), done.
+remote: Total 107 (delta 0), reused 107 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (107/107), 15.58 MiB | 6.99 MiB/s, done.
+
+
+so this will create a folder which is there in repository with name RaghuAssignments in your local computer at D location 
+
+step 4 :
+----------
+Now u go to local folder RaghuAssingments and create one folder there say today is March7 so create a folder inside RaghuAssingments March7Assingments and put all the codes 
+which u have done in class just paste all code into this folder 
+
+step 5:
+---------
+come to now git bash where u were there 
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d
+$ cd d:\RaghuAssignments
+
+raghavendra@LAPTOP-4G8BHPK9 MINGW64 /d/RaghuAssignments (main)
+$
+
+now u are in that folder see here u have to give complete path even u are there in d drive or u can go to that folder right click there and open in git bash here also u can do
+
+step 6 :
+---------
+
+now here some changes has beenn done in RaghuAssingments folder what changes u know u have added March7Assingments folder and in that all contents u haev copied which u have done 
+today in class as assingments 
+
+now from above just type these commands one by one 
+
+git status 
+
+git add . 
+
+git status 
+
+git commit -m "any message saying added "
+
+git push origin main 
+
+so by writing all these commands all your march 7 data will go repsitory so capgemini will check that I want the url of that github 
+I will also check by going into url 
+
+now while writing above commands u may be asked to verify github account you just click authneicate and verify yourself okay 
+
+still any issue will discuss in class and once check with your friends how they have donne or use chat gpt to solve minor issues 
+
+Html and css 
+------------
+CSS demos
+***********
+1. Layout & Box Model
+
+    Property            Description
+    -----------------------------------------------------------------
+    display            Controls how an element is displayed (e.g., block, inline, flex, grid).
+    position           Specifies the positioning ( static, relative, absolute, fixed, sticky ).
+    margin             Sets the outer space around an element ( margin: 10px; ).
+    padding            Sets the inner space inside an element ( padding: 10px; ).
+    width / height     Defines the size of an element ( width: 100px; height: 50px; ).
+    max-width / max-height Sets the maximum allowed width/height of an element.
+    overflow           Controls how content overflows ( visible, hidden, scroll, auto ).
+
+2. Typography (Text Styling)
+
+    Property           Description
+    -----------------------------------------------------------------
+    color             Sets the text color ( color: red; ).
+    font-size         Defines the text size ( font-size: 16px; ).
+    font-weight       Controls thickness ( normal, bold, lighter, bolder, 100-900 ).
+    font-family       Sets the font style ( font-family: Arial, sans-serif; ).
+    text-align        Aligns text ( left, center, right, justify ).
+3. Backgrounds & Borders
+
+    Property            Description
+    -----------------------------------------------------------------
+    background-color   Sets the background color ( background-color: blue; ).
+    background-image   Adds an image as a background ( background-image: url('image.jpg'); ).
+    background-size    Defines how the background image is scaled ( cover, contain ).
+    border            Defines borders ( border: 2px solid black; ).
+    border-radius      Rounds the corners ( border-radius: 10px; ).
+    box-shadow        Adds shadow around an element ( box-shadow: 3px 3px 5px gray; ).
+
+4. Flexbox & Grid (Responsive Design)
+
+    Property                Description
+    -----------------------------------------------------------------
+    display: flex          Enables flexbox layout.
+    flex-direction         Defines row or column layout ( row, column ).
+    justify-content        Aligns items horizontally ( flex-start, center, space-between ).
+    align-items            Aligns items vertically ( flex-start, center, stretch ).
+    grid-template-columns  Defines columns in a grid ( grid-template-columns: repeat(3, 1fr); ).
+    grid-gap               Sets spacing between grid items ( grid-gap: 10px; ).
+
+5. Transitions & Animations
+
+    Property            Description
+    -----------------------------------------------------------------
+    transition         Adds smooth effect ( transition: all 0.5s ease; ).
+    transform          Rotates, scales, or skews an element ( transform: rotate(45deg); ).
+    animation          Defines animations ( @keyframes needed ).
+    opacity            Controls visibility ( opacity: 0.5; ).
+
+6. Miscellaneous
+
+    Property            Description
+    -----------------------------------------------------------------
+    cursor            Changes the cursor type ( pointer, default, text ).
+    visibility        Shows or hides an element ( visible, hidden ).
+    z-index          Defines stacking order ( z-index: 10; ).
+
+    Along with html 4 tags some in built properties came but all were not given those means i cant apply bgcolor proeprty of body to h1 tag so they have 
+
+    introcucted css 
+
+htmlwithcssdemo1.html
+-------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lavendar">
+   <h1 style="background-color: aqua;color:red">The main Heading </h1>
+   <div style="font-size: 16px;font-weight:bold ;background-color: palegreen;color:blueviolet" >
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+    Impedit possimus tenetur ea dignissimos, minima iusto quia!
+     Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+      dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+       illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+   </div>
+   <br/>
+   <br/>
+   <div style="background-color: 
+   chartreuse;color:red;border-radius: 20px;box-shadow: 3px 3px 5px rgb((180,10,10), green, blue);">
+
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Impedit possimus tenetur ea dignissimos, minima iusto quia!
+    Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+    dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+    illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+
+   </div>
+
+   <p style="background-color: darkgoldenrod;color:darkgreen;display: block;">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Impedit possimus tenetur ea dignissimos, minima iusto quia!
+    Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+    dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+    illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+    <span style="background-color: aqua;color:red">Chandigarh Univesity is doing good in all aspects </span>
+
+   </p>
+</body>
+</html>
+
+htmlcssiinternaldemo.html
+---------------------------
+internal style
+-------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style type="text/css">
+    h1 {
+background-color: aqua;color:red
+    }
+    #div1 {
+font-size: 16px;font-weight:bold ;background-color: palegreen;color:blueviolet
+    }
+    div#div2
+    {
+background-color: 
+   chartreuse;color:red;border-radius: 20px;box-shadow: 3px 3px 5px rgb((180,10,10), green, blue);
+    }
+
+    p{
+background-color: darkgoldenrod;color:darkgreen;display: block;
+    }
+
+    span 
+    {
+background-color: aqua;color:red
+    }
+
+</style>
+<body bgcolor="lavendar">
+    <h1 >The main Heading </h1>
+    <div id="div1" >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+    </div>
+    <br />
+    <br />
+    <div id="div2" >
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+
+    </div>
+
+    <p >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+        <span>Chandigarh Univesity is doing good in all aspects </span>
+
+    </p>
+</body>
+</html>
+
+now add one css file externally  like this with name style.css 
+style.css
+--------------
+  h1 {
+      background-color: aqua;
+      color: red
+  }
+
+  #div1 {
+      font-size: 16px;
+      font-weight: bold;
+      background-color: palegreen;
+      color: blueviolet
+  }
+
+  div#div2 {
+      background-color:
+          chartreuse;
+      color: red;
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px rgb((180, 10, 10), green, blue);
+  }
+
+  p {
+      background-color: darkgoldenrod;
+      color: darkgreen;
+      display: block;
+  }
+
+  span {
+      background-color: aqua;
+      color: red
+  }
+
+the add another  html file with same body contents but linking externally 
+htmlcssexternal.html
+---------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body bgcolor="lavendar">
+    <h1>The main Heading </h1>
+    <div id="div1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+    </div>
+    <br />
+    <br />
+    <div id="div2">
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+
+    </div>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Impedit possimus tenetur ea dignissimos, minima iusto quia!
+        Quibusdam architecto illo reiciendis, voluptas veniam, harum repellat
+        dolorum itaque laudantium ducimus alias accusantium quasi facilis officiis nulla magnam ad aperiam odit,
+        illum minus totam! Nulla odio soluta sapiente eveniet suscipit mollitia atque vel!
+        <span>Chandigarh Univesity is doing good in all aspects </span>
+
+    </p>
+</body>
+
+</html>
+
+now create agin a new file where clases and ids i will use 
+usingclassesandid.html
+-------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .MyClass {
+
+        background-color: lightgreen;
+        font-size: x-large;
+        text-indent: 0.5in;
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px rgb(180,10,10);
+    }
+
+    .MyClass2 
+    {
+        color:red;
+    }
+    #myid1
+    {
+        background-color: fuchsia;
+    }
+    #myid2
+    {
+        color:yellow;
+    }
+</style>
+<body>
+    <div id="myid1 myid2" ><!-- multiple ids wont work only one wil work at a time --try puttin myid1 and myid2-->
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+Corrupti eligendi error cumque sunt debitis possimus libero inventore ducimus? 
+Accusantium reiciendis qui doloremque a explicabo excepturi eius eveniet dolorum? 
+Et atque ea praesentium unde velit nisi. Obcaecati quibusdam quod perferendis tenetur iste molestias
+ hic adipisci qui facere? Quaerat illo dignissimos corporis ad reprehenderit? Facere, deserunt magni.
+    </div>
+    <br/>
+    <div id="myid1" class="MyClass2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Corrupti eligendi error cumque sunt debitis possimus libero inventore ducimus?
+        Accusantium reiciendis qui doloremque a explicabo excepturi eius eveniet dolorum?
+        Et atque ea praesentium unde velit nisi. Obcaecati quibusdam quod perferendis tenetur iste molestias
+        hic adipisci qui facere? Quaerat illo dignissimos corporis ad reprehenderit? Facere, deserunt magni.
+    </div>
+    <br/>
+    <div class="MyClass MyClass2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Corrupti eligendi error cumque sunt debitis possimus libero inventore ducimus?
+        Accusantium reiciendis qui doloremque a explicabo excepturi eius eveniet dolorum?
+        Et atque ea praesentium unde velit nisi. Obcaecati quibusdam quod perferendis tenetur iste molestias
+        hic adipisci qui facere? Quaerat illo dignissimos corporis ad reprehenderit? Facere, deserunt magni.
+    </div>
+</body>
+</html>

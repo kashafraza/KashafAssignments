@@ -1,0 +1,7 @@
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\WebApp0904.exe
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\WebApp0904.dll
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\WebApp0904.deps.json
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\WebApp0904.runtimeconfig.json
+D:\.NET\April9Assignments\WebApp0904\obj\Release\net8.0\PubTmp\Out\WebApp0904.pdb

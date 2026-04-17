@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\dog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\dog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\dog\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\dog\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\controllers\\dogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\dog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\dog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\dog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\dog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\models\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\models\\dog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\dogapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\dogapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|d:\\capgeminichandigarh\\day48\\dogapp\\dogapp\\views\\dog\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{134EDB01-37A9-3A99-49B8-CFACF72FFA79}|DogApp\\DogApp.csproj|solutionrelative:dogapp\\views\\dog\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Dog\\Delete.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Delete.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Dog\\Delete.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-14T05:38:40.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Dog\\Edit.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Edit.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Dog\\Edit.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-14T04:46:24.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Program.cs",
+              "RelativeDocumentMoniker": "DogApp\\Program.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Program.cs",
+              "RelativeToolTip": "DogApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T04:27:29.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Details.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Dog\\Details.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Details.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Dog\\Details.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T09:10:34.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Index.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Dog\\Index.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Index.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Dog\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T08:32:55.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Create.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Dog\\Create.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Dog\\Create.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Dog\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T06:23:18.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DogApp.csproj",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\DogApp.csproj",
+              "RelativeDocumentMoniker": "DogApp\\DogApp.csproj",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\DogApp.csproj",
+              "RelativeToolTip": "DogApp\\DogApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T06:11:03.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DogController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Controllers\\DogController.cs",
+              "RelativeDocumentMoniker": "DogApp\\Controllers\\DogController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Controllers\\DogController.cs",
+              "RelativeToolTip": "DogApp\\Controllers\\DogController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowG0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:13:29.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "DogApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "DogApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T06:02:51.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dog.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Models\\Dog.cs",
+              "RelativeDocumentMoniker": "DogApp\\Models\\Dog.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day48\\DogApp\\DogApp\\Models\\Dog.cs",
+              "RelativeToolTip": "DogApp\\Models\\Dog.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:00:10.469Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

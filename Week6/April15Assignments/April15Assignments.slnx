@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KashafApp1/KashafApp1.csproj" />
+  <Project Path="KashafImageApp/KashafImageApp.csproj" />
+</Solution>

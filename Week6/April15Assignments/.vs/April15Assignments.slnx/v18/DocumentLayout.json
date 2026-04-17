@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\KashafAssignments\\Week6\\April15Assignments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8273CC8-7B51-4CC1-0BC0-33551D19DD8E}|KashafImageApp\\KashafImageApp.csproj|d:\\kashafassignments\\week6\\april15assignments\\kashafimageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8273CC8-7B51-4CC1-0BC0-33551D19DD8E}|KashafImageApp\\KashafImageApp.csproj|solutionrelative:kashafimageapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{164F318C-9A29-0469-123C-0CFB327851C9}|KashafApp1\\KashafApp1.csproj|d:\\kashafassignments\\week6\\april15assignments\\kashafapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{164F318C-9A29-0469-123C-0CFB327851C9}|KashafApp1\\KashafApp1.csproj|solutionrelative:kashafapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April15Assignments\\KashafImageApp\\Program.cs",
+              "RelativeDocumentMoniker": "KashafImageApp\\Program.cs",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April15Assignments\\KashafImageApp\\Program.cs",
+              "RelativeToolTip": "KashafImageApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T06:28:22.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KashafAssignments\\Week6\\April15Assignments\\KashafApp1\\Program.cs",
+              "RelativeDocumentMoniker": "KashafApp1\\Program.cs",
+              "ToolTip": "D:\\KashafAssignments\\Week6\\April15Assignments\\KashafApp1\\Program.cs",
+              "RelativeToolTip": "KashafApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T04:57:18.188Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

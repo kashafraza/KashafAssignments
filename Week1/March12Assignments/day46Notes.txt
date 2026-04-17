@@ -1,0 +1,565 @@
+coming back to code (wednesday asp.net mvc code )
+---------------------------------------------------
+come to collectionofobjectpassing view 
+
+and add a new td tag for displaying the employee details individually 
+
+
+@model IEnumerable<mvcwebapp1.Models.Employee>
+@{
+    ViewData["Title"] = "collectionofobjectpassing";
+}
+
+<h1>collectionofobjectpassing</h1>
+
+
+<style>
+	table {
+		border-collapse: collapse;
+		width: 50%;
+	}
+
+	table, th, td {
+		border: 2px solid black;
+	}
+
+	th, td {
+		padding: 8px;
+		text-align: left;
+	}
+</style>
+
+<table>
+	<thead>
+		<tr>
+			<th>EmployeeID</th>
+			<th>EmpName</th>
+			<th>Salary</th>
+			<th> Image </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach(var emp in Model)
+		{
+			<tr>
+            <td> @emp.EmployeeID</td>
+			<td>@emp.EmpName</td>
+			<td>@emp.Salary</td>
+			<td>
+			<img src="@emp.ImageUrl"
+				alt="@emp.EmpName"
+				width="100" height="100" />
+			</td>
+
+				<td>
+					<a href="/Home/Details/@emp.EmployeeID">Details </a> |
+					<a asp-controller="Home" asp-action="Details" asp-route-id="@emp.EmployeeID">Details </a>
+				</td>
+
+	</tr>
+		}
+		
+	</tbody>
+</table>
+
+Now add a action method Details in Home controller like this 
+
+
+
+   public IActionResult Details(int id)
+   {
+       var employee=emplist.FirstOrDefault(e=>e.EmployeeID==id);
+       if(employee==null)
+       {
+           return NotFound();
+       }
+       return View(employee);
+   }
+
+
+Now i  have to create a view for this details action method 
+Normally first generate a view 
+and add on top the single model of employee 
+
+
+intially the code will be like this 
+
+----------
+Details.cshtml
+--------------
+
+@model mvcwebapp1.Models.Employee;
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+Then adding some more values in details view 
+-----------------------------------------------
+@model mvcwebapp1.Models.Employee;
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h1>@Model.EmpName</h1>
+
+<div>
+    <img src="@Model.ImageUrl" alt="@Model.EmpName" width="300" height="300" />
+</div>
+
+<div>
+
+    <p><strong>Salary:</strong> @Model.Salary</p>
+</div>
+<a asp-action="collectionofobjectpassing">Back to List</a>
+
+
+Now i want to search employee from the employee list so one action method i will write in Home controller like this 
+
+
+public ActionResult searchemp(int empid)
+{
+	Employee emp = (from e1 in emplist where e1.EmployeeID == empid select e1).FirstOrDefault();
+	return View(emp);
+}
+
+now right clikc on the above action method and add a view and fill the page like this below 
+
+searchemp view 
+----------------
+
+@model mvcwebapp1.Models.Employee   // code added 
+@{
+    ViewData["Title"] = "searchemp";
+}
+
+<h1>searchemp</h1>
+
+// code added below all 
+
+<table border="1" cellpadding="0" cellspacing="0">
+    <tr>
+        <th>EmployeeID</th>
+        <th>Empname</th>
+        <th>EmpSalary</th>
+    </tr>
+    <tr>
+        <td>@Model.EmployeeID</td>
+        <td>@Model.EmpName</td>
+        <td>@Model.Salary</td>
+    </tr>
+</table>
+
+this is the url u have to type ...
+
+https://localhost:7220/Home/searchemp/?empid=102
+
+
+
+Now add a new model which is Department model in Models folder like this 
+
+just add a class in the models folder by right clicking and give name as Department and just add the properties below 
+
+namespace MvcFirstExample.Models
+{
+    public class Department
+    {
+
+        public int DeptId { set; get; }
+        public string? DeptName { set; get; }
+    }
+}
+
+Next in Home Controller in white space any where add collection of department objects 
+
+ List<Department> deptlist = new List<Department>()
+     {
+         new Department{DeptId=10,DeptName="Sales"},
+         new Department{DeptId=20,DeptName="HR"},
+         new Department{DeptId=30,DeptName="Software"}
+     };
+     
+     
+  Now till now we had passed either single object or collecton of objects now i want to pass multiple objects in return view 
+  
+  like i want to show list of departments and also i want show single employee and also i want to show some current date also in the view 
+  
+ so the situation is that in a single view multiple objects i want to display so i am writing an actoion method like this 
+  
+public ActionResult viewmodeldemo(int empid)
+{
+	var query1 = deptlist.ToList();
+
+	Employee emp=emplist.Where(x=>x.EmployeeID==empid).FirstOrDefault();
+	var query2 = emp;
+
+	return View(query1,query2); // here i will get error as i cannot pass multiple objects 
+}
+
+  so in this situation we will go for 
+  ViewModel a view model holds some other models inside it like a property 
+  so first create a new class in Models folder with the name EmpDeptViewModel
+  
+  
+﻿namespace MvcFirstExample.Models
+{
+    public class EmpDeptViewModel
+    {
+        public List<Department> deptlist { set; get; }
+
+        public Employee emp { set; get; }
+
+        public DateTime date { set; get; }
+
+    }
+}
+
+
+so view model udpated action method code 
+-------------------------------------------
+public ActionResult viewmodeldemo(int empid)
+{
+	var query1 = deptlist.ToList();
+
+	Employee emp=emplist.Where(x=>x.EmployeeID==empid).FirstOrDefault();
+	var query2 = emp;
+
+	EmpDeptViewModel obj = new EmpDeptViewModel()
+	{
+		deptlist = query1,
+		emp = query2,
+		date = DateTime.Now
+	};
+
+	return View(obj);
+}
+
+Now add a view normally as you are passing EmpDeptViewModel object 
+
+so keep that on top of view 
+
+Employeeviewmodel view 
+-------------------------
+@model MvcFirstExample.Models.EmpDeptViewModel
+@{
+    ViewData["Title"] = "viewmodeldemo";
+}
+
+<h1>viewmodeldemo</h1>
+
+<h2> Date : @Model.date</h2>
+
+<h3>dept details </h3>
+<table border="1" cellpadding="1" cellspacing="1">
+    <tr>
+        <th>DeptID</th>
+        <th>Deptname</th>
+    
+
+    @foreach (Department dept in Model.deptlist)
+    {
+            <tr>
+                <td>@dept.DeptId</td>
+                <td>@dept.DeptName</td>
+            </tr>
+    }
+
+
+</table>
+<h3> Search emp details</h3>
+<table border="1" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>EmployeeID</th>
+            <th>Empname</th>
+            <th>EmpSalary</th>
+        </tr>
+        @if(Model.emp!=null)
+    {
+        <tr>
+            <td>@Model.emp.EmployeeID</td>
+            <td>@Model.emp.EmpName</td>
+            <td>@Model.emp.Salary</td>
+        </tr>
+    }
+    else
+    {
+        <tr>
+            <td>There is no employee with this id</td>
+        </tr>
+    }
+
+ </table>
+
+
+https://localhost:7220/Home/viewmodeldemo/?empid=103
+
+<a asp-action="collectionofobjectpassing">Back to List</a>
+
+
+now updated the models 
+
+namespace MVCExampleDemo.Models
+{
+    public class Dept
+    {
+        public int DeptID { set; get; }
+        public string DeptName { set; get; }
+
+        // Master-side collection
+        public List<Employee> Employees { get; set; } = new List<Employee>();
+
+    }
+}
+
+
+namespace MVCExampleDemo.Models
+{
+    public class Employee
+    {
+        public int EmployeeID { set; get; }
+        public string? EmpName { set; get; }
+
+        public int Salary { set; get; }
+
+        public string? ImageUrl { set; get; }
+
+        // FK + reference
+        public int  DeptID { get; set; }
+        public Dept? Dept { get; set; }
+
+    }
+}
+
+In Home controller list also updated 
+--------------------------------------
+ List<Employee> emplist = new List<Employee>()
+ {
+   new Employee{ EmployeeID=101,EmpName="ravi" ,Salary=34000,ImageUrl="/images/pic1.jpg",DeptID=30},
+    new Employee{ EmployeeID=102,EmpName="sita" ,Salary=64000,ImageUrl="/images/pic2.jpg",DeptID=20},
+   
+    new Employee{ EmployeeID=103,EmpName="Mahesh" ,Salary=67000,ImageUrl="/images/boy2.jpg",DeptID=10},
+	    new Employee{ EmployeeID=104,EmpName="shanti" ,Salary=44000,ImageUrl="/images/girls2.jpg",DeptID=10},
+
+ };
+ 
+ 
+ added this method in Home controller 
+ 
+   public IActionResult collectionofdepts ()
+  {
+      return View(deptlist);
+  }
+  
+  generated view for this like this 
+  ----------------------------------
+  @model IEnumerable<MVCExampleDemo.Models.Dept>
+@{
+    ViewData["Title"] = "collectionofdepts";
+}
+
+<h1>collectionofdepts</h1>
+<table cellpadding="3" cellspacing="3" border="2">
+<tr>
+    <th>Dept id </th>
+    <th>Deptn</th>
+    <th>Link </th>
+</tr>
+@foreach(var dept in Model)
+    {
+        <tr>
+            <td>@dept.DeptID</td>
+            <td>@dept.DeptName</td>
+            <td>
+                <a href="/Home/EmpsInDept?deptid=@dept.DeptID">empsindept</a></td>
+        </tr>
+    }
+</table>
+
+
+added another method in Home controller like this
+
+   public IActionResult EmpsInDept(int deptid)
+   {
+       var employees = emplist.Where(e => e.DeptID == deptid).ToList();
+       return View(employees);
+       
+   }
+   
+   and added the view for this 
+
+
+@model IEnumerable<MVCExampleDemo.Models.Employee>
+@{
+    ViewData["Title"] = "EmpsInDept";
+}
+
+<h1>EmpsInDept</h1>
+<table border="2" cellpadding="3" cellspacing="3">
+    <tr>
+        <th>EmployeeID</th>
+        <th>EmployeeName</th>
+        <th>EmpSalary</th>
+        <th>Image</th>
+        <th>Details</th>
+    </tr>
+    @foreach(var emp in Model)
+    {
+        <tr>
+            <td>@emp.EmployeeID</td>
+            <td>@emp.EmpName</td>
+            <td>@emp.Salary</td>
+            <td>
+                <img src="@emp.ImageUrl" width="100" height="100" />
+            </td>
+            <td>
+                <a href="/Home/Details?id=@emp.EmployeeID">Details</a>
+            </td>
+        </tr>
+    }
+</table>
+
+
+so final code of Home Controller is like this 
+
+Home controller final code 
+----------------------------
+using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using MVCExampleDemo.Models;
+
+namespace MVCExampleDemo.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+        public string sampledemo1()
+        {
+            return "Raghavendra Ponde";
+        }
+        public string sampledemo2(int age,string name)
+        {
+            return "The name " + name + "and having age " + age;
+        }
+        public IActionResult sampledemo3()
+        {
+            int age = 34;
+            string name = "ravi kumar";
+            ViewBag.Name = name;
+            ViewBag.Age = age;
+            ViewData["Message"] = "Welcome to Asp.net core learning";
+            ViewData["Year"] = DateTime.Now.Year;
+            return View();
+        }
+        Employee obj = new Employee()
+        {
+            EmployeeID = 101,
+            EmpName = "ravi",
+            Salary = 34000
+        };
+        List<Employee> emplist = new List<Employee>()
+        {
+          new Employee{ EmployeeID=101,EmpName="ravi" ,Salary=34000,ImageUrl="/images/pic1.jpg",DeptID=30},
+           new Employee{ EmployeeID=102,EmpName="sita" ,Salary=64000,ImageUrl="/images/pic2.jpg",DeptID=20},
+          
+           new Employee{ EmployeeID=103,EmpName="Mahesh" ,Salary=67000,ImageUrl="/images/boy2.jpg",DeptID=10},
+		    new Employee{ EmployeeID=104,EmpName="shanti" ,Salary=44000,ImageUrl="/images/girls2.jpg",DeptID=10},
+
+        };
+
+        public IActionResult collectionofdepts ()
+        {
+            return View(deptlist);
+        }
+        public IActionResult EmpsInDept(int deptid)
+        {
+            var employees = emplist.Where(e => e.DeptID == deptid).ToList();
+            return View(employees);
+            
+        }
+
+        List<Dept> deptlist = new List<Dept>()
+        {
+         new Dept{DeptID=10,DeptName="Sales"},
+         new Dept{DeptID=20,DeptName="HR"},
+         new Dept{DeptID=30,DeptName="Software"}
+
+
+        };
+        public IActionResult mixedobjectpassing(int empid)
+        {
+            var query1 = deptlist.ToList();
+            Employee emp = emplist.
+                Where(x => x.EmployeeID == empid).FirstOrDefault();
+            var query2 = emp;
+            EmpdeptViewModel obj = new EmpdeptViewModel()
+            {
+                deptlist=query1,
+                emp=query2,
+                date=DateTime.Now
+
+            };
+            return View(obj);
+        }
+
+
+        public IActionResult Details(int id)
+        {
+          var employee = emplist.FirstOrDefault(e => e.EmployeeID == id);
+           if(employee==null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+
+        }
+        public IActionResult searchemp(int empid)
+        {
+            Employee emp = (from e1 in emplist
+                            where
+                          e1.EmployeeID == empid
+                            select e1).FirstOrDefault();
+            return View(emp);
+        }
+        public IActionResult collectionofobjectspassing()
+        {
+            return View(emplist);
+        }
+        public IActionResult singleobjectpassing()
+        {
+            return View(obj);
+        }
+        public IActionResult display()
+        {
+            return View();
+        }
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}
+
+   
+   
+   

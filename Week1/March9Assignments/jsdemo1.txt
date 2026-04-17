@@ -1,0 +1,329 @@
+Need of javascript or scripting technology:
+--------------------------------------------
+1)when we want to include our own logic when i execute a page then i will use javascript .
+2)In this i will use two tags <script>  and closing </script> tag.
+3)If there are controls in the form to validate the controls also we use javascript.
+eg:Inside a  text box of i should not enter more than 6 characters to do that i will write a code in javascript
+and give user a alert message when he does mistakes
+4) Javascript is completely at the client side anybody can check the code and see its execution if u allow or 
+check the browser to include script code.
+5)The script code can be written after <head> tag or it can be placed inside a body also.
+6)To declare a variable we use var datatype it takes any arguments of our choice means if i supply 30 it will become a data type of integer and if i supply string say "mohan" it will become string data type.
+7)To print any message i use document.write method .
+8)All html tags are valid and can be used in document.write( ) method.
+9)The tags can be used anywhere after <head> and also after <body> it will work fine.
+
+jsdemo1
+-------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var x = 34;
+    var name = "ravi";
+    document.write("<h2>This person " + name + " is " + x + " years</h2>");
+    alert("This person " + name + " is" + x + "years  ")
+</script>
+<body>
+    <h1>This is fist js code </h1>
+    
+</body>
+</html>
+
+jsdemo2
+------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function add()
+    {
+        var total;
+       var first=parseInt(document.getElementById("text1").value);
+       var second =parseInt(document.getElementById("text2").value);
+       total=first+second;
+       alert('The total is '+total);
+    }
+</script>
+<body>
+    <pre>
+    1st Number:<input type="text" id="text1" name="first" 
+    placeholder="enter 1st  number"/>
+    2nd Number:<input type="text" id="text2" name="second" 
+    placeholder="enter 2nd  number" />
+    <input type="button" value="sum" onclick="add()" />
+    </pre>
+</body>
+</html>
+
+second version 
+-----------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function add(a,b)
+    {
+        var total;
+       var first=a;
+       var second =b;
+       total=first+second;
+       alert('The total is '+total);
+    }
+</script>
+<body>
+    <pre>
+    1st Number:<input type="text" id="text1" name="first" 
+    placeholder="enter 1st  number"/>
+    2nd Number:<input type="text" id="text2" name="second" 
+    placeholder="enter 2nd  number" />
+    <input type="button" value="sum" onclick="add(first.value,second.value)" />
+    </pre>
+</body>
+</html>
+
+for the second version i am not getting output modify the code ...to get it
+
+
+when u click the div tag and it output is changed according to what u have written 
+
+<html>
+<head>
+</head>
+<body>
+<div id='feedback' onClick='goodbye()'>Users without Javascript see  this.</div>
+<script type='text/javascript'> 
+document.getElementById('feedback').innerHTML='Hello World!';
+function goodbye() {
+document.getElementById('feedback').innerHTML='Goodbye World!';
+}
+</script>
+</body>
+</html>
+
+some more coding where u have a textbox and button and then and by click of button i am showing the output in div tag and u can see how getelementbyid syntax is used earlier and now in this program and all 
+
+<HTML>
+<HEAD> </HEAD>
+<BODY> 
+<input id='userInput' size=60> <button  
+onClick='userSubmit()'>Submit</button><BR>
+<P><div id='result'></div>
+
+<script type='text/javascript'>
+function userSubmit() {
+var UI=document.getElementById('userInput').value;
+document.getElementById('result').innerHTML='You typed: '+UI;
+}
+</script>
+</BODY>
+</HTML>
+some more coding for javascript and all 
+<html><head><title>My First Javascript</title>
+</head><body>Hello World!
+<p>Say what? <input id="sayThis" size=40>
+<P>How many times? <select id='howMany'>
+<option value=1>1</option>
+<option value=5 selected>5</option>
+<option value=10>10</option>
+<option value=20>20</option>
+</select>
+<p><button onClick='doLoop()'>Do It!</button>
+<p><div id="results"></div>
+<script type='text/javascript'>
+function doLoop() {
+var sayWhat = document.getElementById('sayThis').value;
+var maxLoop = document.getElementById('howMany').value;
+var str = ''; // where we'll store our output temporarily.
+for (var i=1; (i<=maxLoop); i++) {
+str=str+i+':'+sayWhat+'<br>';
+}
+document.getElementById("results").innerHTML=str;
+}
+</script>
+</body>
+</html>
+
+
+JavaScript uses dialog boxes to interact with the user. The dialog boxes are created with three methods:
+
+alert()
+prompt()
+confirm()
+alert:
+------
+We saw in the last chapter that the write() and writeln() were JavaScript methods used to send output to the Web page. Another way to send output to the browser is with the alert() method. The alert() method creates a little independent box—called a dialog box—which contains a small triangle with an exclamation point. 
+
+syntax:
+
+alert("String of plain text");
+alert(expression);
+
+eg:
+alert("Phone number is incorrect");
+alert(a + b);
+prompt :
+-------
+Since JavaScript does not provide a simple method for accepting user input , the prompt dialog box and HTML forms are used  The prompt dialog box pops up with a simple textfield box.
+
+syntax:
+prompt(message);
+prompt(message, defaultText);
+
+eg:
+prompt("What is your name? ", "");
+prompt("Where is your name? ", name);
+
+The Confirm Box:
+-----------------
+The confirm dialog box is used to confirm a user's answer to a question. A question mark will appear in the box with an OK button and a Cancel button. If the user presses the OK button, true is returned; if he presses the Cancel button, false is returned. This method takes only one argument, the question you will ask the user.
+
+example 5:
+----------
+<html>
+    <head>
+    <title>using prompt box with if else</title>
+    </head>    <body>
+        <script language = "JavaScript">
+         var name=prompt("What is your name?", "");
+           document.write("<br>Welcome to my world! "
+               + name + "<br>");
+           var age=prompt("Tell me your age.", "Age");
+           if ( age==null){    
+              alert("Not sharing your age with me");
+           }
+            else{
+              alert(age + " is young");
+            }
+          alert(prompt("Where do you live? ", ""));
+        </script>
+    </body>
+    </html>
+example 6:
+----------
+<html>
+  <head>
+  <title>Using the JavaScript confirm box</title>
+   </head>
+  <body>
+        <script language = "JavaScript">
+          if(confirm("Are you really OK?") == true){
+              alert("Then we can finish the work");
+            }
+            else{
+              alert("We'll work on this when you feel better? ");
+            }
+        </script>
+    </body>
+    </html>
+	
+combined code 
+---------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var one=prompt("enter first number ","enter a number");
+     var second=prompt("enter second number ",'enter a second number');
+
+     var total=parseFloat(one) + parseFloat(second);
+
+    if (confirm("do u want to dispay total?") == true)
+     {
+        alert(total);
+        document.writeln("<h2>The sum is "+total);
+     }
+
+    </script>
+</body>
+</html>
+
+validating an basic html form using javascript :
+-------------------------------------------------
+<html><head>
+<title>Form Validation</title>
+<script type="text/javascript">
+function validate()
+{
+ 
+   if( document.myForm.Name.value == "" )
+   {
+     alert( "Please provide your name!" );
+     document.myForm.Name.focus() ;
+     return false;
+   }
+   if(document.myForm.EMail.value == "" )
+   {
+     alert( "Please provide your Email!" );
+     document.myForm.EMail.focus() ;
+     return false;
+   }
+   if(document.myForm.Zip.value == "" ||
+           isNaN( document.myForm.Zip.value ) ||
+           document.myForm.Zip.value.length != 5 )
+   {
+     alert( "Please provide a zip in the format #####." );
+     document.myForm.Zip.focus() ;
+     return false;
+   }
+   if(document.myForm.Country.value == "-1" )
+   {
+     alert( "Please provide your country!" );
+     return false;
+   }
+   return( true );
+}
+</script>
+</head>
+<body>
+ <form action="/cgi-bin/test.cgi" name="myForm"  
+          onsubmit="return(validate());">
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+   <td align="right">Name</td>
+   <td><input type="text" name="Name" /></td>
+ </tr>
+ <tr>
+   <td align="right">EMail</td>
+   <td><input type="text" name="EMail" /></td>
+ </tr>
+ <tr>
+   <td align="right">Zip Code</td>
+   <td><input type="text" name="Zip" /></td>
+ </tr>
+ <tr>
+ <td align="right">Country</td>
+ <td>
+ <select name="Country">
+   <option value="-1" selected>[choose yours]</option>
+   <option value="1">USA</option>
+   <option value="2">UK</option>
+   <option value="3">INDIA</option>
+ </select>
+ </td>
+ </tr>
+ <tr>
+   <td align="right"></td>
+   <td><input type="submit" value="Submit" /></td>
+ </tr>
+ </table> </form>
+ </body> </html>
+
+

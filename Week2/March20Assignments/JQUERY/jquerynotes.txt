@@ -1,0 +1,364 @@
+JQUERY :
+________
+First go through the slide from jquery section of day 2 as it is clearly mentioned over there and students also can easily understand it well .jQuery is a JavaScript library specialized for changing web page documents on the fly so go upto the ready event and explain the concept from slide only and go through ur slides from 14 to 35 and then explain the below lines of code to them and at the same time tell them about DOM .
+
+Remeber the named function will look like this 
+function named()
+{ 
+// do some stuff here 
+} 
+An anonymous function can be defined in similar way as a normal 
+function but it would not have any name.A anonymous function can be assigned to a variable or passed to a method as shown below.
+var handler = function ()
+{ 
+// do some stuff here 
+}
+JQuery makes a use of anonymous functions very frequently as 
+follows:
+$(document).ready(function()
+{ 
+// do some stuff here 
+}); 
+so another example is there below u can see it clearly 
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  $("h1").hide("slow");
+  $("h2").show("fast");
+  $("img").slideUp();
+  });
+});
+</script>
+
+
+Now let us go ahead with some examples because once we do we will come to know and for this open head first and day 2 slide open to show them demos and all 
+
+<html> 
+<head> 
+<title>The jQuery Example</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("div").click(function() 
+{ 
+alert("Hello world!"); 
+}); 
+});
+</script> 
+</head> 
+<body> 
+<div id="newdiv"> Click on this to see a dialogue box. </div> 
+</body> </html>
+
+
+now open one notepad and save it as custom.js 
+
+and write the following code as well 
+
+/* Filename: custom.js */ 
+$(document).ready(function() 
+{ 
+$("div").click(function() 
+{ 
+alert("Hello world!"); 
+}); 
+});
+
+and then the above coding will change like this 
+
+<html> 
+<head> 
+<title>The jQuery Example</title> 
+<script type="text/javascript" src=" jquery-1.7.1.min.js "></script> 
+<script type="text/javascript" src="custom.js"></script> 
+</head> 
+<body> 
+<div id="newdiv"> Click on this to see a dialogue box. </div> 
+</body> 
+</html>
+
+
+some more coding :
+
+using selectors :
+
+
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src=" jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+var pars = $("p"); 
+for( i=0; i<pars.length; i++ )
+{ 
+alert("Found paragraph: " + pars[i].innerHTML); 
+} 
+}); 
+</script> 
+</head> 
+<body> 
+<div> 
+<p class="myclass">This is a paragraph.</p> 
+<p id="myid">This is second paragraph.</p> <p>This is third paragraph.</p> 
+</div> </body> </html>
+
+changing attributes 
+____________________
+so using this code what i am doing is adding element inside a div tag 
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js">
+</script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+var title = $("em").attr("title"); 
+$("#divid").text(title); 
+}); 
+</script> 
+</head> 
+<body> <div> <em title="Bold and Brave">This is first paragraph.</em> <p 
+id="myid">This is second paragraph.</p> <div id="divid"></div> </div> 
+</body> </html>
+
+using this code i am changing the src property of image path and even able to display the image as well okay 
+
+<html> <head> 
+<title>the title</title> 
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("#myimg").attr("src", "images/Pict0001.jpg"); 
+}); 
+</script> 
+</head> 
+<body> 
+<div> 
+<img id="myimg" src="/wongpath.jpg" alt="Sample image" /> 
+</div> 
+</body> </html> 
+
+applying classes and ids to the element using  jquery ...
+<html> 
+<head> 
+<title>the title</title> 
+<script type="text/javascript" src=“jquery-1.7.1.min.js”></script> 
+<script type="text/javascript" language="javascript"> 
+$(document).ready(function() 
+{ 
+$("em").addClass("selected"); 
+$("#myid").addClass("highlight"); 
+}); 
+</script> 
+<style> 
+.selected { color:red; } 
+.highlight { background:yellow; } 
+</style> 
+</head> <body> <em title="Bold and Brave">This is first paragraph.</em> <p 
+id="myid">This is second paragraph.</p> </body> </html> 
+
+so the above thing is working in some systems and in some systems it is not working try to go in dreamweaver and type below code and then try so that u can get that okay .
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" >
+<title>Inline Styles</title>
+
+some more coding on accessing the list  items 
+
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+$("li").eq(2).css("color", "red");
+});
+</script>
+</head>
+<body>
+<div><ul>
+<li>list item 1</li><li>list item 2</li><li>list item 3</li>
+<li>list item 4</li><li>list item 5</li><li>list item 6</li></ul>
+</div>
+</body>
+</html>
+
+applying multiple values as well 
+
+<html>
+<head>
+<title>the title</title>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" language="javascript">
+$(document).ready(function() 
+{ 
+$("li").eq(2).css({"color":"red", "background-color":"green"}); 
+});
+</script>
+</head>
+<body>
+<div><ul>
+<li>list item 1</li><li>list item 2</li><li>list item 3</li>
+<li>list item 4</li><li>list item 5</li><li>list item 6</li></ul>
+</div>
+</body>
+</html>
+
+some more coding 
+so below program is provide some animation effects inside it .
+<!DOCTYPE html>
+<html><head> <title>jQuery goes to DOM-ville</title>
+<style> 
+  #change_me {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  font: 24px arial;}
+  #move_up #move_down #color #disappear {
+  padding: 5px;}
+</style>
+<script type="text/javascript" 
+src="jquery-1.7.1.min.js"></script>
+</head>
+<body>
+  <button id="move_up">Move Up</button>
+  <button id="move_down">Move Down</button>
+  <button id="color">Change Color</button>
+  <button id="disappear">Disappear/Re-appear</button>
+  <div id="change_me">Make Me Do Stuff!</div>
+  <script>
+    $(document).ready(function() {
+      $("#move_up").click( function() {
+        $("#change_me").animate({top:30},200);
+      });//end move_up
+      $("#move_down").click( function() {
+        $("#change_me").animate({top:500},2000);
+      });//end move_down
+      $("#color").click( function() {
+        $("#change_me").css("color", "purple");
+      });//end color
+      $("#disappear").click( function() {
+        $("#change_me").toggle("slow");
+      });//end disappear
+    });//end doc ready
+  </script>
+</body>
+</html>
+
+
+some more coding 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furry Friends Campaign</title>
+	<style>
+   #clickMe {
+    background: #D8B36E;
+    padding: 20px;
+    text-align: center;
+    width: 205px;
+    display: block;
+    border: 2px solid #000;
+}
+#picframe {
+    background: #D8B36E;
+    padding: 20px;
+    width: 205px;
+    display: none;
+    border: 2px solid #000;
+}
+
+</style>
+  </head>
+  <body>
+    <div id="clickMe">Show me the Furry Friend of the Day</div>
+    <div id="picframe">
+    <img src="merlin.gif">
+    </div>
+    <script src="jquery-1.7.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+    $("#clickMe").click(function() {
+    $("img").fadeIn(1000);
+    $("#picframe").slideToggle("slow");
+    });
+      });
+    </script>
+  </body>
+</html>
+
+After this u go through internet w3schools and execute the code ask them to do it by themselves .
+
+some more examples remove the comments in this and check the output of the code and design how it changes and all it is using some filter option only which we have performed earlier .
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Document</title>
+ <script src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+    $("document").ready(function() {
+        //$("p[class]").css("border", "3px solid red");
+        //$("p[id=para1]").css("border", "3px solid red");
+        //$("p[id^=para]").css("border", "3px solid red");
+        //$("p[id^=para][lang*=en-]").css("border", "3px solid red");
+    });
+</script>
+<style type="text/css">
+.a { color: Navy; }
+.b { color: Maroon; }
+</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+<p class="a">This is paragraph 1</p>
+<p id="para1">This is paragraph 2</p>
+<p class="b">This is paragraph 3</p>
+<p id="para4" lang="en-us">This is paragraph 4</p>
+</body>
+</html>
+
+
+Now better u go into this folder and show the output directly that will be better and explain no need to write the code as there is no limit for the implementaton of jquery code .
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\02_retrieving
+
+autofiltersfinished ,autopdficonsfinished ,form selectors finished ,basic selectors etc just show the examples from this folder only.
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\03_manipulating
+
+attribute finished example 
+creating finished example 
+CSS sizing example as well 
+inserting finished .html 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\04_events
+
+all demos u go through okay 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\05_effects
+
+all demos u show them 
+
+D:\BOOT CAMP\Web_Concepts_Stuff\Lynda.com jQuery Essential Training\Ex_Files_jQuery_EssT\Exercise Files\07_realsite
+
+all demos u show them 
+
+so this will end whole part of jquery in this lesson .

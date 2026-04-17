@@ -1,0 +1,40 @@
+﻿@model MVCExampleDemo.Models.EmpdeptViewModel
+@{
+    ViewData["Title"] = "mixedobjectpassing";
+}
+
+<h1>mixedobjectpassing</h1>
+
+<h2> Date:@Model.date</h2>
+
+<h3>Dept details </h3>
+<table border="1" cellpadding="3" cellspacing="3">
+    <tr>
+        <th>Deptid</th>
+        <th>DeptName</th>
+    </tr>
+    
+        @foreach(var dept in Model.deptlist)
+        {
+            <tr>
+                <td>@dept.DeptID</td>
+                <td>@dept.DeptName</td>
+            </tr>
+        }
+</table>
+<h3>search emp </h3>
+<h1>@Model.emp</h1>
+<div>
+    <img src="@Model.emp.ImageUrl" alt="@Model.emp.EmpName" width="300"
+         height="300" />
+</div>
+
+<div>
+    <h2>Employee details </h2>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </p>
+    <h2>@Model.emp.Salary</h2>
+    <h2><a asp-action="collectionofobjectspassing">back to list</a></h2>
+</div>

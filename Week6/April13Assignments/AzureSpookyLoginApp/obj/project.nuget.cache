@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hfUK4m3+YB8=",
+  "success": true,
+  "projectFilePath": "D:\\KashafAssignments\\Week6\\April13Assignments\\AzureSpookyLoginApp\\AzureSpookyLoginApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mdkas\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

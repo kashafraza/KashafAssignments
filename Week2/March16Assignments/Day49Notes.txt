@@ -1,0 +1,328 @@
+DbFirst approach of Entity Framework in asp.net core mvc 
+*********************************************************
+
+--->First Open mvc core app with 8.0 version 
+
+--->add three dependencies using nugget package manager 8.0.24 version 
+
+
+  Microsoft.EntityFrameworkCore
+   Microsoft.EntityFrameworkCore.SqlServer
+    Microsoft.EntityFrameworkCore.Tools
+
+
+--->then in package manager console fire this command 
+
+ Scaffold-DbContext 'Data Source=LAPTOP-4G8BHPK9\SQLEXPRESS;initial catalog=NorthWind;Integrated Security=true;TrustServerCertificate=True;' 
+ Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context NorthWindContext -Force
+
+change above as per your server and as per your db okay 
+
+so in models all classes will be generated 
+
+
+Add one NorthWindController into the Controller class 
+
+
+frist add in models folder 
+
+namespace DBFirstEFinAsp.netcoreDemo.Models
+{
+    public class SpainCustomerViewModel
+    {
+        public string Cid { get; set; }
+        public string Cname { get; set; }
+        public string Comname { get; set; }
+    }
+}
+
+
+using Microsoft.AspNetCore.Mvc;
+using DBFirstEFinAsp.netcoreDemo.Models;
+using System.Security.Cryptography.Xml;
+
+namespace DBFirstEFinAsp.netcoreDemo.Controllers
+{
+
+   
+    public class NorthWiindController : Controller
+    {
+        public IActionResult SpainCustomers()
+        {
+                    NorthWindContext cnt = new NorthWindContext();
+                    var spainCustomers = cnt.Customers
+            .Where(x => x.Country == "Spain")
+            .Select(x => new SpainCustomerViewModel
+            {
+                Cid = x.CustomerId,
+                Cname = x.ContactName,
+                Comname = x.CompanyName
+            })
+            .ToList();
+
+
+            return View(spainCustomers);
+                
+        }
+        // this will also work without SpainCustomerViewModel
+        public IActionResult SpainCustomers2()
+        {
+            NorthWindContext cnt = new NorthWindContext();
+            var spainCustomers = cnt.Customers
+    .Where(x => x.Country == "Spain")
+    .Select(x => new Customer
+    {
+        CustomerId = x.CustomerId,
+        ContactName = x.ContactName,
+        CompanyName = x.CompanyName
+    })
+    .ToList();
+
+
+            return View(spainCustomers);
+
+        }
+
+        public IActionResult searchCustomer(string contactname)
+        {
+            NorthWindContext cnt = new NorthWindContext();
+            var searchcustomer = from customer in cnt.Customers
+                                 where customer.ContactName == contactname
+                                 select new Customer
+                                 {
+                                     ContactName=customer.ContactName,
+                                     ContactTitle=customer.ContactTitle,
+                                     CompanyName=customer.CompanyName
+
+                                 };
+            var searchcustomer2 = cnt.Customers.Where(x => x.
+            ContactName == contactname)
+                .Select(x => new Customer { ContactName=x.ContactName,
+                    ContactTitle=x.ContactTitle,CompanyName=x.CompanyName
+                });
+            var query1 = searchcustomer.Single();// can also use searchcustomer2
+            var query2 = searchcustomer2.Single();
+            return View(query1);// or query2 can be used 
+
+        }
+    }
+}
+
+
+Views 
+-------
+@model DBFirstEFinAsp.netcoreDemo.Models.Customer
+
+@{
+    ViewData["Title"] = "searchCustomer";
+}
+
+<h1>searchCustomer</h1>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Region)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Region)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fax)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fax)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CustomerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+-----------------
+@model IEnumerable<DBFirstEFinAsp.netcoreDemo.Models.SpainCustomerViewModel>
+
+@{
+    ViewData["Title"] = "SpainCustomers";
+}
+
+<h1>SpainCustomers</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cname);
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cname)
+            </td>
+                    </tr>
+}
+    </tbody>
+</table>
+--------------------
+@model IEnumerable<DBFirstEFinAsp.netcoreDemo.Models.Customer>
+
+@{
+    ViewData["Title"] = "SpainCustomers2";
+}
+
+<h1>SpainCustomers2</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Region)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostalCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fax)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Region)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fax)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

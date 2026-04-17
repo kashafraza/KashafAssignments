@@ -1,0 +1,205 @@
+* {
+	margin:0px;
+	padding:0px;
+  }
+  
+body {
+	font-family:arial;
+	background: url(1710091.jpg)
+}
+
+#container {
+	
+	width:90%;
+
+	background:#EAEAEA;
+	margin:0 auto;
+	border:1px solid black;
+	
+	
+}
+
+header 
+{
+	width:100%;
+	padding:30px 0px;
+	background:#983030;
+	color:white;
+}
+
+header h1 {
+	
+	margin-left:10px;
+	
+}
+
+nav { }
+
+nav ul {
+	background:orange;
+	
+}
+
+nav li {
+	list-style:none;
+	float:left;
+	width:100px;
+	padding:10px 0px;
+	text-align:center;
+}
+
+nav li:hover
+{
+	background:#ffbd5c;
+	cursor :pointer;
+	
+}
+
+section {
+	width:70%;
+	height:500px;
+	background:white;
+	float:left;
+}
+
+article {
+	
+	margin:10px 10px 20px 10px;
+	border-bottom:1px solid black ;
+}
+
+article h1 {
+	
+
+font-size : 25px;
+background: #E0E0E0;
+padding:10px;
+
+
+}
+
+article p {
+	margin :10px 0 10px 0;
+}
+
+#meta {
+	color:gray ;
+	margin:10px 0;
+	font-size: 15px ;
+}
+
+aside {
+	float : left;
+	width: 30%;
+}
+
+#side-top {
+	
+	
+}
+
+#side-top h2 {
+	text-align:center;
+	text-decoration:underline;
+	padding:10px 10px;
+}
+
+#latest-posts-lists
+{
+	padding:0 20px;
+	
+}
+
+.latest-posts
+{
+	
+	height:30px;
+	background:#983030;
+	margin:10px;
+	border:2px solid black;
+	text-align:center;
+	color:white;
+	
+}
+
+
+#side-bottom {
+	
+	
+	
+}
+
+#side-bottom h2 
+{
+	text-align:center;
+	text-decoration:underline;
+	font-size:20px;
+	padding:5px 10px;
+}
+
+#side-bottom form
+{
+	text-align:center;
+	
+}
+
+#side-bottom form input[type='email']
+{
+	width :85%;
+	height: 30px;
+	
+}
+#side-bottom form input[type='text']
+{
+	width :85%;
+	height: 30px;
+	
+}
+#side-bottom form input[type='submit']
+{
+	width :85%;
+	height: 30px;
+	margin-top:10px;
+	background:#FF9900;
+	border:2px solid black;
+}
+
+footer
+ {
+	 background:#983030;
+	 color:white;
+	 padding:10px;
+	 text-align:center;
+	 
+ }
+ 
+ #reg-form 
+ {
+	 
+	 margin:10px;
+ }
+ 
+ #reg-form table 
+ {
+	 width :60%
+	 
+ }
+ 
+ #reg-form table tr 
+ {
+	 height:40px;
+ 
+ 
+ }
+ 
+ #reg-form table td 
+ {
+	 
+ }
+ 
+ #reg-form input ,#reg-form select 
+ {
+	 height :25px;
+	 width:80%;
+	 
+ }

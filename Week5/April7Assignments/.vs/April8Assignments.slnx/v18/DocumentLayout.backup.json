@@ -1,0 +1,283 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET\\April8Assignments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|d:\\.net\\april8assignments\\productapiclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB36F0EC-B419-445C-9189-A442138B65DA}|ProductAPIClient\\ProductAPIClient.csproj|solutionrelative:productapiclient\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\migrations\\20260408050236_firstmigrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\migrations\\20260408050236_firstmigrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|d:\\.net\\april8assignments\\productapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09F990F9-3770-452C-9D87-A6EABDBE656A}|ProductApi\\ProductApi.csproj|solutionrelative:productapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Program.cs",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Program.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Program.cs",
+              "RelativeToolTip": "ProductAPIClient\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T08:51:21.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Program.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Program.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Program.cs",
+              "RelativeToolTip": "ProductApi\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:51:25.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductApi\\appsettings.json",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\appsettings.json",
+              "RelativeToolTip": "ProductApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T04:42:40.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductAPIClient\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T06:05:44.504Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "ProductAPIClient\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T06:06:42.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProductAPIClient\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T06:26:09.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductAPIClient\\appsettings.json",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\appsettings.json",
+              "RelativeToolTip": "ProductAPIClient\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T06:00:45.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ProductAPIClient\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-08T06:26:05.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProductAPIClient\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductAPIClient\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProductAPIClient\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T06:24:01.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductApi\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:08:51.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Services\\IProductService.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Services\\IProductService.cs",
+              "RelativeToolTip": "ProductApi\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:03:52.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260408050236_FirstMigrating.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Migrations\\20260408050236_FirstMigrating.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Migrations\\20260408050236_FirstMigrating.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Migrations\\20260408050236_FirstMigrating.cs",
+              "RelativeToolTip": "ProductApi\\Migrations\\20260408050236_FirstMigrating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:02:36.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ProductApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:55:16.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Models\\Product.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Models\\Product.cs",
+              "RelativeToolTip": "ProductApi\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T04:49:13.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\.NET\\April8Assignments\\ProductApi\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductApi\\Services\\ProductService.cs",
+              "ToolTip": "D:\\.NET\\April8Assignments\\ProductApi\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductApi\\Services\\ProductService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T05:06:46.42Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

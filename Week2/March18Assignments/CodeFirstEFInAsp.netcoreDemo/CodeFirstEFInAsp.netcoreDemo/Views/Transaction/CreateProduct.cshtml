@@ -1,0 +1,50 @@
+﻿@model CodeFirstEFInAsp.netcoreDemo.Models.Product;
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+
+<h1>CreateProduct</h1>
+
+<form asp-action="CreateProduct" method="post">
+    <div>
+        <label asp-for="ProductName"></label>
+        <input asp-for="ProductName" />
+        <span asp-validation-for="ProductName"></span>
+    </div>
+
+    <div>
+        <label asp-for="CustomerID">Who Buyed</label>
+        <select asp-for="CustomerID" asp-items="ViewBag.CustomerList">
+            <option value="">-- Select Customer --</option>
+        </select>
+        <span asp-validation-for="CustomerID"></span>
+    </div>
+
+    <button type="submit">Save</button>
+</form>
+
+<div class="mt-3">
+    @{
+        var selectedCustomerId = 0;
+        if (ViewBag.CustomerId != null)
+        {
+            selectedCustomerId = (int)ViewBag.CustomerId;
+        }
+        else if (Model?.CustomerID > 0)
+        {
+            selectedCustomerId = Model.CustomerID;
+        }
+    }
+    @if (selectedCustomerId > 0)
+    {
+        <a asp-action="Summary"
+        asp-route-customerId="@selectedCustomerId" class="btn btn-primary">
+            Checkout / View Summary
+        </a>
+        <small class="text-muted">for Customer ID: @selectedCustomerId</small>
+    }
+    else
+    {
+        <small class="text-warning">Select a customer first</small>
+    }
+</div>

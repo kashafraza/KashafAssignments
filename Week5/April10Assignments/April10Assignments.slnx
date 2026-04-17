@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AzureFunctionsTangyWeb/AzureFunctionsTangyWeb.csproj" />
+  <Project Path="TangyAzureFunction/TangyAzureFunction.csproj" />
+</Solution>

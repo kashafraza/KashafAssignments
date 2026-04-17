@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var one = prompt("enter first number", "enter a number ");
+        var two = prompt("enter second number", "enter second number");
+        var total = parseFloat(one) + parseFloat(two);
+        if (confirm("do u want to display total?") == true) {
+            alert(total);
+            document.write("<h2>The sum is " + total + "</h2>")
+        }
+    </script>
+</body>
+
+</html>

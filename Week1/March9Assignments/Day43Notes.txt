@@ -1,0 +1,1348 @@
+CSS BOX MODEL
+---------------
+    padding means-- the content how much far it is from the border means if it is having border in which content is there it okay if the content is not having 
+    border then parent elelemt start will become the border here rememeber for content only i will do padding 
+
+    margin -- child elelemt how much distance it maintaines with parent it is applicable to element not content inside the element 
+
+    border means we provide border to element in orer to differentiate 
+
+One of the powerful features of modern HTML and Cascading Style Sheets (CSS) for web development is that you can almost completely separate the markup of your page in HTML from the rendering details specified in your CSS. An HTML page using a small selection of tags and some CSS styling can look like… well, just about anything you like. And you can change how it looks by simply changing the CSS.
+
+A basic - but often misunderstood - feature of CSS styling is something called the box model. The box model simply defines the rectangular space around an element and is defined by three properties:
+
+    border
+    padding
+    margin
+
+check slide 13 in web slides for clear explanation and below are the definitions for it 
+
+The border represents the effective outer limit of the element itself. The border can be either visible or invisible, and has properties for line type, color, and width.
+
+Padding specifies the spacing between the border and any content within the HTML element. If there’s no visible border, then the extent of the padding is effectively the extent of the element. Any background CSS properties associated with the element are displayed within the area defined by the border and padding properties.
+
+The margin represents the distance between the outer edge of the border and any neighboring elements. This is often a source of confusion as it’s easy to think of the margin as a kind of “padding” between elements. Better to think of it like the margin of a page: it represents the outer edge of the object. The margin is effectively transparent and will not reflect any of the background properties specified for the element.
+
+so here u check another slide in webslides which is cssbox okay which gives clear explanation first width and height will come for the element which u define 
+and then u define border and this content has to be how much far from border is decided by padding stuff and the border should be away from the page is decided by margin tags which can be applied as u know to four corners and another thing is u will use maximum div tags to implement css box model okay .
+
+
+
+<html>
+
+<head>
+    <title>The box model example </title>
+    <style type="text/css">
+        body {
+           
+        }
+
+        #container {
+            background: gray;
+            width: 600px;
+            margin: 0px auto;
+            border: 1px solid black;
+        }
+
+        p {
+            background: white;
+            border: 20px solid red;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body >
+    <div id="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+</body>
+
+</html>
+    
+margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+Example
+
+so do some changes and see the effect of css box model 
+
+     <style type="text/css">
+       
+        #container {
+            background: gray;
+            width: 600px;
+            margin: 100px auto; 
+            border: 1px solid black;
+        }
+
+        p {
+            background: white;
+            border: 20px solid red;
+            margin-top: 100px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding-top: 60px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+        }
+    </style>
+
+
+
+Forms 
+--------
+Advantages of form :
+____________________
+---->Collecting names,addresses,telephone numbers,e-mail address and other information to register users for  a service or an event 
+
+---->Gathering infromation for the purchase of an item,for example if i want to purchase book on internet we have fill all relevant information
+
+---->Collecting feedback from the website .
+
+---->providing a search tool for the website ,so sites which are having varied information typically provide users with search box to enable them to locate information faster.
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <h2>Our First Form</h2>
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <!-- Alternative way to label an input (less common) -->
+            <label>
+                Enter a Number:
+                <input type="number" placeholder="enter a number" name="num" min="1" max="1000">
+            </label>
+        </p>
+        <!-- this button doesn't submit the form b/c of the "type" attribute -->
+        <button type="button">Regular button (won't submit)</button>
+        <!-- This button submits the form! -->
+        <button>Submit!!!</button>
+        <!-- So does this one: -->
+        <input type="submit" value="Click Me!">
+    </form>
+    <hr>
+    <!-- Outside of a form, no default behavior -->
+    <button>Not Inside Form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" id="first" name="first" required>
+        </p>
+        <p>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+        </p>
+        <p>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+        </p>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
+
+further html extra notes 
+-------------------------------
+Advantages of form :
+____________________
+---->Collecting names,addresses,telephone numbers,e-mail address and other information to register users for  a service or an event 
+
+---->Gathering infromation for the purchase of an item,for example if i want to purchase book on internet we have fill all relevant information
+
+---->Collecting feedback from the website .
+
+---->providing a search tool for the website ,so sites which are having varied information typically provide users with search box to enable them to locate information faster.
+
+To write a form we use first of all <form> tags 
+
+it has the following attributes :
+
+1)Accept :This defines the list of MIME types that are recognized by server that contains the script to process the form .
+syntax :
+------- 
+ACCEPT="internet media type"
+we use this tag rarely 
+
+2)Action : This tells where the form has to be jumped when u click the submit button in form 
+syntax:
+-------
+ACTION="URL"
+3)Method : This specifies the method by which the data has to be sent to the server .It also specifies the protocol to be used when client sends the data to the server.if the value is GET the browser will create a query that contains the page URL a question mark and values are generated by form 
+
+syntax :
+-------
+<form action="url"  method="get">
+contents...of the form 
+
+</form>
+
+example on get method :
+-----------------------
+when we want to send very less data and it is not secured data we can go for get method of the form. 
+
+<html>
+<head>
+<title>form demo </title>
+</head>
+<body>
+<H2>Join the Mailing List:</H2>
+<FORM ACTION="doc1.html" METHOD=GET>
+<PRE>
+First Name: <INPUT TYPE="text" NAME="first">
+Last Name:  <INPUT TYPE="text" NAME="last">
+<INPUT TYPE="submit">  <INPUT TYPE="reset">
+</PRE>
+</FORM>
+</body>
+</html>
+
+
+HTML INPUT ELEMENTS:
+--------------------
+The <input> element defines the type and appearance of the control to be displayed on the form,the attributes are the following
+
+1)type:This specifies type of element like text means textbox,password means password type textbox ,checkbox means u can select through tick marks etc
+2)name=This specifies the name of the control by which it is called.
+3)value=This is optional one we can use this with radio buttons to specify some value 
+4)size:it determines the width of the control in case of text box if size=30 it can accomodate maximum of 30 characters.
+5)maxlength=This is used to specify maximum number of characters that can be entered in textbox or password element
+6)checked=This is boolean attribute means it specifes true or false and this is used maximum with radio and checkbox control
+7)src=This is used when we are using an image as an input type ,it identifies the location of an image 
+
+Button:
+------
+<input type=button  value=click  name="b1" >
+
+This creates a button control.,u can use size also here if u want..
+
+Text:
+------
+<input type=text value=" " name="username"  size=20>
+
+This creates a textbox with name username and i am keeping the textbox empty from strating itself 
+
+checkbox:
+---------
+
+when we have to select more than one option then u go for checkboxes
+
+<input type=checkbox name=courses value="check-box1" >C language <br>
+<input type=checkbox name=courses value="check-box2" checked >java
+
+submit :
+--------
+when the user clicks the submit button ,the form is submitted to a location which is specified in action attribute
+<input type="submit"  value="click" name="b1">
+
+Image:
+------
+This actually creates a graphical submit button
+<input type=image src="url" name="blue_bulb">
+reset:
+------
+This makes the values in the form to erase when we click it 
+<input type=reset value="reset" name="b2">
+
+code on the form using post method:
+-----------------------------------
+<html>
+<head>
+<title>sample form demo </title>
+</head>
+<body bgcolor="#ffffcc">
+<table>
+<tr><td>
+<form action="doc1.html" METHOD=post>
+<b><h2 align="left" >Sample Stock recovery </h2></b>
+<p><b>describe ur investment experience </b></p>
+<p>
+<input type="radio" name="result-radio1" value="radio-0">Beginner<br>
+<input type="radio" name="result-radio1" value="radio-1">Intermediate<br>
+<input type="radio" name="result-radio1" value="radio-2">Expert<br>
+</p>
+<p><b>Types of investments u make </b></p>
+<p>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-0">Individual stocks<br>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-1">Options<br>
+<input type="checkbox" name="resultcheckbox-1" value="checkbox-2">Mutual funds<br>
+First Name: <INPUT TYPE="text" NAME="first" size=20 ><br>
+Last Name:  <INPUT TYPE="password" NAME="password" size="10" maxlength="15"><br><br><br>
+<INPUT TYPE="submit">&nbsp;<INPUT TYPE="reset"><br>
+</FORM></td></tr></table></body></html>
+
+TextArea Element :
+------------------
+This creates a multiline text input control as compared to single line text box.Here we have to specify the size of the textarea.Also ,we have to specify the rows and columns in the textarea.
+
+<textarea  name="text1" cols=20 rows=5>  </textarea>
+select Element :
+-----------------
+The select element is used to display a list of options for the user.each choice is represented by an OPTION element.A select must contain atleast one OPTION element.The option selected by user is represented by highlighted block.
+
+The optgroup element is used to group the choices of hiearchy 
+
+code for textarea and select element and optgroup:
+--------------------------------------------------
+<html>
+<head>
+<title>Sample Form </title>
+</head>
+<body bgcolor="pink"  >
+<form action="doc1.html" method="post">
+<b><center><h2>Sample stock recovery </h2></center></b>
+<p><b>Investment advice for others </b> </p>
+<textarea  name="result_textarea"  rows="7"  cols="20">
+</textarea><p><!--comment is written like this -->
+<p><b>How do u buy your stocks</b>
+<select name="resultradio-5">
+<option></option>
+<option>1)on-line exam </option>
+<option>2)Touch stone trading</option>
+<option>3)Broken pieces</option>
+<option>4)Other</option>
+</select></p>
+<p><select name="course" multiple>
+<optgroup>
+<option>1)Introduction to html </option>
+<option>2)javascript </option>
+<option selected >3)web designing</option>
+<option selected>4)Other</option>
+</optgroup>
+<optgroup>
+<option>1)c language </option>
+<option>2)C++ language </option>
+<option>3)java language</option>
+<option>4)Other</option>
+</optgroup>
+</select><br><br>
+<button type="submit">
+send <img src="merlin.gif" alt="submit"></button>
+<button type="reset">
+reset <img src="merlin.gif" alt="reset"></button>
+</p></form>
+</body></html>
+
+Label:
+------
+label element is used to attach information to control elements.so let use see a application form developed.
+
+
+<html>
+<head>
+<title>Application  Form </title>
+</head>
+<body >
+<h1><center><font size= 4 color=Forestgreen >Application Form </center></font></h1><hr><br>
+<form action="=" method="post">
+<p>
+<label for="firstname"> Name :  </label>
+<input type="text" id="firstname"><br>
+<p>Area of Interest <br><br>
+<input type=radio name="control1" value="0" checked>web designer
+<input type=radio name="control1" value="1" >Web Administrator
+<input type=radio name="control1" value="2" >web Developer
+<p>Experience
+<select name="control2">
+<option>None</option>
+<option>1 year</option>
+<option>2 years</option>
+<option>4 years</option>
+</select><br>
+<p>Comments<br>
+<textarea name="control3" cols="30" rows="5">Type your comments here</textarea>
+<p><input type="checkbox"  name="control4" checked>send acknowledgement<br>
+<input type=submit value=ok >
+<input type=reset value=rechange >  </form>
+</body></html>
+
+
+flex layout 
+--------------
+
+index.html
+-----------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox vs Grid vs Block</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Flexbox Layout Example</h1>
+    <!-- Flexbox Container -->
+    <div class="flex-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+
+    <h1>Grid Layout Example</h1>
+    <!-- CSS Grid Container -->
+    <div class="grid-container">
+        <div class="grid-box">1</div>
+        <div class="grid-box">2</div>
+        <div class="grid-box">3</div>
+        <div class="grid-box">4</div>
+    </div>
+
+    <h1>Block Layout Example</h1>
+    <!-- Default Block Layout -->
+    <div class="block-container">
+        <div class="block-box">1</div>
+        <div class="block-box">2</div>
+        <div class="block-box">3</div>
+        <div class="block-box">4</div>
+    </div>
+
+</body>
+
+</html>
+
+
+styles.css
+------------
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the heading */
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+/* ======= FLEXBOX LAYOUT ======= */
+.flex-container {
+    display: flex;
+    /* Flexbox Enabled */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: lightgray;
+    padding: 20px;
+    height: 50vh;
+}
+
+/* Flexbox Items */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #ff7e5f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background-color: #feb47b;
+    transform: scale(1.1);
+}
+
+/* ======= GRID LAYOUT ======= */
+.grid-container {
+    display: grid;
+    /* Grid Enabled */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    gap: 20px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Items */
+.grid-box {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.grid-box:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* ======= BLOCK (DEFAULT) LAYOUT ======= */
+.block-container {
+    background-color: #dcdcdc;
+    padding: 20px;
+    height: 50vh;
+}
+
+/* Block Items */
+.block-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3f51b5;
+    color: white;
+    text-align: center;
+    font-size: 24px; 
+    margin: 10px auto;
+    /* Center block elements */
+    line-height: 100px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.block-box:hover {
+    background-color: #303f9f;
+}
+
+
+
+template design'
+=================
+index.html
+-----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template created by raghu</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div id="container">
+    <header>The Main Heading</header>
+    <nav></nav>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+    <footer>copyright &copy; RaghuTechnologies</footer>
+</div>
+</body>
+</html>
+
+style.css
+-------
+<
+
+
+index.html
+------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template created by raghu</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+    <header><h1>The Main Heading</h1></header>
+    <nav></nav>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+    <footer>copyright &copy; RaghuTechnologies</footer>
+</div>
+</body>
+</html>
+
+style.css
+----------
+*{
+    margin:0;
+    padding:0;
+}
+
+#container
+{
+    width:90%;
+    height:500px;
+    background:#97c330;
+    margin:0,auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    color:white;
+    background:#983030;
+    padding-top:40px;
+}
+header h1{
+
+    text-align: center;
+}
+
+
+index.html
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template created by raghu</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+    <header><h1>The Main Heading</h1></header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Music</li>
+            <li>Contact us</li>
+            <li>Blogs</li>
+            <div style="clear:both"></div>
+        </ul>
+    </nav>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+    <footer>copyright &copy; RaghuTechnologies</footer>
+</div>
+</body>
+</html>
+
+style.css
+----------
+*{
+    margin:0;
+    padding:0;
+}
+
+#container
+{
+    width:90%;
+    height:500px;
+    background:#97c330;
+    margin:0,auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    color:white;
+    background:#983030;
+    padding-top:40px;
+}
+header h1{
+
+    text-align: center;
+}
+
+nav ul{
+
+    background:orange;
+   
+}
+
+nav li{
+    list-style: none;
+    float:left;
+    width:100px;
+    padding: 10px 0px;
+    text-align: center;
+}
+nav li:hover 
+{
+    cursor:pointer;
+    background: lightpink;
+}
+
+index.html
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template created by raghu</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+    <header><h1>The Main Heading</h1></header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Music</li>
+            <li>Contact us</li>
+            <li>Blogs</li>
+            <div style="clear:both"></div>
+        </ul>
+    </nav>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+    <aside>
+        
+    </aside>
+    <footer>copyright &copy; RaghuTechnologies</footer>
+</div>
+</body>
+</html>
+
+style.css
+---------
+*{
+    margin:0;
+    padding:0;
+}
+
+#container
+{
+    width:90%;
+    height:500px;
+    background:#97c330;
+    margin:0,auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    color:white;
+    background:#983030;
+    padding-top:40px;
+}
+header h1{
+
+    text-align: center;
+}
+
+nav ul{
+
+    background:orange;
+   
+}
+
+nav li{
+    list-style: none;
+    float:left;
+    width:100px;
+    padding: 10px 0px;
+    text-align: center;
+}
+nav li:hover 
+{
+    cursor:pointer;
+    background: lightpink;
+}
+section
+{
+    width:70%;
+    height:400px;
+    background:white; 
+    float:left;
+}
+aside
+{
+    width:30%;
+    height:400px;
+    background:lightsalmon;
+    float:left;
+
+
+}
+
+index.html
+------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template created by raghu</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="container">
+    <header><h1>The Main Heading</h1></header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Music</li>
+            <li>Contact us</li>
+            <li>Blogs</li>
+            <div style="clear:both"></div>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h1>
+                First Post Title
+            </h1>
+            <div id="meta"><b> 20 Feb 2016| Raghavendra Ponde</b></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </p>
+        </article>
+        <article>
+            <h1>
+                First Post Title
+            </h1>
+            <div id="meta"><b> 20 Feb 2016| Raghavendra Ponde</b></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum
+            </p>
+            </article>
+    </section>
+    <aside>
+        <div id="side-top">
+            <h2> Latest Posts </h2>
+            <div id="latest-posts-lists">
+                <div class="latest-posts">First Post Title </div>
+                <div class="latest-posts">First Post Title </div>
+                <div class="latest-posts">First Post Title </div>
+                <div class="latest-posts">First Post Title </div>
+        
+            </div>
+        </div>
+        <div id="side-bottom">
+            <h2> News Letter </h2>
+            <form>
+        
+                <input type="email">
+                <input type="submit">
+        
+            </form>
+        
+        </div>
+        
+    </aside>
+    <div style="clear:both;"></div>
+    <footer>copyright &copy; RaghuTechnologies</footer>
+</div>
+</body>
+</html>
+
+style.css
+----------
+*{
+    margin:0;
+    padding:0;
+}
+
+#container
+{
+    width:90%;
+    height:500px;
+    background:#97c330;
+    margin:0,auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    color:white;
+    background:#983030;
+    padding-top:40px;
+}
+header h1{
+
+    text-align: center;
+}
+
+nav ul{
+
+    background:orange;
+   
+}
+
+nav li{
+    list-style: none;
+    float:left;
+    width:100px;
+    padding: 10px 0px;
+    text-align: center;
+}
+nav li:hover 
+{
+    cursor:pointer;
+    background: lightpink;
+}
+section
+{
+    width:70%;
+    height:400px;
+    background:white; 
+    float:left;
+}
+aside
+{
+    width:30%;
+    height:400px;
+    background:lightsalmon;
+    float:left;
+
+}
+
+article {
+
+    margin: 10px 10px 20px 10px;
+    border-bottom: 1px solid black;
+}
+
+article h1 {
+
+
+    font-size: 25px;
+    background: #E0E0E0;
+    padding: 10px;
+
+
+}
+
+article p {
+    margin: 10px 0 10px 0;
+}
+
+#meta {
+    color: gray;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+#side-top {}
+
+#side-top h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 10px;
+}
+
+#latest-posts-lists {
+    padding: 0 20px;
+
+}
+
+.latest-posts {
+
+    height: 30px;
+    background: #983030;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+
+}
+
+
+#side-bottom {}
+
+#side-bottom h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#side-bottom form {
+    text-align: center;
+
+}
+
+#side-bottom form input[type='email'] {
+    width: 85%;
+    height: 30px;
+
+}
+
+#side-bottom form input[type='text'] {
+    width: 85%;
+    height: 30px;
+
+}
+
+#side-bottom form input[type='submit'] {
+    width: 85%;
+    height: 30px;
+    margin-top: 10px;
+    background: #FF9900;
+    border: 2px solid black;
+}
+
+footer {
+    background: #983030;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+add one li register 
+
+now in the same folder add new file with the name regsiter.html and copy the data of index.html in regsiter.html 
+
+and from there remove just remove article code let there be section inside section only add it this below form  
+
+
+<form id="reg-form" novalidate>
+<fieldset> 
+<legend> <b>Register</b>  </legend>
+<table>
+<tr>
+<td> Full Name: </td>
+<td> <input type="text" required autofocus placeholder="Enter Name here "> </td>
+</tr>
+<tr>
+<td> Email : </td>
+<td> <input type="email" required placeholder="Enter email here " > </td>
+</tr>
+<tr>
+<td> Password : </td>
+<td> <input type="password" required placeholder="Enter password here " > </td>
+</tr>
+<tr>
+<td> Birthday : </td>
+<td> <input type="date" required placeholder="Birthday " max="2010-01-01" min="2000-01-01" > </td>
+</tr>
+<tr>
+<tr>
+<td> Expereince(In years) : </td>
+<td> <input type="number" required placeholder="Expereince " max="10" min="1" > </td>
+</tr>
+<tr>
+<td> Color (selct it ) : </td>
+<td> <input type="color"  > </td>
+</tr>
+<tr>
+<tr>
+<td> salary(range) : </td>
+<td> <input type="range" required placeholder="range" max="10000" min="1000" > </td>
+</tr>
+<tr>
+<td> Gender: </td>
+<td> 
+<select>
+<option>choose your Gender status</option>
+<option>Male</option>
+<option>Female</option>
+</select>
+ </td>
+</tr>
+<tr>
+<td> Martial status: </td>
+<td> 
+<select>
+<option>choose your Martial status</option>
+<option>Married</option>
+<option>Single</option>
+<option>Divorced</option>
+</select> 
+</td>
+</tr>
+<tr>
+<td>  </td>
+<td> <input type="submit" > </td>
+</tr>
+</table>
+</fieldset>
+
+
+</form>
+
+now add reg-form styles as provided below now  it is working 
+style.css
+----------
+*{
+    margin:0;
+    padding:0;
+}
+
+#container
+{
+    width:90%;
+    
+    background:#97c330;
+    margin:0,auto;
+}
+
+header{
+    width:100%;
+    height:100px;
+    color:white;
+    background:#983030;
+    padding-top:40px;
+}
+header h1{
+
+    text-align: center;
+}
+
+nav ul{
+
+    background:orange;
+   
+}
+
+nav li{
+    list-style: none;
+    float:left;
+    width:100px;
+    padding: 10px 0px;
+    text-align: center;
+}
+nav li:hover 
+{
+    cursor:pointer;
+    background: lightpink;
+}
+section
+{
+    width:70%;
+    height:400px;
+    background:white; 
+    float:left;
+}
+aside
+{
+    width:30%;
+    height:400px;
+    background:lightsalmon;
+    float:left;
+
+}
+
+article {
+
+    margin: 10px 10px 20px 10px;
+    border-bottom: 1px solid black;
+}
+
+article h1 {
+
+
+    font-size: 25px;
+    background: #E0E0E0;
+    padding: 10px;
+
+
+}
+
+article p {
+    margin: 10px 0 10px 0;
+}
+
+#meta {
+    color: gray;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+#side-top {}
+
+#side-top h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px 10px;
+}
+
+#latest-posts-lists {
+    padding: 0 20px;
+
+}
+
+.latest-posts {
+
+    height: 30px;
+    background: #983030;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+
+}
+
+
+#side-bottom {}
+
+#side-bottom h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+#side-bottom form {
+    text-align: center;
+
+}
+
+#side-bottom form input[type='email'] {
+    width: 85%;
+    height: 30px;
+
+}
+
+#side-bottom form input[type='text'] {
+    width: 85%;
+    height: 30px;
+
+}
+
+#side-bottom form input[type='submit'] {
+    width: 85%;
+    height: 30px;
+    margin-top: 10px;
+    background: #FF9900;
+    border: 2px solid black;
+}
+
+footer {
+    background: #983030;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#reg-form {
+
+    margin: 10px;
+}
+
+#reg-form table {
+    width: 60%
+}
+
+#reg-form table tr {
+    height: 20px;
+
+
+}
+
+#reg-form table td {}
+
+#reg-form input,
+#reg-form select {
+    height: 25px;
+    width: 80%;
+
+}
+

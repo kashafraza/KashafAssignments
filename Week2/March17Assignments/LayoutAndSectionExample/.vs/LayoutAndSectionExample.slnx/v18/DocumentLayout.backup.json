@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\dept\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\dept\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\shared\\_mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\shared\\_mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\emp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\emp\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\controllers\\empcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\controllers\\deptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\controllers\\deptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|d:\\capgeminichandigarh\\day50\\layoutandsectionexample\\layoutandsectionexample\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EA1E0164-4744-4398-A8BB-7E0819969632}|LayoutAndSectionExample\\LayoutAndSectionExample.csproj|solutionrelative:layoutandsectionexample\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 23,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeptController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\DeptController.cs",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Controllers\\DeptController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\DeptController.cs",
+              "RelativeToolTip": "LayoutAndSectionExample\\Controllers\\DeptController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:12:56.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Models\\Employee.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Models\\Employee.cs",
+              "RelativeToolTip": "LayoutAndSectionExample\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:10:41.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Models\\Department.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Models\\Department.cs",
+              "RelativeToolTip": "LayoutAndSectionExample\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:10:23.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:09:06.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:07:14.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:04:02.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Dept\\Index.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Dept\\Index.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Dept\\Index.cshtml*",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Dept\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:25:35.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Emp\\Index.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Emp\\Index.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Emp\\Index.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Emp\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:26:17.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_MyLayout.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Shared\\_MyLayout.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Shared\\_MyLayout.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Shared\\_MyLayout.cshtml*",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Shared\\_MyLayout.cshtml*",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:20:19.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\EmpController.cs",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Controllers\\EmpController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\EmpController.cs",
+              "RelativeToolTip": "LayoutAndSectionExample\\Controllers\\EmpController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:13:14.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:04:19.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LayoutAndSectionExample\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T06:03:51.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LayoutAndSectionExample\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\CapgeminiChandigarh\\Day50\\LayoutAndSectionExample\\LayoutAndSectionExample\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LayoutAndSectionExample\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:03:23.568Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
